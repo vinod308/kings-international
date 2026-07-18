@@ -1,0 +1,73 @@
+export type Certification = { num: string; title: string; body: string };
+
+export const CERTIFICATIONS: Certification[] = [
+  { num: "01", title: "ISO 9001 - Quality Management", body: "Consistent product quality and process control across every stage of manufacturing." },
+  { num: "02", title: "ISO 14001 - Environmental Management", body: "Systematic control of environmental impact across the factory and tannery." },
+  { num: "03", title: "ISO 45001 - Health & Safety Management", body: "Safe working conditions and occupational health standards across the workforce." },
+  { num: "04", title: "ISO 50001 - Energy Management", body: "Monitoring and reducing energy consumption throughout production." },
+  { num: "05", title: "SA 8000 - Social Accountability", body: "Fair, ethical labour practices and working conditions across the factory." },
+  { num: "06", title: "Leather Working Group (LWG)", body: "The leather industry's environmental audit and traceability standard." },
+  { num: "07", title: "MSME ZED Gold", body: "Zero Defect Zero Effect certification for quality and environmentally responsible manufacturing." },
+  { num: "08", title: "Sustainable Leather", body: "Responsible sourcing and lower-impact tanning of hides and leather." },
+];
+
+export const WHY_CERTIFIED = [
+  { title: "Audited, not asserted", body: "Every standard here is independently assessed - we don't just claim compliance, we can document it." },
+  { title: "Buyer due-diligence ready", body: "Certificate documents, issuing body, number and audit date are packaged for import compliance teams." },
+  { title: "Renewed on schedule", body: "Audits are recurring, not one-time - standards are maintained order after order, not just at onboarding." },
+];
+
+export type CertificationSlide = { src: string; alt: string; label: string };
+
+export const CERTIFICATION_BADGES = [
+  "ISO 9001:2015 - Quality",
+  "ISO 14001:2015 - Environmental",
+  "ISO 45001:2018 - Health & Safety",
+  "ISO 50001:2018 - Energy",
+  "SA 8000:2014 - Social Accountability",
+  "Leather Working Group - Gold",
+  "MSME ZED Gold Certified",
+];
+
+export const CERTIFICATION_SLIDES: CertificationSlide[] = [
+  {
+    src: "/images/kings/certifications/fm-53849.png",
+    alt: "BSI Certificate of Registration - ISO 9001:2015 Quality Management System - Kings International Limited",
+    label: "ISO 9001:2015 - Quality Management",
+  },
+  {
+    src: "/images/kings/certifications/ems-533267.png",
+    alt: "BSI Certificate of Registration - ISO 14001:2015 Environmental Management System - Kings International Limited",
+    label: "ISO 14001:2015 - Environmental Management",
+  },
+  {
+    src: "/images/kings/certifications/ohs-533268.png",
+    alt: "BSI Certificate of Registration - ISO 45001:2018 Occupational Health & Safety Management System - Kings International Limited",
+    label: "ISO 45001:2018 - Occupational Health & Safety",
+  },
+  {
+    src: "/images/kings/certifications/enms-761836.png",
+    alt: "BSI Certificate of Registration - ISO 50001:2018 Energy Management System - Kings International Limited",
+    label: "ISO 50001:2018 - Energy Management",
+  },
+  {
+    src: "/images/kings/certifications/sa-518580.png",
+    alt: "BSI Certificate of Registration - SA 8000:2014 Social Accountability System - Kings International Limited",
+    label: "SA 8000:2014 - Social Accountability",
+  },
+  {
+    src: "/images/kings/certifications/lwg-certification.png",
+    alt: "Leather Working Group Gold certificate - Kings International Ltd",
+    label: "Leather Working Group - Gold Rated",
+  },
+  {
+    src: "/images/kings/certifications/zed-gold-tannery.png",
+    alt: "MSME Sustainable ZED Gold certificate - Kings International Ltd, Tannery Division",
+    label: "MSME ZED Gold - Tannery Division",
+  },
+  {
+    src: "/images/kings/certifications/zed-gold-saddlery.png",
+    alt: "MSME Sustainable ZED Gold certificate - Kings International Ltd, Saddlery Division",
+    label: "MSME ZED Gold - Saddlery Division",
+  },
+];
