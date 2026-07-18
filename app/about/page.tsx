@@ -6,6 +6,8 @@ import AboutBeliefs from "@/components/sections/about/AboutBeliefs";
 import AboutCraftsmanship from "@/components/sections/about/AboutCraftsmanship";
 import AboutHouses from "@/components/sections/about/AboutHouses";
 import AboutCta from "@/components/sections/about/AboutCta";
+import { readContentFile } from "@/lib/content";
+import type { AboutContent } from "@/lib/about";
 
 export const metadata: Metadata = {
   title: "About",
@@ -14,21 +16,23 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const about = readContentFile<AboutContent>("settings/about.json");
+
   return (
     <>
       <PageHero
-        eyebrow="About Kings · Est. 1977"
-        title="Not just a tannery. Nor just a factory. Both."
-        intro="A vertically integrated manufacturer that selects the hide and finishes the stitch - no subcontracted middlemen, no inconsistent batches. Founded in a modest Kanpur workshop in 1977. The workshop grew. The obsession with the craft didn't."
-        image="/images/kings/brand/facility.jpg"
-        imageAlt="Kings International facility in Kanpur"
+        eyebrow={about.hero.eyebrow}
+        title={about.hero.title}
+        intro={about.hero.intro}
+        image={about.hero.image}
+        imageAlt={about.hero.imageAlt}
       />
-      <AboutStory />
-      <AboutJourney />
-      <AboutBeliefs />
-      <AboutCraftsmanship />
-      <AboutHouses />
-      <AboutCta />
+      <AboutStory content={about.story} />
+      <AboutJourney content={about.journey} />
+      <AboutBeliefs content={about.beliefs} />
+      <AboutCraftsmanship content={about.craftsmanship} />
+      <AboutHouses content={about.houses} />
+      <AboutCta content={about.cta} />
     </>
   );
 }

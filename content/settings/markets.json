@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "eyebrow": "By Industry",
+    "title": "Six industries, one vertically integrated tannery.",
+    "intro": "From fashion retail to industrial footwear, our leather and finished goods serve markets that each demand something different from a hide - we tan and manufacture for all of them under one roof.",
+    "image": "/images/kings/hero/showroom.jpg",
+    "imageAlt": "Kings International leather showroom, Kanpur"
+  },
+  "markets": [
+    {
+      "icon": "Shirt",
+      "title": "Fashion & Retail",
+      "body": "Belts, bags, wallets and small leather goods for brands, wholesalers and retailers, private label or fully custom.",
+      "links": [
+        { "label": "Leather Goods", "href": "/products/leather-goods" },
+        { "label": "Ryder Belts", "href": "/brands/ryder" }
+      ]
+    },
+    {
+      "icon": "Medal",
+      "title": "Equestrian & Saddlery",
+      "body": "Saddles, harness, bridles and tack, made in Kanpur, home of the world's largest saddlery centre.",
+      "links": [
+        { "label": "Kingston", "href": "/brands/kingston" },
+        { "label": "Equitel", "href": "/brands/equitel" }
+      ]
+    },
+    {
+      "icon": "Car",
+      "title": "Automotive & Furniture",
+      "body": "Technical leather for automotive and furniture upholstery, straps and components, held to component-level tolerances.",
+      "links": [{ "label": "Industrial Leather", "href": "/products/industrial-leather" }]
+    },
+    {
+      "icon": "HardHat",
+      "title": "Industrial & Safety Footwear",
+      "body": "Abrasion- and water-resistant leather finished to the durability standards industrial and safety footwear demands.",
+      "links": [{ "label": "Safety Shoe Leather", "href": "/products/safety-shoe-leather" }]
+    },
+    {
+      "icon": "Dog",
+      "title": "Pet Accessories",
+      "body": "Collars, leads and harnesses built with saddlery-grade hides and hardware - comfortable, durable, retail-ready.",
+      "links": [{ "label": "Pets' Pal", "href": "/brands/pets-pal" }]
+    },
+    {
+      "icon": "Crosshair",
+      "title": "Hunting & Outdoor",
+      "body": "Cartridge belts, holsters and field gear in heavier-weight, reinforced leather, built for actual field use.",
+      "links": [{ "label": "Target", "href": "/brands/target" }]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Not seeing your industry?",
+    "heading": "We build custom leather solutions too.",
+    "buttonText": "Explore OEM Services",
+    "buttonHref": "/oem"
+  }
+}

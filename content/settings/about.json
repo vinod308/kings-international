@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "eyebrow": "About Kings · Est. 1977",
+    "title": "Not just a tannery. Nor just a factory. Both.",
+    "intro": "A vertically integrated manufacturer that selects the hide and finishes the stitch - no subcontracted middlemen, no inconsistent batches. Founded in a modest Kanpur workshop in 1977. The workshop grew. The obsession with the craft didn't.",
+    "image": "/images/kings/brand/facility.jpg",
+    "imageAlt": "Kings International facility in Kanpur"
+  },
+  "story": {
+    "eyebrow": "Our Story",
+    "heading": "From a workshop to a vertically integrated facility.",
+    "stats": [
+      { "target": 1977, "suffix": "", "label": "Founded in Kanpur" },
+      { "target": 48, "suffix": "+", "label": "Years of craftsmanship" },
+      { "target": 7, "suffix": "+", "label": "Product categories" },
+      { "target": 100, "suffix": "%", "label": "Vertically integrated" }
+    ],
+    "paragraphs": [
+      "We're not a trading house sourcing finished goods from wherever's cheapest that week. Nor are we a single-product tannery with no finishing capability of our own.",
+      "Tanning, cutting, stitching, and finishing all happen in-house, under one roof in Kanpur - the city that's home to the world's largest saddlery centre and some of South Asia's finest tanneries. Since 1977, we've grown from a single leather workshop into a vertically integrated, multi-product, multi-brand manufacturer."
+    ],
+    "quote": "We didn't add sustainability to our process. We built our process to be sustainable."
+  },
+  "journey": {
+    "eyebrow": "The Journey",
+    "heading": "48 years, six chapters.",
+    "items": [
+      { "year": "1977", "title": "Kings International Ltd.", "body": "Founded in Kanpur - the heart of India's leather industry - with a focus on hand-crafted leather goods." },
+      { "year": "1980s–90s", "title": "Saddlery & Export Foundations", "body": "Building deep expertise in saddlery and harness manufacturing, and establishing early export relationships." },
+      { "year": "2000s", "title": "Vertical Integration", "body": "Bringing tanning in-house, giving full control over hide quality from raw material through to finished product." },
+      { "year": "2010s", "title": "Certifications & Sustainability", "body": "Aligning operations with ISO 9001, Leather Working Group, and Sustainable Leather requirements, using REACH-compliant chemicals throughout." },
+      { "year": "2010s–Now", "title": "Brand Portfolio", "body": "Growing a multi-brand portfolio, including Ryder Belts, Target Hunting Accessories, Kingston, and Equitel." },
+      { "year": "Today", "title": "Global Reach", "body": "Serving brands, wholesalers, distributors, retailers, and OEM partners across international markets from one integrated facility." }
+    ]
+  },
+  "beliefs": {
+    "eyebrow": "What We Believe",
+    "heading": "11 things we won't compromise on.",
+    "items": [
+      "Decades of expertise - founded 1977, still hands-on today.",
+      "Premium materials: buffalo and cow hides, selected, not settled for.",
+      "Traditional skill and modern technology, working in the same room.",
+      "Private label or full OEM - we flex to your specification, not ours.",
+      "Vertically integrated - tanning to finishing, under one roof.",
+      "Global export experience: compliance, documentation, on-time delivery.",
+      "Ethical business - fair labour, transparency, responsible sourcing.",
+      "Sustainability isn't a slogan: REACH-compliant chemicals, water recycling, renewable energy.",
+      "Every product is inspected before it leaves, not just before it's sold.",
+      "Customer-first - from development to after-sales, real people respond.",
+      "We build long-term partnerships, not one-off orders."
+    ]
+  },
+  "craftsmanship": {
+    "eyebrow": "Inside the Facility",
+    "heading": "Our craftsmanship.",
+    "intro": "Master tanners, saddlers, cutters, and stitchers - many with decades on the same floor. We don't publish headshots; we publish the work.",
+    "images": [
+      { "src": "/images/kings/manufacturing/tannery-hides.jpg", "alt": "Hides drying at the in-house tannery" },
+      { "src": "/images/kings/manufacturing/handcraft-stitching.jpg", "alt": "Hand-stitched leather craftsmanship" },
+      { "src": "/images/kings/hero/manufacturing-hero.jpg", "alt": "Production line at Kings International" }
+    ]
+  },
+  "houses": {
+    "eyebrow": "One Factory, Five Houses",
+    "heading": "Everything we make, under five names.",
+    "intro": "Kingston, Equitel, Ryder, Target and Pets' Pal - each built for its own category, all cut, stitched and finished on the same Kanpur floor."
+  },
+  "cta": {
+    "eyebrow": "See the factory behind the story",
+    "heading": "Walk the floor, section by section.",
+    "buttonText": "See Our Smart Factory",
+    "buttonHref": "/manufacturing"
+  }
+}

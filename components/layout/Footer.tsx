@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { FOOTER_LEATHERS, FOOTER_COMPANY, FOOTER_B2B, CONTACT } from "@/lib/nav";
+import { FOOTER_LEATHERS, FOOTER_COMPANY, FOOTER_B2B } from "@/lib/nav";
+import { CONTACT } from "@/lib/contact";
 
 function FacebookIcon() {
   return (

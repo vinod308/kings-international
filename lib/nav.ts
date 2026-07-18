@@ -70,20 +70,3 @@ export const FOOTER_B2B = [
   { label: "Contact", href: "/contact" },
   { label: "Download Catalogue", href: "https://drive.google.com/file/d/1WfNV9NIUXDZXFmso4KVxm60cPSS5JsjZ/view" },
 ];
-
-export const CONTACT = {
-  india: {
-    label: "Corporate Office - India",
-    address: "243, Transport Nagar, Kanpur 208023, India",
-    phones: ["+91 9415128471", "+91 9506293786"],
-    emails: ["taj@kings-international.net", "works@kings-international.net"],
-    hours: "Mon - Sat, 10:00 AM - 7:00 PM IST",
-  },
-  uk: {
-    label: "Overseas Subsidiary - United Kingdom",
-    address: "18, Kenton Park Road, Harrow, Middx. HA3 8TY, UK",
-    phones: ["+44 20 8907 0725", "+44 7802 238131"],
-    emails: ["kings.uk@btinternet.com"],
-    hours: "Mon - Fri, 10:00 AM - 5:00 PM GMT",
-  },
-};

@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "eyebrow": "B2B Hub · Contact",
+    "title": "Let's build something.",
+    "intro": "The form below reads like a brief, not a checkout. Fill in what you know, leave the rest blank - we answer everything personally.",
+    "image": "/images/kings/manufacturing/tannery-hides.jpg",
+    "imageAlt": "Hides in production at the Kings International tannery"
+  },
+  "recipientEmail": "works@kings-international.net",
+  "offices": {
+    "india": {
+      "label": "Corporate Office - India",
+      "address": "243, Transport Nagar, Kanpur 208023, India",
+      "phones": ["+91 9415128471", "+91 9506293786"],
+      "emails": ["taj@kings-international.net", "works@kings-international.net"],
+      "hours": "Mon - Sat, 10:00 AM - 7:00 PM IST"
+    },
+    "uk": {
+      "label": "Overseas Subsidiary - United Kingdom",
+      "address": "18, Kenton Park Road, Harrow, Middx. HA3 8TY, UK",
+      "phones": ["+44 20 8907 0725", "+44 7802 238131"],
+      "emails": ["kings.uk@btinternet.com"],
+      "hours": "Mon - Fri, 10:00 AM - 5:00 PM GMT"
+    }
+  },
+  "quickLinks": [
+    { "label": "WhatsApp", "href": "https://wa.me/919415128471", "icon": "MessageCircle" },
+    { "label": "New enquiry", "href": "mailto:works@kings-international.net?subject=New%20product%20enquiry", "icon": "Sparkles" },
+    { "label": "Press / Media", "href": "mailto:works@kings-international.net?subject=Press%20enquiry", "icon": "Newspaper" },
+    { "label": "OEM Services", "href": "/oem", "icon": "Wrench" }
+  ],
+  "steps": [
+    { "num": "01", "title": "You send the brief", "body": "Fill in what you know - the form below or a plain email both work." },
+    { "num": "02", "title": "We scope it", "body": "The export desk in Kanpur reviews materials, quantities and timeline, and replies with real answers." },
+    { "num": "03", "title": "We sample or quote", "body": "Depending on the request, you'll get a quote directly or a counter-sample proposal to approve first." }
+  ],
+  "interests": [
+    "Belts",
+    "Bags & Leather Goods",
+    "Equestrian & Saddlery",
+    "Pet Accessories",
+    "Hunting & Outdoor Accessories",
+    "OEM / Private Label",
+    "Not sure yet"
+  ]
+}

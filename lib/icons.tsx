@@ -1,0 +1,52 @@
+import {
+  Shirt,
+  Medal,
+  Car,
+  HardHat,
+  Dog,
+  Crosshair,
+  Tag,
+  Wrench,
+  Package,
+  ShieldCheck,
+  Search,
+  Ruler,
+  ClipboardCheck,
+  PackageCheck,
+  Droplets,
+  Wind,
+  Recycle,
+  FlaskConical,
+  MessageCircle,
+  Sparkles,
+  Newspaper,
+  type LucideIcon,
+} from "lucide-react";
+
+export const ICONS: Record<string, LucideIcon> = {
+  Shirt,
+  Medal,
+  Car,
+  HardHat,
+  Dog,
+  Crosshair,
+  Tag,
+  Wrench,
+  Package,
+  ShieldCheck,
+  Search,
+  Ruler,
+  ClipboardCheck,
+  PackageCheck,
+  Droplets,
+  Wind,
+  Recycle,
+  FlaskConical,
+  MessageCircle,
+  Sparkles,
+  Newspaper,
+};
+
+export function getIcon(name: string): LucideIcon {
+  return ICONS[name] ?? Tag;
+}

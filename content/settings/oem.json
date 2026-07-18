@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "eyebrow": "B2B Hub · OEM Services",
+    "title": "Your brand, our vertically integrated production.",
+    "intro": "From private labelling an existing catalogue line to developing a fully bespoke product from a blank brief, our facility handles it under one roof - tanning, cutting, stitching and finishing, all in Kanpur.",
+    "image": "/images/kings/products/leather-goods.jpg",
+    "imageAlt": "Finished leather goods ready for dispatch at Kings International"
+  },
+  "modelsSection": {
+    "eyebrow": "How We Work With Brands",
+    "heading": "Four ways to engage, one production floor.",
+    "items": [
+      { "icon": "Tag", "title": "Private Labelling", "body": "Choose from our existing catalogue of belts, bags, saddlery and accessories, and we produce it under your brand - your branding, packaging and hang tags, our proven design." },
+      { "icon": "Wrench", "title": "Fully Custom Development", "body": "Send a brief, a sketch, or a physical sample. We build a pattern and a counter-sample for your approval, then move to bulk production once the design is locked." },
+      { "icon": "Package", "title": "Component Sourcing", "body": "Hardware, hides, linings and trims sourced to your specification, whether you need full production support or just the raw materials." },
+      { "icon": "ShieldCheck", "title": "Export & Compliance Support", "body": "REACH-compliant chemicals, ISO 9001 quality management, and documentation support for buyers navigating export requirements into new markets." }
+    ]
+  },
+  "whySection": {
+    "eyebrow": "Why It Works",
+    "heading": "Vertically integrated, start to finish.",
+    "body": "Because tanning, cutting, stitching, and finishing all happen within our own facility, we can hold consistency across a production run in a way that's harder to guarantee when a supply chain is split across multiple subcontractors - and we can move faster when a specification changes mid-development. We work with brands, wholesalers, distributors, retailers, and OEM partners of varying sizes, from a first trial order to a repeat seasonal programme."
+  },
+  "cta": {
+    "eyebrow": "Ready to develop a product?",
+    "heading": "Tell us your brief. We'll tell you what's realistic.",
+    "buttonText": "Request a Quote",
+    "buttonHref": "/quote"
+  }
+}

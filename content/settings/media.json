@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "eyebrow": "Media & Gallery",
+    "title": "The floor, and what comes off it.",
+    "intro": "A look inside the Kanpur facility - the tannery, the stitching floor, the water treatment plant - alongside the product range it produces.",
+    "image": "/images/kings/brand/facility.jpg",
+    "imageAlt": "Kings International facility, Kanpur"
+  },
+  "gallerySection": {
+    "eyebrow": "Gallery",
+    "heading": "Facility and product, in frame."
+  },
+  "cta": {
+    "eyebrow": "Compliance paperwork",
+    "heading": "Certification documents are available on request.",
+    "buttonText": "View Certifications",
+    "buttonHref": "/certifications"
+  }
+}

@@ -5,13 +5,19 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { RevealGroup, RevealItem } from "@/components/motion/Reveal";
-import { MEDIA_FILTERS, MEDIA_ITEMS, type MediaCategory } from "@/lib/media";
+import type { MediaCategory, MediaItem } from "@/lib/media";
 
-export default function MediaGallery() {
+const MEDIA_FILTERS: { key: "all" | MediaCategory; label: string }[] = [
+  { key: "all", label: "All" },
+  { key: "facility", label: "Facility & Process" },
+  { key: "products", label: "Products" },
+];
+
+export default function MediaGallery({ items: allItems }: { items: MediaItem[] }) {
   const [filter, setFilter] = useState<"all" | MediaCategory>("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const items = filter === "all" ? MEDIA_ITEMS : MEDIA_ITEMS.filter((i) => i.category === filter);
+  const items = filter === "all" ? allItems : allItems.filter((i) => i.category === filter);
 
   useEffect(() => {
     if (lightboxIndex === null) return;

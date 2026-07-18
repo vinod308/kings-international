@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "eyebrow": "Sustainability",
+    "title": "Real numbers from a real tannery, not vague claims.",
+    "intro": "We didn't add sustainability to our process. We built our process to be sustainable - measured in litres recycled, kilograms of salt recovered, and audits passed, not marketing language.",
+    "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
+    "imageAlt": "Kings International's zero-liquid-discharge water treatment plant"
+  },
+  "initiativesSection": {
+    "eyebrow": "Measured, Not Claimed",
+    "heading": "Four initiatives, with the numbers behind them.",
+    "items": [
+      { "icon": "Droplets", "title": "Lime Water Recycling System", "note": "Since 2015", "body": "Recycles roughly 600 KL (600,000 litres) of lime water annually, recovers 80% of re-lime liquor, reduces water use by 800 litres per ton of processed leather, and saves 15-25% on lime consumption." },
+      { "icon": "Wind", "title": "Hair Saving Screen", "note": "UNIDO-selected, 2016", "body": "Recovers hair from the tanning process instead of chemically dissolving it, cutting Chemical Oxygen Demand (COD) in effluent by 50%. Recovered hair is repurposed as organic fertiliser for green-belt development." },
+      { "icon": "Recycle", "title": "Mechanical Salt De-dusting", "note": null, "body": "Recovers roughly 6 kg of salt per hide (versus roughly 3 kg manually), preventing an estimated 550 tons of salt from entering the environment each year and reducing effluent Total Dissolved Solids (TDS) by 15-20%." },
+      { "icon": "FlaskConical", "title": "Primary Effluent Treatment Plant (PETP) Upgrade", "note": null, "body": "A mechanical sludge dewatering system independently assessed by the Central Leather Research Institute (CLRI), confirming compliance with environmental discharge norms." }
+    ]
+  },
+  "commitmentsSection": {
+    "eyebrow": "Ongoing Commitments",
+    "heading": "Sustainability isn't a slogan.",
+    "items": [
+      "Zero-liquid-discharge tannery, treating and recycling process water on site.",
+      "REACH-compliant chemicals used throughout tanning and finishing.",
+      "Solar power supplementing the facility's energy load.",
+      "ISO 14001 environmental management, independently audited."
+    ]
+  },
+  "cta": {
+    "eyebrow": "Compliance",
+    "heading": "See the certifications behind these numbers.",
+    "buttonText": "View Certifications",
+    "buttonHref": "/certifications"
+  }
+}

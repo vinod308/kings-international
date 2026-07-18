@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { BRANDS } from "@/lib/brands";
+import { readContentFile } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Smart Factory",
@@ -12,38 +13,32 @@ export const metadata: Metadata = {
     "A section-by-section manufacturing process for saddlery, harness, belts and pet accessories - traditional hand craftsmanship where it matters, modern machinery where it counts. Kanpur, India.",
 };
 
-const FLOOR = [
-  { num: "01", title: "Saddle Section", body: "Dedicated to crafting saddles, harnesses, and equestrian accessories - leather selection, cutting & shaping, hand and machine stitching, fitting, and final quality control." },
-  { num: "02", title: "Pre-Shaped Component Cutting Area", body: "Leather is precisely cut into pre-defined shapes using advanced cutting machinery, minimising waste while preserving texture and quality." },
-  { num: "03", title: "Strap Cutting & Splitting Area", body: "Precise cutting and splitting of leather into straps for belts, saddlery, and pet accessories, controlling width, thickness, softness and strength." },
-  { num: "04", title: "Machine & Hand Stitching Areas", body: "Industrial stitching machines handle high-volume, consistent seams; skilled artisans hand-stitch detailed and custom work for premium finishing." },
-  { num: "05", title: "Hole Punching, Stamping, Creasing & Skiving", body: "Specialised finishing processes - hole punching for buckles and fastenings, stamping for logos and branding, creasing for clean edges, skiving for smooth, stitch-ready edges." },
-  { num: "06", title: "Raw Material Storage", body: "Controlled storage for hides, leather, threads, zippers, hardware, chemicals, and dyes, protecting materials from moisture and temperature damage." },
-  { num: "07", title: "Packing & Dispatch Area", body: "Final quality check, protective packing, and shipment preparation with tracking documentation before dispatch." },
-];
+type ManufacturingContent = {
+  hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
+  floorSection: { eyebrow: string; heading: string; items: { num: string; title: string; body: string }[] };
+  brandsSection: { eyebrow: string; heading: string };
+  cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
+};
 
 export default function ManufacturingPage() {
+  const content = readContentFile<ManufacturingContent>("settings/manufacturing.json");
+  const { hero, floorSection, brandsSection, cta } = content;
+
   return (
     <>
-      <PageHero
-        eyebrow="Smart Factory"
-        title="One roof, every process."
-        intro="A specialised, section-by-section manufacturing process for saddlery, harness, belts and pet accessories - traditional hand craftsmanship where it matters, modern machinery where it counts."
-        image="/images/kings/hero/manufacturing-hero.jpg"
-        imageAlt="Production line at Kings International, Kanpur"
-      />
+      <PageHero eyebrow={hero.eyebrow} title={hero.title} intro={hero.intro} image={hero.image} imageAlt={hero.imageAlt} />
 
       <section className="bg-cream py-24 sm:py-32">
         <div className="container-site">
           <Reveal type="up" className="mb-14 max-w-2xl">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">The Floor</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{floorSection.eyebrow}</p>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
-              Section by section, hide to dispatch.
+              {floorSection.heading}
             </h2>
           </Reveal>
 
           <RevealGroup className="flex flex-col gap-4">
-            {FLOOR.map((f) => (
+            {floorSection.items.map((f) => (
               <RevealItem key={f.num} type="up">
                 <div className="grid sm:grid-cols-[minmax(0,3fr)_minmax(0,9fr)] gap-4 sm:gap-10 p-6 sm:p-8 rounded-2xl bg-white border border-[var(--line)] items-start">
                   <div className="flex items-baseline gap-3">
@@ -63,11 +58,9 @@ export default function ManufacturingPage() {
       <section className="bg-cream-deep py-24 sm:py-32">
         <div className="container-site">
           <Reveal type="up" className="mb-14 max-w-2xl">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
-              What Comes Off This Floor
-            </p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{brandsSection.eyebrow}</p>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
-              Five brands, produced here.
+              {brandsSection.heading}
             </h2>
           </Reveal>
 
@@ -94,18 +87,16 @@ export default function ManufacturingPage() {
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">
-                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">
-                  See it before you order
-                </p>
+                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">{cta.eyebrow}</p>
                 <h3 className="font-display text-[clamp(24px,2.8vw,34px)] leading-tight tracking-tight text-cream">
-                  See the floor before you place the order.
+                  {cta.heading}
                 </h3>
               </div>
               <Link
-                href="/contact"
+                href={cta.buttonHref}
                 className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-ink hover:bg-cream transition-colors shrink-0"
               >
-                Arrange a Conversation
+                {cta.buttonText}
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </div>

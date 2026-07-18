@@ -2,22 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { BRANDS } from "@/lib/brands";
+import type { AboutContent } from "@/lib/about";
 
-export default function AboutHouses() {
+export default function AboutHouses({ content }: { content: AboutContent["houses"] }) {
+  const { eyebrow, heading, intro } = content;
+
   return (
     <section className="bg-cream py-24 sm:py-32">
       <div className="container-site">
         <Reveal type="up" className="mb-14 max-w-2xl">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
-            One Factory, Five Houses
-          </p>
+          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{eyebrow}</p>
           <h2 className="font-display text-[clamp(30px,4.2vw,52px)] leading-[1.08] tracking-tight text-ink mb-5">
-            Everything we make, under five names.
+            {heading}
           </h2>
-          <p className="text-[16px] leading-relaxed text-ink-soft">
-            Kingston, Equitel, Ryder, Target and Pets&apos; Pal - each built for its own category, all cut, stitched
-            and finished on the same Kanpur floor.
-          </p>
+          <p className="text-[16px] leading-relaxed text-ink-soft">{intro}</p>
         </Reveal>
 
         <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
