@@ -1,7 +1,9 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import crypto from "crypto";
 
-export async function GET(request: NextRequest) {
+const SITE_URL = "https://app.kings-international.net";
+
+export async function GET() {
   const clientId = process.env.OAUTH_CLIENT_ID;
 
   if (!clientId) {
@@ -9,7 +11,7 @@ export async function GET(request: NextRequest) {
   }
 
   const state = crypto.randomBytes(16).toString("hex");
-  const redirectUri = new URL("/api/callback", request.url).toString();
+  const redirectUri = new URL("/api/callback", SITE_URL).toString();
 
   const authorizeUrl = new URL("https://github.com/login/oauth/authorize");
   authorizeUrl.searchParams.set("client_id", clientId);

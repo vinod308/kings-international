@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+const SITE_URL = "https://app.kings-international.net";
+
 function renderPostMessagePage(message: string) {
   const html = `<!doctype html>
 <html><body>
@@ -49,7 +51,7 @@ export async function GET(request: NextRequest) {
       client_id: clientId,
       client_secret: clientSecret,
       code,
-      redirect_uri: new URL("/api/callback", request.url).toString(),
+      redirect_uri: new URL("/api/callback", SITE_URL).toString(),
     }),
   });
 
