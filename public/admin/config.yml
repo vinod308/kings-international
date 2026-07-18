@@ -1,0 +1,108 @@
+backend:
+  name: github
+  repo: vinod308/kings-international
+  branch: main
+  base_url: https://app.kings-international.net
+  auth_endpoint: api/auth
+
+publish_mode: simple
+
+media_folder: "public/images/kings/uploads"
+public_folder: "/images/kings/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "content/settings/home.json"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Image Alt Text", name: "heroAlt", widget: "string" }
+
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Number", name: "num", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tagline", name: "tagline", widget: "string" }
+      - { label: "Blurb", name: "blurb", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Hero Intro", name: "heroIntro", widget: "text" }
+      - { label: "Characteristics", name: "characteristics", widget: "list" }
+      - { label: "Applications", name: "applications", widget: "list" }
+      - label: "Specs"
+        name: "specs"
+        widget: "list"
+        fields:
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Value", name: "value", widget: "string" }
+
+  - name: "brands"
+    label: "Brands"
+    folder: "content/brands"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Number", name: "num", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Copy", name: "copy", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "list" }
+      - { label: "Materials", name: "materials", widget: "list" }
+      - { label: "Quote", name: "quote", widget: "text" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Content"
+        name: "content"
+        widget: "text"
+        hint: "Use ## for headings, **text** for bold, - for bullet lists, 1. for numbered lists. Separate paragraphs with a blank line."
+
+  - name: "certifications_page"
+    label: "Certifications Page"
+    files:
+      - file: "content/certifications.json"
+        label: "Certifications"
+        name: "certifications"
+        fields:
+          - label: "Certifications"
+            name: "certifications"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - label: "Why Certified"
+            name: "whyCertified"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+          - label: "Certification Badges"
+            name: "certificationBadges"
+            widget: "list"
+          - label: "Certification Slides"
+            name: "certificationSlides"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }

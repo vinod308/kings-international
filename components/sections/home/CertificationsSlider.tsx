@@ -3,9 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { CERTIFICATION_SLIDES } from "@/lib/certifications";
+import type { CertificationSlide } from "@/lib/certifications";
 
-export default function CertificationsSlider() {
+export default function CertificationsSlider({
+  slides: CERTIFICATION_SLIDES,
+}: {
+  slides: CertificationSlide[];
+}) {
   const [index, setIndex] = useState(0);
   const count = CERTIFICATION_SLIDES.length;
 

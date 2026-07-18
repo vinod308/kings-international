@@ -1,0 +1,22 @@
+{
+  "slug": "industrial-leather",
+  "num": "05",
+  "title": "Industrial Leather",
+  "tagline": "Heavier-duty leather for technical applications.",
+  "blurb": "Finished for heavier-duty applications - automotive and furniture upholstery, technical straps and components.",
+  "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
+  "heroIntro": "Not every leather product is a finished good - a lot of what we tan goes into components. Automotive and furniture upholstery, technical straps, and machine parts all demand a heavier, more engineered leather than a bag or a belt, with thickness and finish held tight across the run.",
+  "characteristics": [
+    "Engineered for load, heat, and repeated wear",
+    "Consistent thickness for machine cutting and assembly",
+    "Technical coating options for demanding environments",
+    "Produced to component-level tolerances"
+  ],
+  "applications": ["Automotive upholstery", "Furniture upholstery", "Technical straps", "Machine components"],
+  "specs": [
+    { "label": "Hide source", "value": "Buffalo & cow" },
+    { "label": "Finish", "value": "Pigmented, technical coatings" },
+    { "label": "Thickness range", "value": "1.5mm – 4mm" },
+    { "label": "Typical use", "value": "Automotive, furniture, industrial components" }
+  ]
+}

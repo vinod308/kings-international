@@ -1,0 +1,22 @@
+{
+  "slug": "finished-leather",
+  "num": "01",
+  "title": "Finished Leather",
+  "tagline": "The base material behind everything we make.",
+  "blurb": "Wet-blue and wet-white leather, tanned and finished in-house for bags, belts, garments, saddlery and harness.",
+  "image": "/images/kings/manufacturing/tannery-hides.jpg",
+  "heroIntro": "Every product that leaves our facility starts on our own tannery floor. We process buffalo and cow hides through wet-blue and wet-white tanning in-house, giving us control over consistency, thickness, and finish from the raw hide onward - rather than buying pre-tanned stock from a third party.",
+  "characteristics": [
+    "In-house wet-blue and wet-white processing",
+    "Chrome and chrome-free tanning options",
+    "Batch-to-batch consistency in colour and temper",
+    "Full grading and selection before it reaches finishing"
+  ],
+  "applications": ["Bags & leather goods", "Belts", "Garments", "Saddlery & harness"],
+  "specs": [
+    { "label": "Tanning", "value": "Wet-blue & wet-white (chrome / chrome-free)" },
+    { "label": "Hide source", "value": "Buffalo & cow" },
+    { "label": "Thickness range", "value": "0.8mm – 3.5mm" },
+    { "label": "Finish options", "value": "Aniline, semi-aniline, pigmented" }
+  ]
+}

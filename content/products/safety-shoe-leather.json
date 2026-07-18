@@ -1,0 +1,22 @@
+{
+  "slug": "safety-shoe-leather",
+  "num": "04",
+  "title": "Safety Shoe Leather",
+  "tagline": "Built to the standards industrial footwear demands.",
+  "blurb": "Tanned and finished to the abrasion, water-resistance and durability standards industrial footwear requires.",
+  "image": "/images/kings/products/gym-accessories.jpg",
+  "heroIntro": "Industrial and safety footwear puts leather through abrasion, moisture, and flex-fatigue that fashion leather never sees. We finish this category specifically for that environment - water-resistant crusting, reinforced abrasion resistance, and the consistent thickness footwear manufacturers need to build to spec.",
+  "characteristics": [
+    "Water-resistant and oil-pull-up finish options",
+    "Reinforced abrasion resistance",
+    "Consistent thickness for automated cutting",
+    "Tested for flex fatigue and durability"
+  ],
+  "applications": ["Safety shoe uppers", "Industrial footwear", "Work boots"],
+  "specs": [
+    { "label": "Hide source", "value": "Buffalo & cow" },
+    { "label": "Finish", "value": "Waterproof / oil-pull-up, water-resistant crust" },
+    { "label": "Thickness range", "value": "1.8mm – 2.6mm" },
+    { "label": "Durability", "value": "Abrasion & water-resistance tested" }
+  ]
+}

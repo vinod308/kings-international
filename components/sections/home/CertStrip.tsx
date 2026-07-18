@@ -1,5 +1,5 @@
 import Reveal from "@/components/motion/Reveal";
-import { CERTIFICATION_BADGES } from "@/lib/certifications";
+import { CERTIFICATION_BADGES, CERTIFICATION_SLIDES } from "@/lib/certifications";
 import CertificationsSlider from "@/components/sections/home/CertificationsSlider";
 
 export default function CertStrip() {
@@ -30,7 +30,7 @@ export default function CertStrip() {
         <div className="lg:col-span-7">
           <Reveal type="scale" duration={0.9}>
             <div className="max-w-md mx-auto">
-              <CertificationsSlider />
+              <CertificationsSlider slides={CERTIFICATION_SLIDES} />
             </div>
           </Reveal>
         </div>

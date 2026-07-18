@@ -1,0 +1,13 @@
+{
+  "slug": "pets-pal",
+  "num": "05",
+  "name": "Pets' Pal",
+  "tag": "Pet Leather Goods",
+  "copy": "Collars, leashes and accessories in imported and indigenous leathers.",
+  "image": "/images/kings/products/pet-accessories.jpg",
+  "description": [
+    "Pets' Pal is a stylish, functional collection of pet accessories crafted from a mix of imported and indigenous leathers, balancing luxury, durability, and eco-consciousness."
+  ],
+  "materials": ["Imported leather", "Indigenous leather"],
+  "quote": "Imported leather, cut, stitched and finished as pet accessories - made under one roof."
+}

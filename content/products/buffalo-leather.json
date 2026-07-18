@@ -1,0 +1,22 @@
+{
+  "slug": "buffalo-leather",
+  "num": "02",
+  "title": "Buffalo Leather",
+  "tagline": "Full-grain strength for saddlery and harness.",
+  "blurb": "Full-grain buffalo hide, tanned in-house for the strength and grain character saddlery and harness demand.",
+  "image": "/images/kings/products/equestrian.jpg",
+  "heroIntro": "Buffalo hide has a denser fibre structure than cow or goat, which is why it's been the backbone of Kanpur's saddlery trade for generations. We tan it full-grain, keeping the natural markings and strength intact for products that need to carry real, repeated load.",
+  "characteristics": [
+    "Dense fibre structure with high tensile strength",
+    "Full-grain, natural markings retained",
+    "Ages and patinas well under regular use",
+    "Suited to heavy stitching and load-bearing hardware"
+  ],
+  "applications": ["Saddles & harness", "Belts", "Heavy-duty bags", "Straps & tack"],
+  "specs": [
+    { "label": "Hide source", "value": "Indian buffalo" },
+    { "label": "Grain", "value": "Full-grain, natural character" },
+    { "label": "Thickness range", "value": "1.2mm – 4mm" },
+    { "label": "Finish options", "value": "Aniline & semi-aniline" }
+  ]
+}

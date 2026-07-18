@@ -1,0 +1,22 @@
+{
+  "slug": "leather-goods",
+  "num": "06",
+  "title": "Leather Goods",
+  "tagline": "Cut, dyed and stitched under one roof.",
+  "blurb": "Bags, wallets, belts, gym accessories and small leather goods, cut, dyed and stitched under one roof.",
+  "image": "/images/kings/products/leather-goods.jpg",
+  "heroIntro": "This is where the other five categories come together into finished product. Our cutting, dyeing, and stitching lines turn our own finished leather into bags, wallets, belts, and small goods - built to your specification, whether that's private label on an existing design or a fully custom development.",
+  "characteristics": [
+    "Full in-house cutting, dyeing and stitching",
+    "Private label and OEM development",
+    "Hardware and component sourcing to your spec",
+    "Quality inspection at every production stage"
+  ],
+  "applications": ["Bags & totes", "Wallets & small leather goods", "Belts", "Gym & fitness accessories"],
+  "specs": [
+    { "label": "Process", "value": "Cutting, dyeing & stitching in-house" },
+    { "label": "Capability", "value": "Private label & OEM" },
+    { "label": "Categories", "value": "Bags, wallets, belts, gym accessories" },
+    { "label": "Finish", "value": "To brand specification" }
+  ]
+}

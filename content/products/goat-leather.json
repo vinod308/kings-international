@@ -1,0 +1,22 @@
+{
+  "slug": "goat-leather",
+  "num": "03",
+  "title": "Goat Leather",
+  "tagline": "Fine grain, soft hand-feel, light weight.",
+  "blurb": "Softer hand-feel and finer grain than buffalo or cow leather - suited to wallets and small leather goods.",
+  "image": "/images/kings/manufacturing/handcraft-stitching.jpg",
+  "heroIntro": "Where buffalo leather is chosen for strength, goat leather is chosen for feel. Its tighter, finer grain and lighter weight give it a soft drape that buffalo and cow hides can't match - the right material for products that are judged by touch as much as durability.",
+  "characteristics": [
+    "Fine, tight grain structure",
+    "Lightweight with a soft, supple drape",
+    "Strong strength-to-weight ratio for its thinness",
+    "Takes dye and printing evenly"
+  ],
+  "applications": ["Wallets & small leather goods", "Garment leather", "Linings", "Accessories"],
+  "specs": [
+    { "label": "Hide source", "value": "Indian goat" },
+    { "label": "Grain", "value": "Fine, tight grain" },
+    { "label": "Thickness range", "value": "0.6mm – 1.2mm" },
+    { "label": "Finish options", "value": "Aniline, nappa, printed" }
+  ]
+}
