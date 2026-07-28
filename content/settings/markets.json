@@ -29,13 +29,13 @@
       "icon": "Car",
       "title": "Automotive & Furniture",
       "body": "Technical leather for automotive and furniture upholstery, straps and components, held to component-level tolerances.",
-      "links": [{ "label": "Industrial Leather", "href": "/products/industrial-leather" }]
+      "links": [{ "label": "Finished Leather", "href": "/products/finished-leather" }]
     },
     {
       "icon": "HardHat",
       "title": "Industrial & Safety Footwear",
       "body": "Abrasion- and water-resistant leather finished to the durability standards industrial and safety footwear demands.",
-      "links": [{ "label": "Safety Shoe Leather", "href": "/products/safety-shoe-leather" }]
+      "links": [{ "label": "Finished Leather", "href": "/products/finished-leather" }]
     },
     {
       "icon": "Dog",

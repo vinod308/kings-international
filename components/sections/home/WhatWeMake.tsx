@@ -34,7 +34,7 @@ export default function WhatWeMake({ content }: { content: HomeContent["whatWeMa
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <span className="absolute top-4 left-4 text-[11px] font-semibold tracking-[0.12em] text-cream/90 bg-ink/60 backdrop-blur-sm px-2.5 py-1 rounded-full">
-                    {p.num} / 06
+                    {p.num} / 09
                   </span>
                 </div>
                 <div className="p-6">

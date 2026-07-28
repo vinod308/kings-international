@@ -1,0 +1,22 @@
+{
+  "slug": "hunting-accessories",
+  "num": "08",
+  "title": "Hunting Accessories",
+  "tagline": "Cartridge belts and field gear, built for use.",
+  "blurb": "Cartridge belts, field pouches and hunting accessories under our Target brand, built for outdoor use.",
+  "image": "/images/kings/products/hunting-accessories.jpg",
+  "heroIntro": "Our Target range covers cartridge belts, field pouches and related hunting accessories, built from heavier-weight leathers selected for outdoor durability. Hardware, stitching and reinforcement are specified for repeated field use, not just display.",
+  "characteristics": [
+    "Heavier-weight leathers for outdoor durability",
+    "Reinforced stitching at load points",
+    "Weather-resistant hardware",
+    "Field-tested construction"
+  ],
+  "applications": ["Cartridge belts", "Field pouches", "Gun covers", "Hunting accessories"],
+  "specs": [
+    { "label": "Leather", "value": "Heavy-weight buffalo & cow" },
+    { "label": "Hardware", "value": "Weather-resistant fittings" },
+    { "label": "Stitching", "value": "Reinforced at load points" },
+    { "label": "Customization", "value": "Private label & OEM" }
+  ]
+}

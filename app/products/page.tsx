@@ -10,7 +10,7 @@ import { readContentFile } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our Leathers",
   description:
-    "Six leather categories, one tannery - finished, buffalo, goat, safety shoe, industrial leather and finished leather goods, tanned and manufactured in-house in Kanpur.",
+    "Nine product categories, one tannery - from finished leather and leather goods to equestrian, bags, wallets, belts, pet, hunting and gym accessories, made in-house in Kanpur.",
 };
 
 type ProductsPageContent = {
@@ -43,7 +43,7 @@ export default function ProductsPage() {
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <span className="absolute top-4 left-4 text-[11px] font-semibold tracking-[0.12em] text-cream/90 bg-ink/60 backdrop-blur-sm px-2.5 py-1 rounded-full">
-                      {p.num} / 06
+                      {p.num} / 09
                     </span>
                   </div>
                   <div className="p-6">

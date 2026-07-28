@@ -1,0 +1,22 @@
+{
+  "slug": "belts",
+  "num": "05",
+  "title": "Belts",
+  "tagline": "Casual, fashion and equestrian belts at volume.",
+  "blurb": "Full-grain and split leather belts under our Ryder brand, built for casual, fashion and equestrian markets.",
+  "image": "/images/kings/products/belts.jpg",
+  "heroIntro": "Belts are one of our highest-volume categories, produced under our Ryder brand as well as private label. Full-grain and split leather options, buckle and hardware sourcing, and edge finishing are all handled in-house, so we can hold consistent quality across large casual and fashion belt orders.",
+  "characteristics": [
+    "Full-grain and split leather options",
+    "In-house buckle and hardware fitting",
+    "Consistent edge finishing at volume",
+    "Casual, fashion and equestrian styles"
+  ],
+  "applications": ["Casual belts", "Fashion belts", "Equestrian belts", "Work belts"],
+  "specs": [
+    { "label": "Leather", "value": "Full-grain & split leather" },
+    { "label": "Hardware", "value": "Brass / nickel-plated buckles" },
+    { "label": "Width range", "value": "25mm – 45mm" },
+    { "label": "Customization", "value": "Private label & OEM" }
+  ]
+}

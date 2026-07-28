@@ -45,10 +45,6 @@ export const NAV: NavItem[] = [
 export const FOOTER_LEATHERS = [
   { label: "By Leather Type", href: "/products" },
   { label: "Finished Leather", href: "/products/finished-leather" },
-  { label: "Buffalo Leather", href: "/products/buffalo-leather" },
-  { label: "Goat Leather", href: "/products/goat-leather" },
-  { label: "Safety Shoe Leather", href: "/products/safety-shoe-leather" },
-  { label: "Industrial Leather", href: "/products/industrial-leather" },
   { label: "Leather Goods", href: "/products/leather-goods" },
   { label: "Our Brands", href: "/brands" },
   { label: "By Industry", href: "/markets" },

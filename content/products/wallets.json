@@ -1,0 +1,22 @@
+{
+  "slug": "wallets",
+  "num": "04",
+  "title": "Wallets",
+  "tagline": "Small leather goods, precision-cut.",
+  "blurb": "Wallets, cardholders and small leather goods, cut and stitched to close tolerances for volume production.",
+  "image": "/images/kings/products/wallets.jpg",
+  "heroIntro": "Wallets and small leather goods demand a different kind of precision than bags or belts - tighter tolerances, more panels per item, and finish that holds up to daily handling. Our small goods line is set up for exactly that, running consistent quality across volume orders.",
+  "characteristics": [
+    "Precision-cut panels and card slots",
+    "Edge-painted and burnished finishing",
+    "Consistent quality across volume runs",
+    "Compact, close-tolerance stitching"
+  ],
+  "applications": ["Bifold & trifold wallets", "Cardholders", "Coin pouches", "Small leather goods"],
+  "specs": [
+    { "label": "Leather", "value": "Full-grain & goat leather" },
+    { "label": "Finish", "value": "Edge-painted, burnished" },
+    { "label": "Stitching", "value": "Precision machine stitching" },
+    { "label": "Customization", "value": "Private label & OEM" }
+  ]
+}

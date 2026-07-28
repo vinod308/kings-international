@@ -1,0 +1,22 @@
+{
+  "slug": "equestrian-goods",
+  "num": "02",
+  "title": "Equestrian Goods",
+  "tagline": "Saddlery and harness, built for daily use.",
+  "blurb": "Saddles, harness and tack, hand-finished under our Kingston and Equitel brands for riders and equestrian retailers.",
+  "image": "/images/kings/products/equestrian.jpg",
+  "heroIntro": "Saddlery is where Kings International started in 1977, and it remains one of our deepest areas of craft. Our saddlers hand-stitch panels, fit hardware, and finish English and continental saddles, harness and tack to the tolerances working riders and equestrian brands expect.",
+  "characteristics": [
+    "Hand-stitched panels and stress points",
+    "Full-grain buffalo and cow leather",
+    "Brass and nickel-plated hardware",
+    "Built to riding-tack durability standards"
+  ],
+  "applications": ["Saddles", "Harness & tack", "Bridles & reins", "Equestrian accessories"],
+  "specs": [
+    { "label": "Leather", "value": "Full-grain buffalo & cow" },
+    { "label": "Stitching", "value": "Hand & machine" },
+    { "label": "Hardware", "value": "Brass / nickel-plated" },
+    { "label": "Customization", "value": "Private label & OEM" }
+  ]
+}

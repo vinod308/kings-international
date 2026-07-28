@@ -1,0 +1,22 @@
+{
+  "slug": "gym-accessories",
+  "num": "09",
+  "title": "Gym Accessories",
+  "tagline": "Weightlifting belts and straps, built for load.",
+  "blurb": "Weightlifting belts and training straps, stitched from heavy-duty leather for repeated, high-load use.",
+  "image": "/images/kings/products/gym-accessories.jpg",
+  "heroIntro": "Gym accessories put leather under real, repeated load - so our weightlifting belts and straps are cut from heavier-weight hides and reinforced at every stress point. It's the same tannery-to-finished-product control we apply everywhere else, specified for a different kind of durability.",
+  "characteristics": [
+    "Heavy-duty leather for high-load use",
+    "Reinforced stitching at stress points",
+    "Secure, adjustable closures",
+    "Built for repeated daily use"
+  ],
+  "applications": ["Weightlifting belts", "Training straps", "Grip accessories", "Gym accessories"],
+  "specs": [
+    { "label": "Leather", "value": "Heavy-duty buffalo & cow" },
+    { "label": "Thickness", "value": "4mm – 6mm" },
+    { "label": "Stitching", "value": "Reinforced at stress points" },
+    { "label": "Customization", "value": "Private label & OEM" }
+  ]
+}
