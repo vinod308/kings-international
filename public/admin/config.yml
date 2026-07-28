@@ -119,7 +119,10 @@ collections:
                   - { label: "Number", name: "target", widget: "number" }
                   - { label: "Suffix", name: "suffix", widget: "string", required: false }
                   - { label: "Label", name: "label", widget: "string" }
-              - { label: "Paragraphs", name: "paragraphs", widget: "list" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
           - label: "Journey Section"
             name: "journey"
             widget: "object"
@@ -356,7 +359,10 @@ collections:
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Commitments", name: "items", widget: "list" }
+              - label: "Commitments"
+                name: "items"
+                widget: "list"
+                field: { label: "Commitment", name: "commitment", widget: "text" }
           - label: "Call to Action"
             name: "cta"
             widget: "object"
@@ -418,8 +424,14 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Address", name: "address", widget: "text" }
-                  - { label: "Phone Numbers", name: "phones", widget: "list" }
-                  - { label: "Emails", name: "emails", widget: "list" }
+                  - label: "Phone Numbers"
+                    name: "phones"
+                    widget: "list"
+                    field: { label: "Phone Number", name: "phone", widget: "string" }
+                  - label: "Emails"
+                    name: "emails"
+                    widget: "list"
+                    field: { label: "Email", name: "email", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
               - label: "UK Office"
                 name: "uk"
@@ -427,8 +439,14 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Address", name: "address", widget: "text" }
-                  - { label: "Phone Numbers", name: "phones", widget: "list" }
-                  - { label: "Emails", name: "emails", widget: "list" }
+                  - label: "Phone Numbers"
+                    name: "phones"
+                    widget: "list"
+                    field: { label: "Phone Number", name: "phone", widget: "string" }
+                  - label: "Emails"
+                    name: "emails"
+                    widget: "list"
+                    field: { label: "Email", name: "email", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
           - label: "Quick Links"
             name: "quickLinks"
@@ -444,7 +462,10 @@ collections:
               - { label: "Number", name: "num", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Body", name: "body", widget: "text" }
-          - { label: "Interest Dropdown Options", name: "interests", widget: "list" }
+          - label: "Interest Dropdown Options"
+            name: "interests"
+            widget: "list"
+            field: { label: "Option", name: "option", widget: "string" }
 
       - file: "content/settings/blog.json"
         label: "Blog Listing Page"
@@ -553,8 +574,14 @@ collections:
       - { label: "Blurb", name: "blurb", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Hero Intro", name: "heroIntro", widget: "text" }
-      - { label: "Characteristics", name: "characteristics", widget: "list" }
-      - { label: "Applications", name: "applications", widget: "list" }
+      - label: "Characteristics"
+        name: "characteristics"
+        widget: "list"
+        field: { label: "Characteristic", name: "characteristic", widget: "string" }
+      - label: "Applications"
+        name: "applications"
+        widget: "list"
+        field: { label: "Application", name: "application", widget: "string" }
       - label: "Specs"
         name: "specs"
         widget: "list"
@@ -574,8 +601,14 @@ collections:
       - { label: "Tag", name: "tag", widget: "string" }
       - { label: "Copy", name: "copy", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "list" }
-      - { label: "Materials", name: "materials", widget: "list" }
+      - label: "Description"
+        name: "description"
+        widget: "list"
+        field: { label: "Paragraph", name: "paragraph", widget: "text" }
+      - label: "Materials"
+        name: "materials"
+        widget: "list"
+        field: { label: "Material", name: "material", widget: "string" }
       - { label: "Quote", name: "quote", widget: "text" }
 
   - name: "blog"
