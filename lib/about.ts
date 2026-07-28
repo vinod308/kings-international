@@ -5,7 +5,6 @@ export type AboutContent = {
     heading: string;
     stats: { target: number; suffix: string; label: string }[];
     paragraphs: string[];
-    quote: string;
   };
   journey: {
     eyebrow: string;

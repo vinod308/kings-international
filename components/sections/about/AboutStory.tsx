@@ -3,7 +3,7 @@ import CountUp from "@/components/motion/CountUp";
 import type { AboutContent } from "@/lib/about";
 
 export default function AboutStory({ content }: { content: AboutContent["story"] }) {
-  const { eyebrow, heading, stats, paragraphs, quote } = content;
+  const { eyebrow, heading, stats, paragraphs } = content;
 
   return (
     <section className="bg-cream py-24 sm:py-32">
@@ -33,7 +33,6 @@ export default function AboutStory({ content }: { content: AboutContent["story"]
               {paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
-              <p className="italic text-ink-soft/70">&ldquo;{quote}&rdquo;</p>
             </Reveal>
           </div>
         </div>

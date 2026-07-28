@@ -120,7 +120,6 @@ collections:
                   - { label: "Suffix", name: "suffix", widget: "string", required: false }
                   - { label: "Label", name: "label", widget: "string" }
               - { label: "Paragraphs", name: "paragraphs", widget: "list" }
-              - { label: "Quote", name: "quote", widget: "text" }
           - label: "Journey Section"
             name: "journey"
             widget: "object"
