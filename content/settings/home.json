@@ -2,15 +2,30 @@
   "heroImage": "/images/kings/uploads/home..png",
   "heroAlt": "Kings International - where traditional craft meets modern technology",
   "theHouse": {
-    "eyebrow": "01 · The House",
+    "eyebrow": "02 · The House",
     "heading": "A vertically integrated house, built on leather.",
     "intro": "Founded in 1977 in Kanpur, the heart of India's leather industry, Kings International Ltd. has become a leader in premium leather craftsmanship, from raw hide to finished product, cut and stitched under one roof.",
     "facts": [
-      { "label": "Process", "value": "Wet-blue & wet-white hides, tanned in-house" },
-      { "label": "Founded", "value": "Est. 1977, Kanpur" },
-      { "label": "Capacity", "value": "200 hides processed per day" },
-      { "label": "Offices", "value": "India & United Kingdom" },
-      { "label": "Portfolio", "value": "Five house brands, one factory" }
+      {
+        "label": "Process",
+        "value": "Wet-blue & wet-white hides, tanned in-house"
+      },
+      {
+        "label": "Founded",
+        "value": "Est. 1977, Kanpur"
+      },
+      {
+        "label": "Capacity",
+        "value": "200 hides processed per day"
+      },
+      {
+        "label": "Offices",
+        "value": "India & United Kingdom"
+      },
+      {
+        "label": "Portfolio",
+        "value": "Five house brands, one factory"
+      }
     ],
     "image": "/images/kings/manufacturing/tannery-hides.jpg",
     "imageAlt": "Hides drying at the Kings International in-house tannery, Kanpur"
@@ -53,11 +68,31 @@
       }
     ],
     "items": [
-      { "target": 1977, "suffix": "", "label": "Established" },
-      { "target": 200, "suffix": "", "label": "Hides Processed / Day" },
-      { "target": 48, "suffix": "+", "label": "Years of Craft" },
-      { "target": 5, "suffix": "", "label": "House Brands" },
-      { "target": 6, "suffix": "", "label": "Leather Categories" }
+      {
+        "target": 1977,
+        "suffix": "",
+        "label": "Established"
+      },
+      {
+        "target": 200,
+        "suffix": "",
+        "label": "Hides Processed / Day"
+      },
+      {
+        "target": 48,
+        "suffix": "+",
+        "label": "Years of Craft"
+      },
+      {
+        "target": 5,
+        "suffix": "",
+        "label": "House Brands"
+      },
+      {
+        "target": 6,
+        "suffix": "",
+        "label": "Leather Categories"
+      }
     ]
   },
   "whyChooseUs": {
@@ -65,16 +100,56 @@
     "heading": "Crafting excellence. Delivering trust.",
     "intro": "At Kings International, we don't just manufacture leather products - we build long-term business partnerships.",
     "reasons": [
-      { "icon": "Award", "title": "Proven Expertise", "copy": "48+ years of hands-on leather craftsmanship, since 1977." },
-      { "icon": "Layers", "title": "Premium Materials", "copy": "Full-grain buffalo, goat and European cow hides, selected and tanned in-house." },
-      { "icon": "Wrench", "title": "Custom Solutions", "copy": "Private label and OEM development, built around your specification." },
-      { "icon": "Headset", "title": "Customer-First Approach", "copy": "A direct line to the export desk - not a call centre." },
-      { "icon": "Globe2", "title": "Global Partnerships", "copy": "Trusted by brands, wholesalers and importers across three continents." },
-      { "icon": "Factory", "title": "Vertically Integrated", "copy": "Hide to finished product, cut and stitched under one roof." },
-      { "icon": "Ship", "title": "Export Experience", "copy": "Corporate office in Kanpur, plus an overseas subsidiary in the United Kingdom." },
-      { "icon": "HeartHandshake", "title": "Ethical Practices", "copy": "Traceable sourcing and fair labour, audited to SA 8000." },
-      { "icon": "Leaf", "title": "Sustainability Commitment", "copy": "Zero-liquid-discharge tannery, solar power and water recycling since 2015." },
-      { "icon": "BadgeCheck", "title": "Certified Quality", "copy": "ISO 9001, 14001, 45001 and 50001 certified operations." }
+      {
+        "icon": "Award",
+        "title": "Proven Expertise",
+        "copy": "48+ years of hands-on leather craftsmanship, since 1977."
+      },
+      {
+        "icon": "Layers",
+        "title": "Premium Materials",
+        "copy": "Full-grain buffalo, goat and European cow hides, selected and tanned in-house."
+      },
+      {
+        "icon": "Wrench",
+        "title": "Custom Solutions",
+        "copy": "Private label and OEM development, built around your specification."
+      },
+      {
+        "icon": "Headset",
+        "title": "Customer-First Approach",
+        "copy": "A direct line to the export desk - not a call centre."
+      },
+      {
+        "icon": "Globe2",
+        "title": "Global Partnerships",
+        "copy": "Trusted by brands, wholesalers and importers across three continents."
+      },
+      {
+        "icon": "Factory",
+        "title": "Vertically Integrated",
+        "copy": "Hide to finished product, cut and stitched under one roof."
+      },
+      {
+        "icon": "Ship",
+        "title": "Export Experience",
+        "copy": "Corporate office in Kanpur, plus an overseas subsidiary in the United Kingdom."
+      },
+      {
+        "icon": "HeartHandshake",
+        "title": "Ethical Practices",
+        "copy": "Traceable sourcing and fair labour, audited to SA 8000."
+      },
+      {
+        "icon": "Leaf",
+        "title": "Sustainability Commitment",
+        "copy": "Zero-liquid-discharge tannery, solar power and water recycling since 2015."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Certified Quality",
+        "copy": "ISO 9001, 14001, 45001 and 50001 certified operations."
+      }
     ]
   },
   "collection": {
