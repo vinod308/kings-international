@@ -7,24 +7,24 @@
     "intro": "Founded in 1977 in Kanpur, the heart of India's leather industry, Kings International Ltd. has become a leader in premium leather craftsmanship, from raw hide to finished product, cut and stitched under one roof.",
     "facts": [
       {
-        "label": "Process",
-        "value": "Wet-blue & wet-white hides, tanned in-house"
+        "label": "Tanning Process",
+        "value": "From raw hide to finish leather"
       },
       {
-        "label": "Founded",
-        "value": "Est. 1977, Kanpur"
+        "label": "Experience",
+        "value": "Almost 50 years"
       },
       {
-        "label": "Capacity",
-        "value": "200 hides processed per day"
+        "label": "Tanning Capacity",
+        "value": "200 hides per day"
       },
       {
         "label": "Offices",
         "value": "India & United Kingdom"
       },
       {
-        "label": "Portfolio",
-        "value": "Five house brands, one factory"
+        "label": "USP",
+        "value": "Gold Rated by LWG"
       }
     ],
     "image": "/images/kings/manufacturing/tannery-hides.jpg",
