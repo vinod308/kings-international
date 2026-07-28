@@ -22,7 +22,7 @@ export default function AboutStory({ content }: { content: AboutContent["story"]
 
         <div className="relative grid lg:grid-cols-12 gap-12 lg:gap-16 overflow-hidden">
           <Image
-            src="/images/kings/logo/kings-international-logo-transparent.png"
+            src="/images/kings/logo/kings-international-logo-grey.png"
             alt=""
             aria-hidden="true"
             width={1212}
