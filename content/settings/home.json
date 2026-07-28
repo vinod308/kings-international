@@ -36,7 +36,7 @@
   },
   "stats": {
     "eyebrow": "The Process",
-    "heading": "From raw hide to finished order, vertically integrated.",
+    "heading": "From raw hide to finished products",
     "process": [
       {
         "num": "01",
@@ -75,7 +75,7 @@
         "label": "Hides Processed / Day"
       },
       {
-        "target": 48,
+        "target": 49,
         "suffix": "+",
         "label": "Years of Craft"
       },
