@@ -134,13 +134,6 @@ collections:
                   - { label: "Year", name: "year", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Body", name: "body", widget: "text" }
-          - label: "Beliefs Section"
-            name: "beliefs"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Belief Items", name: "items", widget: "list" }
           - label: "Craftsmanship Section"
             name: "craftsmanship"
             widget: "object"

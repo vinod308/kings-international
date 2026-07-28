@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHero from "@/components/layout/PageHero";
 import AboutStory from "@/components/sections/about/AboutStory";
 import AboutJourney from "@/components/sections/about/AboutJourney";
-import AboutBeliefs from "@/components/sections/about/AboutBeliefs";
 import AboutCraftsmanship from "@/components/sections/about/AboutCraftsmanship";
 import AboutHouses from "@/components/sections/about/AboutHouses";
 import AboutCta from "@/components/sections/about/AboutCta";
@@ -29,7 +28,6 @@ export default function AboutPage() {
       />
       <AboutStory content={about.story} />
       <AboutJourney content={about.journey} />
-      <AboutBeliefs content={about.beliefs} />
       <AboutCraftsmanship content={about.craftsmanship} />
       <AboutHouses content={about.houses} />
       <AboutCta content={about.cta} />

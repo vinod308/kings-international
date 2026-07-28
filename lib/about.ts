@@ -12,7 +12,6 @@ export type AboutContent = {
     heading: string;
     items: { year: string; title: string; body: string }[];
   };
-  beliefs: { eyebrow: string; heading: string; items: string[] };
   craftsmanship: {
     eyebrow: string;
     heading: string;
