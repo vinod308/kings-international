@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { PRODUCTS } from "@/lib/products";
+import { readContentFile } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Our Leathers",
@@ -12,16 +13,17 @@ export const metadata: Metadata = {
     "Six leather categories, one tannery - finished, buffalo, goat, safety shoe, industrial leather and finished leather goods, tanned and manufactured in-house in Kanpur.",
 };
 
+type ProductsPageContent = {
+  hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
+  cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
+};
+
 export default function ProductsPage() {
+  const { hero, cta } = readContentFile<ProductsPageContent>("settings/products.json");
+
   return (
     <>
-      <PageHero
-        eyebrow="Our Leathers · By Type"
-        title="Six leather categories, one tannery."
-        intro="From raw hide to finished product, every leather we tan and every good we stitch comes off the same Kanpur floor. Explore each category below."
-        image="/images/kings/hero/manufacturing-hero.jpg"
-        imageAlt="Leather production line at Kings International, Kanpur"
-      />
+      <PageHero eyebrow={hero.eyebrow} title={hero.title} intro={hero.intro} image={hero.image} imageAlt={hero.imageAlt} />
 
       <section className="bg-cream py-24 sm:py-32">
         <div className="container-site">
@@ -66,18 +68,16 @@ export default function ProductsPage() {
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">
-                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">
-                  Private label or fully custom
-                </p>
+                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">{cta.eyebrow}</p>
                 <h3 className="font-display text-[clamp(24px,2.8vw,34px)] leading-tight tracking-tight text-cream">
-                  Tell us the leather. We&apos;ll build the product.
+                  {cta.heading}
                 </h3>
               </div>
               <Link
-                href="/quote"
+                href={cta.buttonHref}
                 className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-ink hover:bg-cream transition-colors shrink-0"
               >
-                Request a Quote
+                {cta.buttonText}
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </div>

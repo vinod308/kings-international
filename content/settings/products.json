@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "eyebrow": "Our Leathers · By Type",
+    "title": "Six leather categories, one tannery.",
+    "intro": "From raw hide to finished product, every leather we tan and every good we stitch comes off the same Kanpur floor. Explore each category below.",
+    "image": "/images/kings/hero/manufacturing-hero.jpg",
+    "imageAlt": "Leather production line at Kings International, Kanpur"
+  },
+  "cta": {
+    "eyebrow": "Private label or fully custom",
+    "heading": "Tell us the leather. We'll build the product.",
+    "buttonText": "Request a Quote",
+    "buttonHref": "/quote"
+  }
+}

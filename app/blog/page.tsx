@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { POSTS } from "@/lib/blog";
+import { readContentFile } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Leather Knowledge",
@@ -12,16 +13,16 @@ export const metadata: Metadata = {
     "Sourcing guides and explainers on leather grades, manufacturing models, and compliance - written for brands, wholesalers, and buyers sourcing leather goods.",
 };
 
+type BlogPageContent = {
+  hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
+};
+
 export default function BlogPage() {
+  const { hero } = readContentFile<BlogPageContent>("settings/blog.json");
+
   return (
     <>
-      <PageHero
-        eyebrow="Leather Knowledge"
-        title="Sourcing guides, written for buyers."
-        intro="Plain-language explainers on the leather, manufacturing, and compliance questions that come up most often before an order gets placed."
-        image="/images/kings/manufacturing/tannery-hides.jpg"
-        imageAlt="Hides drying at the Kings International tannery"
-      />
+      <PageHero eyebrow={hero.eyebrow} title={hero.title} intro={hero.intro} image={hero.image} imageAlt={hero.imageAlt} />
 
       <section className="bg-cream py-24 sm:py-32">
         <div className="container-site">

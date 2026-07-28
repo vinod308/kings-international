@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "eyebrow": "B2B Hub · Request a Quote",
+    "title": "Tell us what you need to source.",
+    "intro": "The more specific the enquiry - quantities, materials, destination market - the more specific the answer. Everything goes straight to the export desk in Kanpur.",
+    "image": "/images/kings/manufacturing/handcraft-stitching.jpg",
+    "imageAlt": "Hand-stitching a leather harness at Kings International"
+  },
+  "why": [
+    {
+      "num": "01",
+      "title": "Straight to the export desk",
+      "body": "No call centre, no reseller - your enquiry reaches the people who actually run production in Kanpur."
+    },
+    {
+      "num": "02",
+      "title": "One factory, every stage",
+      "body": "Tannery, cutting, stitching and finishing under one roof, so the quote you get reflects real capacity, not a guess."
+    },
+    {
+      "num": "03",
+      "title": "Reply within a business day",
+      "body": "Mon-Sat IST. Specific enquiries get specific answers - quantities, materials, and lead times, not templates."
+    }
+  ]
+}

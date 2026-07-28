@@ -3,7 +3,13 @@ import Link from "next/link";
 import { ArrowUpRight, BadgeCheck } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
-import { CERTIFICATIONS, WHY_CERTIFIED } from "@/lib/certifications";
+import {
+  CERTIFICATIONS,
+  WHY_CERTIFIED,
+  CERTIFICATIONS_HERO,
+  CERTIFICATIONS_SECTION,
+  CERTIFICATIONS_CTA,
+} from "@/lib/certifications";
 
 export const metadata: Metadata = {
   title: "Certifications & Awards",
@@ -15,11 +21,11 @@ export default function CertificationsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Compliance"
-        title="Audited before you order."
-        intro="Quality, environment, health & safety, energy and social accountability, audited across the factory and tannery. Full certificate documents - issuing body, number and audit date - are provided to buyers on request."
-        image="/images/kings/manufacturing/sustainability-zld-plant.jpg"
-        imageAlt="Kings International's ZLD water treatment plant"
+        eyebrow={CERTIFICATIONS_HERO.eyebrow}
+        title={CERTIFICATIONS_HERO.title}
+        intro={CERTIFICATIONS_HERO.intro}
+        image={CERTIFICATIONS_HERO.image}
+        imageAlt={CERTIFICATIONS_HERO.imageAlt}
       />
 
       <section className="bg-cream py-24 sm:py-32">
@@ -36,9 +42,9 @@ export default function CertificationsPage() {
           </RevealGroup>
 
           <Reveal type="up" className="mb-14 max-w-2xl">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">Certifications</p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{CERTIFICATIONS_SECTION.eyebrow}</p>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
-              Eight standards, one facility.
+              {CERTIFICATIONS_SECTION.heading}
             </h2>
           </Reveal>
 
@@ -66,16 +72,16 @@ export default function CertificationsPage() {
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">
-                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">Documentation</p>
+                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">{CERTIFICATIONS_CTA.eyebrow}</p>
                 <h3 className="font-display text-[clamp(24px,2.8vw,34px)] leading-tight tracking-tight text-cream">
-                  Need compliance paperwork for your market?
+                  {CERTIFICATIONS_CTA.heading}
                 </h3>
               </div>
               <Link
-                href="/contact"
+                href={CERTIFICATIONS_CTA.buttonHref}
                 className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-ink hover:bg-cream transition-colors shrink-0"
               >
-                Request Documentation
+                {CERTIFICATIONS_CTA.buttonText}
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </div>

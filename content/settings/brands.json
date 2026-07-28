@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "eyebrow": "Our Brands · Five Houses",
+    "title": "Five house brands, one factory floor.",
+    "intro": "Kingston, Equitel, Ryder, Target and Pets' Pal - each built for its own category, all cut, stitched and finished under one roof in Kanpur.",
+    "image": "/images/kings/hero/showroom.jpg",
+    "imageAlt": "Kings International leather showroom, Kanpur"
+  },
+  "cta": {
+    "eyebrow": "Looking for something else?",
+    "heading": "We also build fully custom, unbranded product.",
+    "buttonText": "Explore OEM Services",
+    "buttonHref": "/oem"
+  }
+}

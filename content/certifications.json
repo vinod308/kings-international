@@ -1,4 +1,21 @@
 {
+  "hero": {
+    "eyebrow": "Compliance",
+    "title": "Audited before you order.",
+    "intro": "Quality, environment, health & safety, energy and social accountability, audited across the factory and tannery. Full certificate documents - issuing body, number and audit date - are provided to buyers on request.",
+    "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
+    "imageAlt": "Kings International's ZLD water treatment plant"
+  },
+  "certificationsSection": {
+    "eyebrow": "Certifications",
+    "heading": "Eight standards, one facility."
+  },
+  "cta": {
+    "eyebrow": "Documentation",
+    "heading": "Need compliance paperwork for your market?",
+    "buttonText": "Request Documentation",
+    "buttonHref": "/contact"
+  },
   "certifications": [
     { "num": "01", "title": "ISO 9001 - Quality Management", "body": "Consistent product quality and process control across every stage of manufacturing." },
     { "num": "02", "title": "ISO 14001 - Environmental Management", "body": "Systematic control of environmental impact across the factory and tannery." },

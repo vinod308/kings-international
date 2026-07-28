@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { BRANDS } from "@/lib/brands";
+import { readContentFile } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Our Brands",
@@ -12,16 +13,17 @@ export const metadata: Metadata = {
     "Kingston, Equitel, Ryder Belts, Target and Pets' Pal - five house brands, each built for its own category, all cut, stitched and finished on the same Kanpur floor.",
 };
 
+type BrandsPageContent = {
+  hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
+  cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
+};
+
 export default function BrandsPage() {
+  const { hero, cta } = readContentFile<BrandsPageContent>("settings/brands.json");
+
   return (
     <>
-      <PageHero
-        eyebrow="Our Brands · Five Houses"
-        title="Five house brands, one factory floor."
-        intro="Kingston, Equitel, Ryder, Target and Pets' Pal - each built for its own category, all cut, stitched and finished under one roof in Kanpur."
-        image="/images/kings/hero/showroom.jpg"
-        imageAlt="Kings International leather showroom, Kanpur"
-      />
+      <PageHero eyebrow={hero.eyebrow} title={hero.title} intro={hero.intro} image={hero.image} imageAlt={hero.imageAlt} />
 
       <section className="bg-cream py-24 sm:py-32">
         <div className="container-site">
@@ -69,18 +71,16 @@ export default function BrandsPage() {
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">
-                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">
-                  Looking for something else?
-                </p>
+                <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">{cta.eyebrow}</p>
                 <h3 className="font-display text-[clamp(24px,2.8vw,34px)] leading-tight tracking-tight text-cream">
-                  We also build fully custom, unbranded product.
+                  {cta.heading}
                 </h3>
               </div>
               <Link
-                href="/oem"
+                href={cta.buttonHref}
                 className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-ink hover:bg-cream transition-colors shrink-0"
               >
-                Explore OEM Services
+                {cta.buttonText}
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </div>
