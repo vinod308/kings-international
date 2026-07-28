@@ -550,6 +550,8 @@ collections:
     label: "Media Gallery"
     folder: "content/media"
     create: true
+    extension: "json"
+    format: "json"
     slug: "{{order}}-{{fields.category}}"
     fields:
       - { label: "Order", name: "order", widget: "number" }
@@ -565,6 +567,8 @@ collections:
     label: "Products"
     folder: "content/products"
     create: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
@@ -593,6 +597,8 @@ collections:
     label: "Brands"
     folder: "content/brands"
     create: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
@@ -615,6 +621,8 @@ collections:
     label: "Blog Posts"
     folder: "content/blog"
     create: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
     fields:
       - { label: "Slug", name: "slug", widget: "string" }
