@@ -27,7 +27,7 @@ export default function AboutStory({ content }: { content: AboutContent["story"]
             aria-hidden="true"
             width={1212}
             height={1536}
-            className="pointer-events-none select-none absolute left-1/2 top-1/2 w-[280px] sm:w-[360px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-15"
+            className="pointer-events-none select-none absolute left-1/2 top-1/2 w-[140px] sm:w-[180px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-15"
           />
           <div className="relative z-10 lg:col-span-5">
             <Reveal type="up">
