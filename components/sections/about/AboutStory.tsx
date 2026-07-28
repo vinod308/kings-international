@@ -22,12 +22,12 @@ export default function AboutStory({ content }: { content: AboutContent["story"]
 
         <div className="relative grid lg:grid-cols-12 gap-12 lg:gap-16 overflow-hidden">
           <Image
-            src="/images/kings/brand/kings-wordmark.png"
+            src="/images/kings/logo/kings-international-logo-transparent.png"
             alt=""
             aria-hidden="true"
-            width={364}
-            height={143}
-            className="pointer-events-none select-none absolute left-1/2 top-1/2 w-[85%] max-w-[820px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-15"
+            width={1212}
+            height={1536}
+            className="pointer-events-none select-none absolute left-1/2 top-1/2 w-[280px] sm:w-[360px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-15"
           />
           <div className="relative z-10 lg:col-span-5">
             <Reveal type="up">
