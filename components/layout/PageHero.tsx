@@ -6,17 +6,27 @@ export default function PageHero({
   intro,
   image,
   imageAlt,
+  imagePosition = "center",
 }: {
   eyebrow: string;
   title: string;
   intro: string;
   image: string;
   imageAlt: string;
+  imagePosition?: string;
 }) {
   return (
     <section className="relative min-h-[56svh] flex items-end overflow-hidden bg-ink">
       <div className="absolute inset-0">
-        <Image src={image} alt={imageAlt} fill priority sizes="100vw" className="object-cover" />
+        <Image
+          src={image}
+          alt={imageAlt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+          style={{ objectPosition: imagePosition }}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
       </div>
 

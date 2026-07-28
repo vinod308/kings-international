@@ -25,6 +25,7 @@ export default function AboutPage() {
         intro={about.hero.intro}
         image={about.hero.image}
         imageAlt={about.hero.imageAlt}
+        imagePosition="center 20%"
       />
       <AboutStory content={about.story} />
       <AboutJourney content={about.journey} />
