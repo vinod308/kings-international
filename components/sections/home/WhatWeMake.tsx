@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
-import { PRODUCTS } from "@/lib/products";
+import Reveal from "@/components/motion/Reveal";
 import type { HomeContent } from "@/lib/home";
 
 export default function WhatWeMake({ content }: { content: HomeContent["whatWeMake"] }) {
@@ -18,39 +17,26 @@ export default function WhatWeMake({ content }: { content: HomeContent["whatWeMa
           </h2>
         </Reveal>
 
-        <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {PRODUCTS.map((p) => (
-            <RevealItem key={p.slug} type="up">
-              <Link
-                href={`/products/${p.slug}`}
-                className="group block rounded-2xl bg-white border border-[var(--line)] overflow-hidden hover:shadow-xl hover:shadow-black/[0.06] hover:-translate-y-1 transition-all duration-400"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={p.image}
-                    alt={p.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <span className="absolute top-4 left-4 text-[11px] font-semibold tracking-[0.12em] text-cream/90 bg-ink/60 backdrop-blur-sm px-2.5 py-1 rounded-full">
-                    {p.num} / 09
-                  </span>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-start justify-between gap-3 mb-2">
-                    <h3 className="font-display text-[19px] font-semibold text-ink">{p.title}</h3>
-                    <ArrowUpRight
-                      size={18}
-                      className="shrink-0 mt-1 text-ink-soft/40 group-hover:text-green group-hover:rotate-45 transition-all duration-300"
-                    />
-                  </div>
-                  <p className="text-[13.5px] leading-relaxed text-ink-soft">{p.blurb}</p>
-                </div>
-              </Link>
-            </RevealItem>
-          ))}
-        </RevealGroup>
+        <Reveal type="up" delay={0.1}>
+          <Link
+            href="/products"
+            className="group relative block rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm hover:shadow-xl hover:shadow-black/[0.08] transition-all duration-400"
+          >
+            <div className="relative aspect-[16/9] w-full">
+              <Image
+                src="/images/kings/products/categories-banner.png"
+                alt="Our product categories - finished leather, equestrian goods, hand bags, wallets, belts, leather goods, pets' accessories, hunting accessories and gym accessories"
+                fill
+                sizes="(max-width: 1360px) 100vw, 1360px"
+                className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              />
+            </div>
+            <span className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full bg-ink/80 backdrop-blur-sm px-5 py-2.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-cream group-hover:bg-green transition-colors">
+              Explore Our Products
+              <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </span>
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
