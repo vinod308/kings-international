@@ -82,7 +82,7 @@ export default function Footer() {
             alt="Kings International"
             width={121}
             height={154}
-            className="h-14 w-auto mb-5 bg-white rounded-lg p-1.5"
+            className="h-14 w-auto mb-5 bg-white p-1.5"
           />
           <p className="text-[13px] leading-relaxed text-cream/70 max-w-xs">
             Excellence in hand-crafted leather goods, manufactured and exported worldwide since 1977.

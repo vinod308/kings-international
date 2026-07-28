@@ -35,7 +35,7 @@ export default function Navbar() {
             width={121}
             height={154}
             priority
-            className="h-11 w-auto object-contain rounded-md bg-white p-1"
+            className="h-11 w-auto object-contain bg-white p-1"
           />
           <span className="hidden sm:block font-display leading-tight">
             <span className="block text-[15px] font-semibold tracking-tight text-ink">Kings International</span>
