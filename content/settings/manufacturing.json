@@ -1,8 +1,8 @@
 {
   "hero": {
     "eyebrow": "Smart Factory",
-    "title": "One roof, every process.",
-    "intro": "A specialised, section-by-section manufacturing process for saddlery, harness, belts and pet accessories - traditional hand craftsmanship where it matters, modern machinery where it counts.",
+    "title": "Every process under one roof.",
+    "intro": "A specialized, section-by-section manufacturing process for saddlery, harness, belts, bag and pet accessories, hunting accessories.",
     "image": "/images/kings/hero/manufacturing-hero.jpg",
     "imageAlt": "Production line at Kings International, Kanpur"
   },
@@ -10,13 +10,41 @@
     "eyebrow": "The Floor",
     "heading": "Section by section, hide to dispatch.",
     "items": [
-      { "num": "01", "title": "Saddle Section", "body": "Dedicated to crafting saddles, harnesses, and equestrian accessories - leather selection, cutting & shaping, hand and machine stitching, fitting, and final quality control." },
-      { "num": "02", "title": "Pre-Shaped Component Cutting Area", "body": "Leather is precisely cut into pre-defined shapes using advanced cutting machinery, minimising waste while preserving texture and quality." },
-      { "num": "03", "title": "Strap Cutting & Splitting Area", "body": "Precise cutting and splitting of leather into straps for belts, saddlery, and pet accessories, controlling width, thickness, softness and strength." },
-      { "num": "04", "title": "Machine & Hand Stitching Areas", "body": "Industrial stitching machines handle high-volume, consistent seams; skilled artisans hand-stitch detailed and custom work for premium finishing." },
-      { "num": "05", "title": "Hole Punching, Stamping, Creasing & Skiving", "body": "Specialised finishing processes - hole punching for buckles and fastenings, stamping for logos and branding, creasing for clean edges, skiving for smooth, stitch-ready edges." },
-      { "num": "06", "title": "Raw Material Storage", "body": "Controlled storage for hides, leather, threads, zippers, hardware, chemicals, and dyes, protecting materials from moisture and temperature damage." },
-      { "num": "07", "title": "Packing & Dispatch Area", "body": "Final quality check, protective packing, and shipment preparation with tracking documentation before dispatch." }
+      {
+        "num": "01",
+        "title": "Saddle Section",
+        "body": "Dedicated to crafting saddles, harnesses, and equestrian accessories - leather selection, cutting & shaping, hand and machine stitching, fitting, and final quality control."
+      },
+      {
+        "num": "02",
+        "title": "Pre-Shaped Component Cutting Area",
+        "body": "Leather is precisely cut into pre-defined shapes using advanced cutting machinery, minimising waste while preserving texture and quality."
+      },
+      {
+        "num": "03",
+        "title": "Strap Cutting & Splitting Area",
+        "body": "Precise cutting and splitting of leather into straps for belts, saddlery, and pet accessories, controlling width, thickness, softness and strength."
+      },
+      {
+        "num": "04",
+        "title": "Machine & Hand Stitching Areas",
+        "body": "Industrial stitching machines handle high-volume, consistent seams; skilled artisans hand-stitch detailed and custom work for premium finishing."
+      },
+      {
+        "num": "05",
+        "title": "Hole Punching, Stamping, Creasing & Skiving",
+        "body": "Specialised finishing processes - hole punching for buckles and fastenings, stamping for logos and branding, creasing for clean edges, skiving for smooth, stitch-ready edges."
+      },
+      {
+        "num": "06",
+        "title": "Raw Material Storage",
+        "body": "Controlled storage for hides, leather, threads, zippers, hardware, chemicals, and dyes, protecting materials from moisture and temperature damage."
+      },
+      {
+        "num": "07",
+        "title": "Packing & Dispatch Area",
+        "body": "Final quality check, protective packing, and shipment preparation with tracking documentation before dispatch."
+      }
     ]
   },
   "brandsSection": {
