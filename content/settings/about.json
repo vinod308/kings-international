@@ -1,14 +1,14 @@
 {
   "hero": {
-    "eyebrow": "About Kings · Est. 1977",
+    "eyebrow": "Established in 1977",
     "title": "Excellence in Hand- Crafted Leather Goods",
-    "intro": "KINGS, A vertically integrated multi-product and multi-brand company engaged in manufacturing of sustainable leather goods meticulously crafted with traditional skill & modern technology.",
+    "intro": "KINGS - A vertically integrated multi-product and multi-brand company engaged in manufacturing of sustainable leather goods meticulously crafted with traditional skill & modern technology.",
     "image": "/images/kings/brand/facility.jpg",
     "imageAlt": "Kings International facility in Kanpur"
   },
   "story": {
     "eyebrow": "Our Story ",
-    "heading": "From a workshop to a vertically integrated facility.",
+    "heading": "  From a small workshop to a vertically integrated modern facility",
     "stats": [
       {
         "target": 1977,
@@ -18,7 +18,7 @@
       {
         "target": 49,
         "suffix": "+",
-        "label": "Years of craftsmanship"
+        "label": "Years of Experience"
       },
       {
         "target": 9,
@@ -32,14 +32,16 @@
       }
     ],
     "paragraphs": [
-      "For the last 50 years KINGS is the first-generation family-owned leather company with an in- house Tannery having a capacity of processing 200 hides per day. Kings International has been dedicated to producing premium leather and leather goods for international markets. Our expertise skilled workforce and commitment to quality enable us to manufacture products that meet the expectations of leading global brands.",
-      "We combine traditional craftsmanship with modern manufacturing technology to produce leather that offers superior strength texture durability and finish. Every stage of production is carefully monitored to ensure consistent quality and customer satisfaction. Whether you require finished leather leather accessories fashion products industrial leather or customized manufacturing solutions Kings International is your reliable business partner for sustainable products"
+      "For the last 50 years",
+      "KINGS has been the first generation family-owned leather company with an in-house Tannery having a capacity of processing 200 hides per day. Kings International has been dedicated to producing premium leather and leather goods for international markets. Our expertise of skilled workforce and commitment to quality enabled us to manufacture products that meets the expectations of leading global brands. We combine traditional craftsmanship with modern manufacturing technology to produce leather that offers superior strength",
+      "texture",
+      "durability and finish. Every stage of production is carefully monitored to ensure consistent quality and customer satisfaction. Whether you require finished leather or leather accessories or customized manufacturing solutions. Kings International is a reliable & dependable business partner for sustainable products."
     ],
-    "quote": "We didn't add sustainability to our process. We built our process to be sustainable."
+    "quote": "."
   },
   "journey": {
     "eyebrow": "The Journey",
-    "heading": "49 years, six chapters.",
+    "heading": "49 years, six milestones",
     "items": [
       {
         "year": "1977",
@@ -49,17 +51,17 @@
       {
         "year": "1980s–90s",
         "title": "Saddlery & Export Foundations",
-        "body": "Building deep expertise in saddlery and harness manufacturing, and establishing early export relationships."
+        "body": "Building deep expertise in saddlery and harness manufacturing, and establishing export market worldwide & Participating in International trade fairs."
       },
       {
         "year": "2000s",
         "title": "Vertical Integration",
-        "body": "Bringing tanning in-house, giving full control over hide quality from raw material through to finished product."
+        "body": "Creating In-house tanning & finishing facilities, giving full control over leather quality from through to finished leather."
       },
       {
         "year": "2010s",
         "title": "Certifications & Sustainability",
-        "body": "Aligning operations with ISO 9001, Leather Working Group, and Sustainable Leather requirements, using REACH-compliant chemicals throughout."
+        "body": "Aligning different Management Systems such as ISO 9001, ISO 14001, ISO 45001. ISO 50000, SA 8000, Gold Rating of Leather Working Group for Sustainable Leather manufacturing, using REACH compliant chemicals."
       },
       {
         "year": "2010s–Now",
