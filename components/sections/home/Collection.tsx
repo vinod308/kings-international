@@ -3,15 +3,18 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { BRANDS } from "@/lib/brands";
+import type { HomeContent } from "@/lib/home";
 
-export default function Collection() {
+export default function Collection({ content }: { content: HomeContent["collection"] }) {
+  const { eyebrow, heading } = content;
+
   return (
     <section className="bg-cream-deep py-24 sm:py-32">
       <div className="container-site">
         <Reveal type="up" className="mb-14 max-w-2xl">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">The Collection</p>
+          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{eyebrow}</p>
           <h2 className="font-display text-[clamp(30px,4.2vw,52px)] leading-[1.08] tracking-tight text-ink">
-            Five house brands, one factory floor.
+            {heading}
           </h2>
         </Reveal>
 

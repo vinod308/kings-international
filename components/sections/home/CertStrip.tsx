@@ -1,18 +1,19 @@
 import Reveal from "@/components/motion/Reveal";
 import { CERTIFICATION_BADGES, CERTIFICATION_SLIDES } from "@/lib/certifications";
 import CertificationsSlider from "@/components/sections/home/CertificationsSlider";
+import type { HomeContent } from "@/lib/home";
 
-export default function CertStrip() {
+export default function CertStrip({ content }: { content: HomeContent["certStrip"] }) {
+  const { eyebrow, heading } = content;
+
   return (
     <section className="bg-cream-deep py-24 sm:py-32">
       <div className="container-site grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <div className="lg:col-span-5">
           <Reveal type="up">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
-              Certifications &amp; Awards
-            </p>
+            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{eyebrow}</p>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink mb-6">
-              Recognised for quality and sustainability.
+              {heading}
             </h2>
             <ul className="flex flex-wrap gap-2.5 list-none p-0 m-0">
               {CERTIFICATION_BADGES.map((badge) => (

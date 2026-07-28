@@ -1,55 +1,21 @@
 import Image from "next/image";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import CountUp from "@/components/motion/CountUp";
+import type { HomeContent } from "@/lib/home";
 
-const STATS = [
-  { target: 1977, suffix: "", label: "Established" },
-  { target: 200, suffix: "", label: "Hides Processed / Day" },
-  { target: 48, suffix: "+", label: "Years of Craft" },
-  { target: 5, suffix: "", label: "House Brands" },
-  { target: 6, suffix: "", label: "Leather Categories" },
-];
+export default function Stats({ content }: { content: HomeContent["stats"] }) {
+  const { eyebrow, heading, process, items } = content;
 
-const PROCESS = [
-  {
-    num: "01",
-    title: "Raw Hide",
-    image: "/images/kings/manufacturing/tannery-hides.jpg",
-    body: "Hides tanned and hung to dry.",
-  },
-  {
-    num: "02",
-    title: "Drying & Sorting",
-    image: "/images/kings/manufacturing/handcraft-stitching.jpg",
-    body: "Dried, sorted and staged for cutting.",
-  },
-  {
-    num: "03",
-    title: "Cutting & Production",
-    image: "/images/kings/hero/manufacturing-hero.jpg",
-    body: "Cut, stitched and assembled on the line.",
-  },
-  {
-    num: "04",
-    title: "Finished Order",
-    image: "/images/kings/hero/showroom.jpg",
-    body: "Inspected, packed and ready to ship.",
-  },
-];
-
-export default function Stats() {
   return (
     <section className="bg-ink py-20 sm:py-24">
       <div className="container-site">
         <Reveal type="up" className="mb-14 text-center max-w-2xl mx-auto">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-gold mb-3">The Process</p>
-          <h2 className="font-display text-[clamp(26px,3.4vw,40px)] text-cream leading-tight">
-            From raw hide to finished order, vertically integrated.
-          </h2>
+          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-gold mb-3">{eyebrow}</p>
+          <h2 className="font-display text-[clamp(26px,3.4vw,40px)] text-cream leading-tight">{heading}</h2>
         </Reveal>
 
         <RevealGroup className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-20">
-          {PROCESS.map((p) => (
+          {process.map((p) => (
             <RevealItem key={p.num} type="up">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
                 <Image
@@ -72,7 +38,7 @@ export default function Stats() {
 
         <div className="border-t border-cream/10 pt-14">
           <RevealGroup className="grid grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-6">
-            {STATS.map((s) => (
+            {items.map((s) => (
               <RevealItem key={s.label} type="scale" className="text-center">
                 <p className="font-display text-[clamp(32px,4.5vw,54px)] font-semibold text-cream leading-none">
                   <CountUp target={s.target} suffix={s.suffix} />

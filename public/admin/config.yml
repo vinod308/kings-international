@@ -24,6 +24,74 @@ collections:
         fields:
           - { label: "Hero Image", name: "heroImage", widget: "image" }
           - { label: "Hero Image Alt Text", name: "heroAlt", widget: "string" }
+          - label: "The House Section"
+            name: "theHouse"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Facts"
+                name: "facts"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value", name: "value", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - label: "Certifications Strip"
+            name: "certStrip"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+          - label: "What We Make Section"
+            name: "whatWeMake"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+          - label: "The Process / Stats Section"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Process Steps"
+                name: "process"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "num", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Body", name: "body", widget: "text" }
+              - label: "Stats"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "target", widget: "number" }
+                  - { label: "Suffix", name: "suffix", widget: "string", required: false }
+                  - { label: "Label", name: "label", widget: "string" }
+          - label: "Why Choose Us Section"
+            name: "whyChooseUs"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Reasons"
+                name: "reasons"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name, e.g. Award, Layers, Wrench, Headset, Globe2, Factory, Ship, HeartHandshake, Leaf, BadgeCheck" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Copy", name: "copy", widget: "text" }
+          - label: "Collection Section"
+            name: "collection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
 
       - file: "content/settings/about.json"
         label: "About Page"

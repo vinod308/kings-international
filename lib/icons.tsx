@@ -20,6 +20,15 @@ import {
   MessageCircle,
   Sparkles,
   Newspaper,
+  Award,
+  Layers,
+  Headset,
+  Globe2,
+  Factory,
+  Ship,
+  HeartHandshake,
+  Leaf,
+  BadgeCheck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -45,6 +54,15 @@ export const ICONS: Record<string, LucideIcon> = {
   MessageCircle,
   Sparkles,
   Newspaper,
+  Award,
+  Layers,
+  Headset,
+  Globe2,
+  Factory,
+  Ship,
+  HeartHandshake,
+  Leaf,
+  BadgeCheck,
 };
 
 export function getIcon(name: string): LucideIcon {

@@ -1,11 +1,6 @@
 import Image from "next/image";
-import { readContentFile } from "@/lib/content";
 
-type HomeSettings = { heroImage: string; heroAlt: string };
-
-export default function Hero() {
-  const { heroImage, heroAlt } = readContentFile<HomeSettings>("settings/home.json");
-
+export default function Hero({ heroImage, heroAlt }: { heroImage: string; heroAlt: string }) {
   return (
     <section className="bg-cream pt-[72px]">
       <div className="relative w-full aspect-[16/9] overflow-hidden">
