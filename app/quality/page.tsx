@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
@@ -60,13 +61,23 @@ export default function QualityPage() {
 
       <section className="bg-cream-deep py-24 sm:py-32">
         <div className="container-site">
-          <Reveal type="up" className="mb-16 max-w-3xl">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{whySection.eyebrow}</p>
-            <h2 className="font-display text-[clamp(26px,3.2vw,40px)] leading-[1.1] tracking-tight text-ink mb-6">
-              {whySection.heading}
-            </h2>
-            <p className="text-[16px] leading-relaxed text-ink-soft">{whySection.body}</p>
-          </Reveal>
+          <div className="relative mb-16 overflow-hidden">
+            <Image
+              src="/images/kings/logo/kings-international-logo-grey.png"
+              alt=""
+              aria-hidden="true"
+              width={1212}
+              height={1536}
+              className="pointer-events-none select-none hidden lg:block absolute right-0 top-1/2 w-[160px] xl:w-[200px] h-auto -translate-y-1/2 opacity-15"
+            />
+            <Reveal type="up" className="relative z-10 max-w-3xl">
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{whySection.eyebrow}</p>
+              <h2 className="font-display text-[clamp(26px,3.2vw,40px)] leading-[1.1] tracking-tight text-ink mb-6">
+                {whySection.heading}
+              </h2>
+              <p className="text-[16px] leading-relaxed text-ink-soft">{whySection.body}</p>
+            </Reveal>
+          </div>
 
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">

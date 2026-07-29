@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
@@ -64,8 +65,16 @@ export default function SustainabilityPage() {
 
       <section className="bg-cream-deep py-24 sm:py-32">
         <div className="container-site">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 mb-16">
-            <div className="lg:col-span-5">
+          <div className="relative grid lg:grid-cols-12 gap-12 lg:gap-16 mb-16 overflow-hidden">
+            <Image
+              src="/images/kings/logo/kings-international-logo-grey.png"
+              alt=""
+              aria-hidden="true"
+              width={1212}
+              height={1536}
+              className="pointer-events-none select-none absolute left-1/2 top-1/2 w-[140px] sm:w-[180px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-15"
+            />
+            <div className="relative z-10 lg:col-span-5">
               <Reveal type="up">
                 <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{commitmentsSection.eyebrow}</p>
                 <h2 className="font-display text-[clamp(26px,3vw,36px)] leading-[1.1] tracking-tight text-ink">
@@ -73,7 +82,7 @@ export default function SustainabilityPage() {
                 </h2>
               </Reveal>
             </div>
-            <div className="lg:col-span-7">
+            <div className="relative z-10 lg:col-span-7">
               <Reveal type="up" delay={0.1}>
                 <ul className="flex flex-col gap-4">
                   {commitmentsSection.items.map((c) => (
