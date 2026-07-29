@@ -42,23 +42,17 @@ export default function ProcessGrid({ process }: { process: ProcessStep[] }) {
             >
               <Image
                 src={p.image}
-                alt={p.title}
+                alt={p.title?.trim() || "The process"}
                 fill
                 sizes="(max-width: 1024px) 45vw, 23vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
               <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/20 transition-colors duration-300 flex items-center justify-center">
                 <ZoomIn
                   size={26}
                   strokeWidth={1.6}
                   className="text-cream opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300"
                 />
-              </div>
-              <span className="absolute top-4 left-4 font-display text-[13px] font-bold text-gold/80">{p.num}</span>
-              <div className="absolute left-4 right-4 bottom-4">
-                <h3 className="text-[15px] font-semibold text-cream leading-snug mb-1">{p.title}</h3>
-                <p className="text-[12px] text-cream/65 leading-snug">{p.body}</p>
               </div>
             </button>
           </RevealItem>
@@ -113,15 +107,17 @@ export default function ProcessGrid({ process }: { process: ProcessStep[] }) {
               initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className="flex flex-col items-center max-w-3xl w-full"
+              className="flex flex-col items-center max-w-full max-h-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-xl overflow-hidden">
-                <Image src={active.image} alt={active.title} fill sizes="90vw" className="object-contain" />
+              <div className="relative w-[90vw] sm:w-[70vw] h-[75vh] max-w-3xl rounded-xl overflow-hidden">
+                <Image src={active.image} alt={active.title?.trim() || "The process"} fill sizes="90vw" className="object-contain" />
               </div>
-              <p className="mt-5 text-[14px] text-cream/75 text-center">
-                {active.num} · {active.title} — {active.body}
-              </p>
+              {(active.num?.trim() || active.title?.trim() || active.body?.trim()) && (
+                <p className="mt-5 text-[14px] text-cream/75 text-center">
+                  {active.num} · {active.title} — {active.body}
+                </p>
+              )}
             </motion.div>
           </motion.div>
         )}
