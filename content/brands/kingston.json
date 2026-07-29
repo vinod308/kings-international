@@ -1,14 +1,18 @@
 {
-  "slug": "kingston",
   "num": "01",
   "name": "Kingston",
-  "tag": "Saddlery & Harness",
+  "slug": "kingston",
+  "materials": [
+    "Full-grain leather",
+    "Aniline finish",
+    "Indian buffalo leather"
+  ],
   "copy": "Full-grain, aniline-finished Indian buffalo leather - handcrafted saddles and harness for the serious trade.",
-  "image": "/images/kings/products/equestrian.jpg",
+  "tag": "Saddlery & Harness",
+  "image": "/images/kings/uploads/kingston.webp",
+  "quote": "Full-grain leather, cut, stitched and finished as saddlery & harness - made under one roof.",
   "description": [
     "The Kingston range is a premium collection of saddlery and harness products made from the finest full-grain, aniline-finished Indian buffalo leather - known for exceptional quality and durability.",
     "Each product is handcrafted by skilled artisans and rigorously inspected for precision and quality before it reaches the customer."
-  ],
-  "materials": ["Full-grain leather", "Aniline finish", "Indian buffalo leather"],
-  "quote": "Full-grain leather, cut, stitched and finished as saddlery & harness - made under one roof."
+  ]
 }
