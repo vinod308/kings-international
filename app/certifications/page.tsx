@@ -56,10 +56,7 @@ export default function CertificationsPage() {
                     <BadgeCheck size={20} strokeWidth={1.8} />
                   </div>
                   <h3 className="text-[14.5px] font-semibold text-ink mb-1.5 leading-snug">{c.title}</h3>
-                  <p className="text-[12.5px] leading-relaxed text-ink-soft mb-4">{c.body}</p>
-                  <span className="inline-block text-[10px] font-bold tracking-[0.14em] uppercase text-gold border border-gold/40 rounded-full px-2.5 py-1">
-                    Available on request
-                  </span>
+                  <p className="text-[12.5px] leading-relaxed text-ink-soft">{c.body}</p>
                 </div>
               </RevealItem>
             ))}
