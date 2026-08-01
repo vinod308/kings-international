@@ -53,11 +53,6 @@ body {
   padding-inline: clamp(20px, 5vw, 64px);
 }
 
-.container-full {
-  width: 100%;
-  padding-inline: clamp(20px, 5vw, 64px);
-}
-
 .font-display {
   font-family: var(--font-display);
 }
