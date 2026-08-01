@@ -1,25 +1,45 @@
 {
   "hero": {
     "eyebrow": "Quality Assurance",
-    "title": "Inspected before it leaves, not just before it's sold.",
-    "intro": "Quality control happens at every stage of production on our floor, backed by ISO 9001 quality management - not a single check at the end of the line.",
+    "title": "Quality Built Into Every Stage of Manufacturing",
+    "intro": "Quality is at the heart of everything we do. From raw material selection to final packaging, every stage of our manufacturing process is carefully monitored to ensure consistency, durability, and customer satisfaction. Our commitment to quality enables us to deliver leather and leather goods that meet the expectations of global markets.",
     "image": "/images/kings/manufacturing/handcraft-stitching.jpg",
     "imageAlt": "Quality inspection during hand-stitching at Kings International"
   },
   "stagesSection": {
     "eyebrow": "The Process",
-    "heading": "Four checkpoints, hide to dispatch.",
+    "heading": "Our Quality Control Process",
     "items": [
-      { "icon": "Search", "num": "01", "title": "Hide Grading", "body": "Every hide is graded before it enters the tannery - thickness, grain quality, and blemishes assessed before a single cut is made." },
-      { "icon": "Ruler", "num": "02", "title": "In-Process Inspection", "body": "Cutting, stitching, and finishing are checked at each stage of the floor, not just at the end - so a defect is caught where it happens, not after the batch is complete." },
-      { "icon": "ClipboardCheck", "num": "03", "title": "Pre-Dispatch Sign-Off", "body": "A final inspection against the agreed specification before anything is packed - stitching density, hardware fit, colour match, and finish are all checked against the approved sample." },
-      { "icon": "PackageCheck", "num": "04", "title": "Documentation & Traceability", "body": "Batch records and inspection documentation are kept for every order, so quality issues - if they ever arise - can be traced back to the stage that caused them." }
+      {
+        "icon": "Search",
+        "num": "01",
+        "title": "Raw Material Inspection",
+        "body": "Every batch of raw material is visually inspected to ensure suitability for production."
+      },
+      {
+        "icon": "Ruler",
+        "num": "02",
+        "title": "Production Monitoring",
+        "body": "Manufacturing processes are monitored to maintain consistency and minimize variations."
+      },
+      {
+        "icon": "ClipboardCheck",
+        "num": "03",
+        "title": "In-Process Inspection",
+        "body": "Critical production stages are checked to identify and correct issues before moving forward."
+      },
+      {
+        "icon": "PackageCheck",
+        "num": "04",
+        "title": "Final Product Inspection",
+        "body": "Finished products are inspected for appearance, workmanship, measurements, and finishing quality."
+      }
     ]
   },
   "whySection": {
-    "eyebrow": "Why It Matters",
-    "heading": "A sample and a bulk order should be the same product.",
-    "body": "Because tanning, cutting, stitching, and finishing all happen in-house, we can hold consistency across a production run in a way that's harder to guarantee when a supply chain is split across multiple subcontractors. What passed inspection in the sample room is what leaves the factory in the container."
+    "eyebrow": "OUR APPROACH",
+    "heading": "Excellence Begins with Attention to Detail",
+    "body": "At Kings International, quality is not limited to the final inspection—it is integrated into every stage of production. We focus on selecting premium raw materials, maintaining controlled manufacturing processes, and conducting systematic inspections to ensure that every product meets our internal quality standards and customer expectations.\n\nOur goal is to deliver products that are consistent, reliable, and ready for international markets."
   },
   "cta": {
     "eyebrow": "Certifications",
