@@ -45,7 +45,6 @@ export const NAV: NavItem[] = [
       { label: "Send Your Enquiry", href: "/quote" },
       { label: "OEM Services", href: "/oem" },
       { label: "Contact", href: "/contact" },
-      { label: "Download Catalogue (PDF)", href: "https://drive.google.com/file/d/1WfNV9NIUXDZXFmso4KVxm60cPSS5JsjZ/view" },
     ],
   },
 ];
@@ -72,5 +71,4 @@ export const FOOTER_B2B = [
   { label: "Request a Quote / Sample", href: "/quote" },
   { label: "OEM Services", href: "/oem" },
   { label: "Contact", href: "/contact" },
-  { label: "Download Catalogue", href: "https://drive.google.com/file/d/1WfNV9NIUXDZXFmso4KVxm60cPSS5JsjZ/view" },
 ];
