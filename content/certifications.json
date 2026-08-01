@@ -1,14 +1,21 @@
 {
-  "hero": {
-    "eyebrow": "COMPLIANCE",
-    "title": "Certified to Global Standards. Trusted by Global Brands.",
-    "intro": "At Kings International, compliance is embedded into every stage of manufacturing. Our internationally recognized certifications reflect our commitment to quality management, environmental responsibility, workplace safety, ethical manufacturing, and sustainable leather production - giving global buyers complete confidence in every partnership.",
-    "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
-    "imageAlt": "Kings International's ZLD water treatment plant"
-  },
+  "certificationBadges": [
+    "ISO 9001:2015 - Quality",
+    "ISO 14001:2015 - Environmental",
+    "ISO 45001:2018 - Health & Safety",
+    "ISO 50001:2018 - Energy",
+    "SA 8000:2014 - Social Accountability",
+    "Leather Working Group - Gold",
+    "MSME ZED Gold Certified - Tannery",
+    "MSME ZED Gold Certified - Leather Goods"
+  ],
   "certificationsSection": {
     "eyebrow": "GLOBAL CERTIFICATIONS",
     "heading": "International Standards. One Manufacturing Ecosystem."
+  },
+  "awardsSection": {
+    "eyebrow": "Awards",
+    "heading": "Recognised by the industry."
   },
   "cta": {
     "eyebrow": "Documentation",
@@ -16,6 +23,7 @@
     "buttonText": "Request Documentation",
     "buttonHref": "/contact"
   },
+  "awards": [],
   "certifications": [
     {
       "num": "01",
@@ -58,30 +66,13 @@
       "body": "Our leather is manufactured using REACH-compliant materials and ZDHC-aligned chemical management practices to meet stringent international environmental and product safety expectations."
     }
   ],
-  "whyCertified": [
-    {
-      "title": "Independently Audited",
-      "body": "Every certification is issued and verified by accredited third-party certification bodies, ensuring transparency, credibility, and continuous compliance with international standards."
-    },
-    {
-      "title": "Buyer Compliance Ready",
-      "body": "Complete certification documents, audit reports, scope details, and validity information are readily available to support customer due diligence, sourcing approvals, and retailer compliance requirements."
-    },
-    {
-      "title": "Continuously Maintained",
-      "body": "Our management systems are regularly audited and renewed, ensuring ongoing compliance rather than one-time certification and supporting long-term manufacturing excellence."
-    }
-  ],
-  "certificationBadges": [
-    "ISO 9001:2015 - Quality",
-    "ISO 14001:2015 - Environmental",
-    "ISO 45001:2018 - Health & Safety",
-    "ISO 50001:2018 - Energy",
-    "SA 8000:2014 - Social Accountability",
-    "Leather Working Group - Gold",
-    "MSME ZED Gold Certified - Tannery",
-    "MSME ZED Gold Certified - Leather Goods"
-  ],
+  "hero": {
+    "eyebrow": "COMPLIANCE",
+    "title": "Certified to Global Standards. Trusted by Global Brands.",
+    "intro": "At Kings International, compliance is embedded into every stage of manufacturing. Our internationally recognized certifications reflect our commitment to quality management, environmental responsibility, workplace safety, ethical manufacturing, and sustainable leather production - giving global buyers complete confidence and trust in our competence. ",
+    "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
+    "imageAlt": "Kings International's ZLD water treatment plant"
+  },
   "certificationSlides": [
     {
       "src": "/images/kings/certifications/fm-53849.png",
@@ -124,9 +115,18 @@
       "label": "MSME ZED Gold - Saddlery Division"
     }
   ],
-  "awardsSection": {
-    "eyebrow": "Awards",
-    "heading": "Recognised by the industry."
-  },
-  "awards": []
+  "whyCertified": [
+    {
+      "title": "Independently Audited",
+      "body": "Every certification is issued and verified by accredited third-party certification bodies, ensuring transparency, credibility, and continuous compliance with international standards."
+    },
+    {
+      "title": "Buyer Compliance Ready",
+      "body": "Complete certification documents, audit reports, scope details, and validity information are readily available to support customer due diligence, sourcing approvals, and retailer compliance requirements."
+    },
+    {
+      "title": "Continuously Maintained",
+      "body": "Our management systems are regularly audited and renewed, ensuring ongoing compliance rather than one-time certification and supporting long-term manufacturing excellence."
+    }
+  ]
 }
