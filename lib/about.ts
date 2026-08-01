@@ -6,6 +6,12 @@ export type AboutContent = {
     stats: { target: number; suffix: string; label: string }[];
     paragraphs: string[];
   };
+  visionMission: {
+    eyebrow: string;
+    heading: string;
+    vision: { title: string; body: string };
+    mission: { title: string; body: string };
+  };
   journey: {
     eyebrow: string;
     heading: string;
