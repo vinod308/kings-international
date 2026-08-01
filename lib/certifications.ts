@@ -2,6 +2,7 @@ import { readContentFile } from "./content";
 
 export type Certification = { num: string; title: string; body: string };
 export type CertificationSlide = { src: string; alt: string; label: string };
+export type Award = { image: string; alt: string; caption: string };
 
 type CertificationsData = {
   hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
@@ -11,6 +12,8 @@ type CertificationsData = {
   whyCertified: { title: string; body: string }[];
   certificationBadges: string[];
   certificationSlides: CertificationSlide[];
+  awardsSection: { eyebrow: string; heading: string };
+  awards: Award[];
 };
 
 const DATA = readContentFile<CertificationsData>("certifications.json");
@@ -22,3 +25,5 @@ export const CERTIFICATIONS = DATA.certifications;
 export const WHY_CERTIFIED = DATA.whyCertified;
 export const CERTIFICATION_BADGES = DATA.certificationBadges;
 export const CERTIFICATION_SLIDES = DATA.certificationSlides;
+export const AWARDS_SECTION = DATA.awardsSection;
+export const AWARDS = DATA.awards;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, BadgeCheck } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
@@ -9,6 +10,8 @@ import {
   CERTIFICATIONS_HERO,
   CERTIFICATIONS_SECTION,
   CERTIFICATIONS_CTA,
+  AWARDS_SECTION,
+  AWARDS,
 } from "@/lib/certifications";
 
 export const metadata: Metadata = {
@@ -63,6 +66,34 @@ export default function CertificationsPage() {
           </RevealGroup>
         </div>
       </section>
+
+      {AWARDS.length > 0 && (
+        <section className="bg-cream-deep py-24 sm:py-32">
+          <div className="container-site">
+            <Reveal type="up" className="mb-14 max-w-2xl">
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{AWARDS_SECTION.eyebrow}</p>
+              <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
+                {AWARDS_SECTION.heading}
+              </h2>
+            </Reveal>
+
+            <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {AWARDS.map((a) => (
+                <RevealItem key={a.image} type="up">
+                  <div className="rounded-2xl overflow-hidden bg-white border border-[var(--line)]">
+                    <div className="relative aspect-[4/3]">
+                      <Image src={a.image} alt={a.alt} fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-contain p-4" />
+                    </div>
+                    {a.caption && (
+                      <p className="px-5 pb-5 text-[13px] text-ink-soft text-center">{a.caption}</p>
+                    )}
+                  </div>
+                </RevealItem>
+              ))}
+            </RevealGroup>
+          </div>
+        </section>
+      )}
 
       <section className="bg-cream-deep pb-24 sm:pb-32">
         <div className="container-site">
