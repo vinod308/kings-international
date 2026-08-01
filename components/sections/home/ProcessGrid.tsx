@@ -33,21 +33,23 @@ export default function ProcessGrid({ process }: { process: ProcessStep[] }) {
 
   return (
     <>
-      <RevealGroup className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-20">
+      <RevealGroup className="flex flex-col gap-5 mb-20">
         {process.map((p, idx) => (
           <RevealItem key={p.image} type="up">
             <button
               onClick={() => setActiveIndex(idx)}
-              className="group relative block w-full text-left aspect-[4/5] rounded-2xl overflow-hidden"
+              className="group relative block w-full text-left rounded-2xl overflow-hidden"
             >
-              <Image
-                src={p.image}
-                alt={p.title?.trim() || "The process"}
-                fill
-                sizes="(max-width: 1024px) 45vw, 23vw"
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/20 transition-colors duration-300 flex items-center justify-center">
+              <div className="relative w-full aspect-[16/9]">
+                <Image
+                  src={p.image}
+                  alt={p.title?.trim() || "The process"}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 1200px"
+                  className="object-contain"
+                />
+              </div>
+              <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors duration-300 flex items-center justify-center">
                 <ZoomIn
                   size={26}
                   strokeWidth={1.6}

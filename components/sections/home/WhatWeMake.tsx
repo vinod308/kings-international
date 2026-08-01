@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import Reveal from "@/components/motion/Reveal";
 import type { HomeContent } from "@/lib/home";
 
@@ -18,24 +16,17 @@ export default function WhatWeMake({ content }: { content: HomeContent["whatWeMa
         </Reveal>
 
         <Reveal type="up" delay={0.1}>
-          <Link
-            href="/products"
-            className="group relative block rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm hover:shadow-xl hover:shadow-black/[0.08] transition-all duration-400"
-          >
+          <div className="relative block rounded-2xl overflow-hidden border border-[var(--line)] shadow-sm">
             <div className="relative aspect-[16/9] w-full">
               <Image
                 src="/images/kings/products/categories-banner.png"
                 alt="Our product categories - finished leather, equestrian goods, hand bags, wallets, belts, leather goods, pets' accessories, hunting accessories and gym accessories"
                 fill
                 sizes="(max-width: 1360px) 100vw, 1360px"
-                className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                className="object-cover"
               />
             </div>
-            <span className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full bg-ink/80 backdrop-blur-sm px-5 py-2.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-cream group-hover:bg-green transition-colors">
-              Explore Our Products
-              <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </span>
-          </Link>
+          </div>
         </Reveal>
       </div>
     </section>

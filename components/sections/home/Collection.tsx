@@ -22,16 +22,15 @@ export default function Collection({ content }: { content: HomeContent["collecti
           {BRANDS.map((b) => (
             <RevealItem key={b.slug} type="up">
               <Link href={`/brands/${b.slug}`} className="group block">
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-white border border-[var(--line)]">
                   <Image
                     src={b.image}
                     alt={b.name}
                     fill
                     sizes="(max-width: 768px) 50vw, 20vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/0 to-transparent" />
-                  <span className="absolute bottom-4 left-4 text-[10px] font-semibold tracking-[0.14em] uppercase text-gold-soft">
+                  <span className="absolute top-4 left-4 text-[10px] font-semibold tracking-[0.14em] uppercase text-green">
                     {b.tag}
                   </span>
                 </div>

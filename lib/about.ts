@@ -17,6 +17,5 @@ export type AboutContent = {
     intro: string;
     images: { src: string; alt: string }[];
   };
-  houses: { eyebrow: string; heading: string; intro: string };
   cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
 };
