@@ -27,7 +27,7 @@ export default function Navbar() {
         scrolled ? "shadow-[0_1px_0_var(--line)]" : ""
       }`}
     >
-      <div className="container-site flex items-center justify-between py-3.5">
+      <div className="container-full flex items-center justify-between py-3.5">
         <Link href="/" className="flex items-center gap-2.5 shrink-0" onClick={() => setOpenDesktop(null)}>
           <Image
             src="/images/kings/logo/kings-international-logo.png"
