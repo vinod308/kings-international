@@ -848,7 +848,7 @@ collections:
             name: "awards"
             widget: "list"
             allow_add: true
-            hint: "Add a photo of any award here — it appears automatically below the certifications on the Certifications & Awards page."
+            hint: "Add a photo of any award here - it appears automatically below the certifications on the Certifications & Awards page."
             fields:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Alt Text", name: "alt", widget: "string" }

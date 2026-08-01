@@ -117,7 +117,7 @@ export default function ProcessGrid({ process }: { process: ProcessStep[] }) {
               </div>
               {(active.num?.trim() || active.title?.trim() || active.body?.trim()) && (
                 <p className="mt-5 text-[14px] text-cream/75 text-center">
-                  {active.num} · {active.title} — {active.body}
+                  {active.num} · {active.title} - {active.body}
                 </p>
               )}
             </motion.div>
