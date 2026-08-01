@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "eyebrow": "Environmental Compliance",
+    "title": "Audited Against International Environmental Standards",
+    "intro": "ISO 14001 environmental management, REACH-compliant chemicals and ZDHC-aligned wastewater standards, independently audited across the factory and tannery.",
+    "image": "/images/kings/hero/manufacturing-hero.jpg",
+    "imageAlt": "Production line at Kings International, Kanpur"
+  },
+  "initiativesSection": {
+    "eyebrow": "Standards We're Audited Against",
+    "heading": "Environmental compliance, independently verified.",
+    "items": [
+      {
+        "icon": "ShieldCheck",
+        "title": "ISO 14001:2015",
+        "note": "Environmental Management",
+        "body": "Independently audited environmental management system covering the factory and tannery, from resource use to waste handling."
+      },
+      {
+        "icon": "FlaskConical",
+        "title": "REACH Compliance",
+        "note": null,
+        "body": "Tanning and finishing chemicals are REACH-compliant, supporting safe handling on the factory floor and safe end products for buyers."
+      },
+      {
+        "icon": "Droplets",
+        "title": "ZDHC-Aligned Wastewater",
+        "note": null,
+        "body": "Effluent treatment aligned with ZDHC wastewater guidelines, independently assessed by the Central Leather Research Institute (CLRI)."
+      },
+      {
+        "icon": "Globe2",
+        "title": "MSME ZED Gold",
+        "note": "Tannery & Leather Goods",
+        "body": "Zero Defect Zero Effect certification held separately for the tannery and leather goods manufacturing divisions."
+      }
+    ]
+  },
+  "commitmentsSection": {
+    "eyebrow": "How We Stay Compliant",
+    "heading": "Audited on a recurring schedule, not once.",
+    "items": [
+      "Certificate documents, issuing body, number and audit date provided to buyers on request.",
+      "Environmental audits recurring, not one-time - standards maintained order after order.",
+      "Chemical inventory and safety data sheets tracked for every tanning and finishing input.",
+      "Effluent and emissions monitored against ISO 14001 and ZDHC benchmarks."
+    ]
+  },
+  "cta": {
+    "eyebrow": "Full Documentation",
+    "heading": "See every certificate we hold.",
+    "buttonText": "View All Certifications",
+    "buttonHref": "/certifications"
+  }
+}

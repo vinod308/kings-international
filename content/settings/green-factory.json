@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "eyebrow": "Green Factory",
+    "title": "Manufacturing Built Around a Lower Footprint",
+    "intro": "Solar power, water recycling and a zero-liquid-discharge tannery - the Green Factory initiatives reduce Kings International's environmental footprint at the source, not just on paper.",
+    "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
+    "imageAlt": "Kings International's ZLD water treatment plant"
+  },
+  "initiativesSection": {
+    "eyebrow": "What Makes It Green",
+    "heading": "Measured reductions, not just intentions.",
+    "items": [
+      {
+        "icon": "Droplets",
+        "title": "Zero-Liquid-Discharge Tannery",
+        "note": "Since 2015",
+        "body": "Process water is treated and recycled on site rather than discharged, cutting the facility's freshwater draw and keeping effluent out of the local water table."
+      },
+      {
+        "icon": "Recycle",
+        "title": "Lime Water & Salt Recovery",
+        "note": null,
+        "body": "Roughly 600 KL of lime water recycled annually and around 6 kg of salt recovered per hide, keeping both out of the effluent stream."
+      },
+      {
+        "icon": "Leaf",
+        "title": "Solar Power",
+        "note": null,
+        "body": "Solar capacity supplements the facility's energy load, reducing reliance on grid power for day-to-day operations."
+      },
+      {
+        "icon": "Wind",
+        "title": "Hair Saving Recovery",
+        "note": "UNIDO-selected, 2016",
+        "body": "Hair is mechanically recovered from the tanning process instead of chemically dissolved, cutting Chemical Oxygen Demand in effluent by half and repurposing the recovered hair as organic fertiliser."
+      }
+    ]
+  },
+  "commitmentsSection": {
+    "eyebrow": "Ongoing Commitments",
+    "heading": "Built into daily operations, not a one-time upgrade.",
+    "items": [
+      "Water and energy use tracked and reported as part of ISO 14001 and ISO 50001 management systems.",
+      "REACH-compliant chemicals used throughout tanning and finishing.",
+      "Effluent independently assessed against discharge norms by the Central Leather Research Institute (CLRI).",
+      "Sustainable Leather and MSME ZED Gold certified for both the tannery and leather goods divisions."
+    ]
+  },
+  "cta": {
+    "eyebrow": "See the numbers",
+    "heading": "See the sustainability initiatives behind these numbers.",
+    "buttonText": "View Sustainability",
+    "buttonHref": "/sustainability"
+  }
+}

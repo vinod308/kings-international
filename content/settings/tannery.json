@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "eyebrow": "Tannery Division",
+    "title": "From Raw Hide to Finished Leather, In-House",
+    "intro": "Our in-house tannery is where every product begins - processing up to 200 hides a day through wet-blue and wet-white tanning, under one roof with the finishing and manufacturing floors it supplies.",
+    "image": "/images/kings/manufacturing/tannery-hides.jpg",
+    "imageAlt": "Hides drying at the Kings International in-house tannery, Kanpur"
+  },
+  "initiativesSection": {
+    "eyebrow": "Inside the Tannery",
+    "heading": "Full control, from raw hide to finished leather.",
+    "items": [
+      {
+        "icon": "Factory",
+        "title": "200 Hides a Day",
+        "note": null,
+        "body": "Our Kanpur tannery processes up to 200 hides daily, giving us the raw material base for every finished leather and leather goods category we manufacture."
+      },
+      {
+        "icon": "Droplets",
+        "title": "Wet-Blue & Wet-White Tanning",
+        "note": null,
+        "body": "Chrome and chrome-free tanning processes run in parallel, letting us match the tanning method to the end use - garments, bags, belts or saddlery."
+      },
+      {
+        "icon": "Layers",
+        "title": "Full Grading & Selection",
+        "note": null,
+        "body": "Every hide is graded and selected before it reaches finishing, so batch-to-batch consistency in colour, temper and thickness is controlled at the source, not after the fact."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "REACH-Compliant Chemicals",
+        "note": null,
+        "body": "Tanning and finishing chemicals are REACH-compliant throughout, supporting both product safety and the facility's environmental compliance standards."
+      }
+    ]
+  },
+  "commitmentsSection": {
+    "eyebrow": "Why It's In-House",
+    "heading": "Vertical integration starts here.",
+    "items": [
+      "No dependency on third-party pre-tanned stock - consistency is controlled from the raw hide onward.",
+      "Direct traceability from hide intake through to finished leather.",
+      "Tanning capacity and finishing lines managed on the same site as manufacturing.",
+      "Almost 50 years of in-house tanning experience, since 1977."
+    ]
+  },
+  "cta": {
+    "eyebrow": "See the rest of the floor",
+    "heading": "See how finished leather becomes a finished product.",
+    "buttonText": "See Our Smart Factory",
+    "buttonHref": "/manufacturing"
+  }
+}

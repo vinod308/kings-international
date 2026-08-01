@@ -383,6 +383,144 @@ collections:
               - { label: "Button Text", name: "buttonText", widget: "string" }
               - { label: "Button Link", name: "buttonHref", widget: "string" }
 
+      - file: "content/settings/environmental-compliance.json"
+        label: "Environmental Compliance Page"
+        name: "environmental_compliance"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - label: "Initiatives Section"
+            name: "initiativesSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Initiatives"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name, e.g. ShieldCheck, FlaskConical, Droplets, Globe2" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Note (optional)", name: "note", widget: "string", required: false }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Commitments Section"
+            name: "commitmentsSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Commitments"
+                name: "items"
+                widget: "list"
+                field: { label: "Commitment", name: "commitment", widget: "text" }
+          - label: "Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonHref", widget: "string" }
+
+      - file: "content/settings/tannery.json"
+        label: "Tannery Division Page"
+        name: "tannery"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - label: "Initiatives Section"
+            name: "initiativesSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Initiatives"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name, e.g. Factory, Droplets, Layers, ShieldCheck" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Note (optional)", name: "note", widget: "string", required: false }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Commitments Section"
+            name: "commitmentsSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Commitments"
+                name: "items"
+                widget: "list"
+                field: { label: "Commitment", name: "commitment", widget: "text" }
+          - label: "Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonHref", widget: "string" }
+
+      - file: "content/settings/green-factory.json"
+        label: "Green Factory Page"
+        name: "green_factory"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - label: "Initiatives Section"
+            name: "initiativesSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Initiatives"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name, e.g. Droplets, Recycle, Leaf, Wind" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Note (optional)", name: "note", widget: "string", required: false }
+                  - { label: "Body", name: "body", widget: "text" }
+          - label: "Commitments Section"
+            name: "commitmentsSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Commitments"
+                name: "items"
+                widget: "list"
+                field: { label: "Commitment", name: "commitment", widget: "text" }
+          - label: "Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Button Link", name: "buttonHref", widget: "string" }
+
       - file: "content/settings/media.json"
         label: "Media & Gallery Page"
         name: "media"

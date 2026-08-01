@@ -12,13 +12,12 @@ export const NAV: NavItem[] = [
     ],
   },
   {
-    label: "Our Leathers",
+    label: "Leather & Leather Goods",
     href: "/products",
     children: [
-      { label: "By Leather Type", href: "/products" },
+      { label: "Finished Leather", href: "/products/finished-leather" },
+      { label: "Leather Goods", href: "/products/leather-goods" },
       { label: "Our Brands", href: "/brands" },
-      { label: "By Industry", href: "/markets" },
-      { label: "Leather Knowledge", href: "/blog" },
     ],
   },
   {
@@ -27,14 +26,23 @@ export const NAV: NavItem[] = [
     children: [
       { label: "Sustainability Overview", href: "/sustainability" },
       { label: "Quality Assurance", href: "/quality" },
+      { label: "Environmental Compliance", href: "/environmental-compliance" },
     ],
   },
-  { label: "Smart Factory", href: "/manufacturing" },
+  {
+    label: "Manufacturing Facilities",
+    href: "/manufacturing",
+    children: [
+      { label: "Tannery Division", href: "/tannery" },
+      { label: "Smart Factory", href: "/manufacturing" },
+      { label: "Green Factory", href: "/green-factory" },
+    ],
+  },
   {
     label: "B2B Hub",
     href: "/quote",
     children: [
-      { label: "Request a Quote / Sample", href: "/quote" },
+      { label: "Send Your Enquiry", href: "/quote" },
       { label: "OEM Services", href: "/oem" },
       { label: "Contact", href: "/contact" },
       { label: "Download Catalogue (PDF)", href: "https://drive.google.com/file/d/1WfNV9NIUXDZXFmso4KVxm60cPSS5JsjZ/view" },
