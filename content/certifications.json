@@ -1,14 +1,14 @@
 {
   "hero": {
-    "eyebrow": "Compliance",
-    "title": "Audited before you order.",
-    "intro": "Quality, environment, health & safety, energy and social accountability, audited across the factory and tannery. Full certificate documents - issuing body, number and audit date - are provided to buyers on request.",
+    "eyebrow": "COMPLIANCE",
+    "title": "Certified to Global Standards. Trusted by Global Brands.",
+    "intro": "At Kings International, compliance is embedded into every stage of manufacturing. Our internationally recognized certifications reflect our commitment to quality management, environmental responsibility, workplace safety, ethical manufacturing, and sustainable leather production—giving global buyers complete confidence in every partnership.",
     "image": "/images/kings/manufacturing/sustainability-zld-plant.jpg",
     "imageAlt": "Kings International's ZLD water treatment plant"
   },
   "certificationsSection": {
-    "eyebrow": "Certifications",
-    "heading": "Eight standards, one facility."
+    "eyebrow": "GLOBAL CERTIFICATIONS",
+    "heading": "International Standards. One Manufacturing Ecosystem."
   },
   "cta": {
     "eyebrow": "Documentation",
@@ -17,19 +17,60 @@
     "buttonHref": "/contact"
   },
   "certifications": [
-    { "num": "01", "title": "ISO 9001 - Quality Management", "body": "Consistent product quality and process control across every stage of manufacturing." },
-    { "num": "02", "title": "ISO 14001 - Environmental Management", "body": "Systematic control of environmental impact across the factory and tannery." },
-    { "num": "03", "title": "ISO 45001 - Health & Safety Management", "body": "Safe working conditions and occupational health standards across the workforce." },
-    { "num": "04", "title": "ISO 50001 - Energy Management", "body": "Monitoring and reducing energy consumption throughout production." },
-    { "num": "05", "title": "SA 8000 - Social Accountability", "body": "Fair, ethical labour practices and working conditions across the factory." },
-    { "num": "06", "title": "Leather Working Group (LWG)", "body": "The leather industry's environmental audit and traceability standard." },
-    { "num": "07", "title": "MSME ZED Gold", "body": "Zero Defect Zero Effect certification for quality and environmentally responsible manufacturing." },
-    { "num": "08", "title": "Sustainable Leather", "body": "Responsible sourcing and lower-impact tanning of hides and leather." }
+    {
+      "num": "01",
+      "title": "ISO 9001 - Quality Management System",
+      "body": "Ensuring consistent product quality, process control, customer satisfaction, and continual improvement throughout manufacturing."
+    },
+    {
+      "num": "02",
+      "title": "ISO 14001 - Environmental Management System",
+      "body": "Minimizing environmental impact through responsible resource management, pollution prevention, and sustainable operations."
+    },
+    {
+      "num": "03",
+      "title": "ISO 45001 - Occupational Health & Safety",
+      "body": "Providing a safe, healthy, and compliant workplace for every employee across our manufacturing facilities."
+    },
+    {
+      "num": "04",
+      "title": "ISO 50001 - Energy Management System",
+      "body": "Improving energy efficiency, reducing environmental impact, and supporting responsible industrial production."
+    },
+    {
+      "num": "05",
+      "title": "SA 8000 - Social Accountability",
+      "body": "Promoting ethical manufacturing through fair labor practices, worker welfare, human rights, and responsible workplace management."
+    },
+    {
+      "num": "06",
+      "title": "Leather Working Group (LWG)",
+      "body": "Responsible Leather Manufacturing- Recognizing best practices in environmental performance, traceability, and responsible leather production aligned with global industry expectations"
+    },
+    {
+      "num": "07",
+      "title": "MSME ZED Gold",
+      "body": "Zero Defect Zero Effect- Recognizing excellence in product quality while promoting environmentally responsible manufacturing and operational efficiency."
+    },
+    {
+      "num": "08",
+      "title": "REACH & ZDHC Compliance",
+      "body": "Our leather is manufactured using REACH-compliant materials and ZDHC-aligned chemical management practices to meet stringent international environmental and product safety expectations."
+    }
   ],
   "whyCertified": [
-    { "title": "Audited, not asserted", "body": "Every standard here is independently assessed - we don't just claim compliance, we can document it." },
-    { "title": "Buyer due-diligence ready", "body": "Certificate documents, issuing body, number and audit date are packaged for import compliance teams." },
-    { "title": "Renewed on schedule", "body": "Audits are recurring, not one-time - standards are maintained order after order, not just at onboarding." }
+    {
+      "title": "Independently Audited",
+      "body": "Every certification is issued and verified by accredited third-party certification bodies, ensuring transparency, credibility, and continuous compliance with international standards."
+    },
+    {
+      "title": "Buyer Compliance Ready",
+      "body": "Complete certification documents, audit reports, scope details, and validity information are readily available to support customer due diligence, sourcing approvals, and retailer compliance requirements."
+    },
+    {
+      "title": "Continuously Maintained",
+      "body": "Our management systems are regularly audited and renewed, ensuring ongoing compliance rather than one-time certification and supporting long-term manufacturing excellence."
+    }
   ],
   "certificationBadges": [
     "ISO 9001:2015 - Quality",
