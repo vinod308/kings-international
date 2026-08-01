@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "B2B Hub · OEM Services",
-    "title": "Your brand, our vertically integrated production.",
-    "intro": "From private labelling an existing catalogue line to developing a fully bespoke product from a blank brief, our facility handles it under one roof - tanning, cutting, stitching and finishing, all in Kanpur.",
+    "eyebrow": "OEM & PRIVATE LABEL MANUFACTURING",
+    "title": "Your Manufacturing Partner for Premium Leather Products",
+    "intro": "Kings International partners with global brands, wholesalers, retailers, and importers to manufacture premium leather products under their own brand. From concept development to bulk production, we provide flexible OEM and private label manufacturing solutions tailored to your business requirements.",
     "image": "/images/kings/products/leather-goods.jpg",
     "imageAlt": "Finished leather goods ready for dispatch at Kings International"
   },
@@ -10,10 +10,26 @@
     "eyebrow": "How We Work With Brands",
     "heading": "Four ways to engage, one production floor.",
     "items": [
-      { "icon": "Tag", "title": "Private Labelling", "body": "Choose from our existing catalogue of belts, bags, saddlery and accessories, and we produce it under your brand - your branding, packaging and hang tags, our proven design." },
-      { "icon": "Wrench", "title": "Fully Custom Development", "body": "Send a brief, a sketch, or a physical sample. We build a pattern and a counter-sample for your approval, then move to bulk production once the design is locked." },
-      { "icon": "Package", "title": "Component Sourcing", "body": "Hardware, hides, linings and trims sourced to your specification, whether you need full production support or just the raw materials." },
-      { "icon": "ShieldCheck", "title": "Export & Compliance Support", "body": "REACH-compliant chemicals, ISO 9001 quality management, and documentation support for buyers navigating export requirements into new markets." }
+      {
+        "icon": "Tag",
+        "title": "Private Labelling",
+        "body": "Choose from our existing catalogue of belts, bags, saddlery and accessories, and we produce it under your brand - your branding, packaging and hang tags, our proven design."
+      },
+      {
+        "icon": "Wrench",
+        "title": "Fully Custom Development",
+        "body": "Send a brief, a sketch, or a physical sample. We build a pattern and a counter-sample for your approval, then move to bulk production once the design is locked."
+      },
+      {
+        "icon": "Package",
+        "title": "Component Sourcing",
+        "body": "Hardware, hides, linings and trims sourced to your specification, whether you need full production support or just the raw materials."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Export & Compliance Support",
+        "body": "REACH-compliant chemicals, ISO 9001 quality management, and documentation support for buyers navigating export requirements into new markets."
+      }
     ]
   },
   "whySection": {
