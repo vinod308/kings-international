@@ -34,18 +34,18 @@ export default function BrandsPage() {
                   href={`/brands/${b.slug}`}
                   className="group block rounded-2xl bg-white border border-[var(--line)] overflow-hidden hover:shadow-xl hover:shadow-black/[0.06] hover:-translate-y-1 transition-all duration-400"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-white">
                     <Image
                       src={b.image}
                       alt={b.name}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                     />
                     <span className="absolute top-4 left-4 text-[11px] font-semibold tracking-[0.12em] text-cream/90 bg-ink/60 backdrop-blur-sm px-2.5 py-1 rounded-full">
                       {b.num} / 05
                     </span>
-                    <span className="absolute bottom-4 left-4 text-[10px] font-semibold tracking-[0.14em] uppercase text-gold-soft">
+                    <span className="absolute bottom-4 left-4 text-[10px] font-semibold tracking-[0.14em] uppercase text-green">
                       {b.tag}
                     </span>
                   </div>

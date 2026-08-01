@@ -103,13 +103,13 @@ export default async function BrandPage({
                   href={`/brands/${b.slug}`}
                   className="group block rounded-2xl bg-white border border-[var(--line)] overflow-hidden hover:shadow-xl hover:shadow-black/[0.06] hover:-translate-y-1 transition-all duration-400"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-white">
                     <Image
                       src={b.image}
                       alt={b.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-6">

@@ -67,16 +67,17 @@ export default function ManufacturingPage() {
           <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 mb-16">
             {BRANDS.map((b) => (
               <RevealItem key={b.slug} type="up">
-                <Link href={`/brands/${b.slug}`} className="group block relative aspect-[3/4] rounded-2xl overflow-hidden">
-                  <Image
-                    src={b.image}
-                    alt={b.name}
-                    fill
-                    sizes="(max-width: 768px) 45vw, 18vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-transparent" />
-                  <span className="absolute left-4 bottom-4 right-4 text-cream text-[15px] font-display font-semibold tracking-tight">
+                <Link href={`/brands/${b.slug}`} className="group block">
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-3 bg-white border border-[var(--line)]">
+                    <Image
+                      src={b.image}
+                      alt={b.name}
+                      fill
+                      sizes="(max-width: 768px) 45vw, 18vw"
+                      className="object-contain p-6 group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <span className="block text-center text-[15px] font-display font-semibold tracking-tight text-ink">
                     {b.name}
                   </span>
                 </Link>
