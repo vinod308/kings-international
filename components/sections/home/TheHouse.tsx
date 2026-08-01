@@ -12,7 +12,11 @@ export default function TheHouse({ content }: { content: HomeContent["theHouse"]
           <Reveal type="up">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{eyebrow}</p>
             <h2 className="font-display text-[clamp(30px,4.2vw,52px)] leading-[1.08] tracking-tight text-ink mb-6">
-              {heading}
+              {heading.split("\n").map((line, i) => (
+                <span key={i} className="block">
+                  {line.trim()}
+                </span>
+              ))}
             </h2>
             <p className="text-[16px] leading-relaxed text-ink-soft max-w-xl mb-10">{intro}</p>
           </Reveal>
