@@ -1,14 +1,14 @@
 {
   "hero": {
     "eyebrow": "Our Brands · Five Houses",
-    "title": "Five house brands, one factory floor.",
-    "intro": "Kingston, Equitel, Ryder, Target and Pets' Pal - each built for its own category, all cut, stitched and finished under one roof in Kanpur.",
+    "title": "Brands Built on Craftsmanship & Trust",
+    "intro": "Kingston, Equitel, Ryder, Target and Pets' Pal - Kings International manufactures premium leather products for its own brands as well as private label customers across International markets.",
     "image": "/images/kings/hero/showroom.jpg",
     "imageAlt": "Kings International leather showroom, Kanpur"
   },
   "cta": {
     "eyebrow": "Looking for something else?",
-    "heading": "We also build fully custom, unbranded product.",
+    "heading": "We also build fully custom, Branded and Unbranded product.",
     "buttonText": "Explore OEM Services",
     "buttonHref": "/oem"
   }
