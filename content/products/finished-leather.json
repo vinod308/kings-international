@@ -45,11 +45,11 @@
   "collections": {
     "heading": "Explore Our Leather Collections",
     "items": [
-      { "name": "Equestrian Leather", "image": "" },
-      { "name": "Softy Leather", "image": "" },
-      { "name": "Nappa Leather", "image": "" },
-      { "name": "Suede Leather", "image": "" },
-      { "name": "Nubuck Leather", "image": "" }
+      { "name": "Equestrian Leather", "image": "/images/kings/products/equestrian.jpg" },
+      { "name": "Softy Leather", "image": "/images/kings/manufacturing/handcraft-stitching.jpg" },
+      { "name": "Nappa Leather", "image": "/images/kings/products/bags.jpg" },
+      { "name": "Suede Leather", "image": "/images/kings/products/wallets.jpg" },
+      { "name": "Nubuck Leather", "image": "/images/kings/manufacturing/tannery-hides.jpg" }
     ]
   },
   "qualityStandards": {
