@@ -18,6 +18,7 @@ export type Product = {
   introEyebrow?: string;
   introHeading?: string;
   collections?: { heading: string; items: { name: string; image?: string }[] };
+  categoriesSection?: { eyebrow: string; heading: string };
   qualityStandards?: { heading: string; body: string };
   customDevelopment?: { heading: string; body: string };
 };

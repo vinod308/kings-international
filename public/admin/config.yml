@@ -778,6 +778,14 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image (optional)", name: "image", widget: "image", required: false }
+      - label: "Nine Categories Showcase (optional)"
+        name: "categoriesSection"
+        widget: "object"
+        required: false
+        hint: "Shows a grid of all 9 product categories on this page."
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
       - label: "Quality Standards (optional)"
         name: "qualityStandards"
         widget: "object"
