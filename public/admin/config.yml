@@ -806,7 +806,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "text", hint: "Each new line becomes its own line on the page." }
           - label: "Call to Action"
             name: "cta"
             widget: "object"

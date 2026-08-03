@@ -44,10 +44,14 @@ export default function CertificationsPage() {
             ))}
           </RevealGroup>
 
-          <Reveal type="up" className="mb-14 max-w-2xl">
+          <Reveal type="up" className="mb-14 max-w-4xl">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{CERTIFICATIONS_SECTION.eyebrow}</p>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
-              {CERTIFICATIONS_SECTION.heading}
+              {CERTIFICATIONS_SECTION.heading.split("\n").map((line, i) => (
+                <span key={i} className="block">
+                  {line.trim()}
+                </span>
+              ))}
             </h2>
           </Reveal>
 
