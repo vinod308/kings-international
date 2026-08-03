@@ -1,25 +1,13 @@
 import Image from "next/image";
-import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
-import CountUp from "@/components/motion/CountUp";
+import Reveal from "@/components/motion/Reveal";
 import type { AboutContent } from "@/lib/about";
 
 export default function AboutStory({ content }: { content: AboutContent["story"] }) {
-  const { eyebrow, heading, stats, paragraphs } = content;
+  const { eyebrow, heading, paragraphs } = content;
 
   return (
     <section className="bg-cream py-24 sm:py-32">
       <div className="container-site">
-        <RevealGroup className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-6 mb-20 sm:mb-28 pb-16 sm:pb-20 border-b border-[var(--line)]">
-          {stats.map((s) => (
-            <RevealItem key={s.label} type="scale" className="text-center sm:text-left">
-              <p className="font-display text-[clamp(30px,4vw,48px)] font-semibold text-ink leading-none">
-                <CountUp target={s.target} suffix={s.suffix} />
-              </p>
-              <p className="mt-3 text-[11px] tracking-[0.1em] uppercase text-ink-soft/60">{s.label}</p>
-            </RevealItem>
-          ))}
-        </RevealGroup>
-
         <div className="relative grid lg:grid-cols-12 gap-12 lg:gap-16 overflow-hidden">
           <Image
             src="/images/kings/logo/kings-international-logo-grey.png"
