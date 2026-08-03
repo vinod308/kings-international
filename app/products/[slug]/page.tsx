@@ -37,7 +37,8 @@ export default async function ProductPage({
   return (
     <>
       <PageHero
-        title={product.title}
+        eyebrow={product.heroEyebrow}
+        title={product.heroTitle ?? product.title}
         intro={product.tagline}
         image={product.image}
         imageAlt={product.title}
@@ -48,8 +49,21 @@ export default async function ProductPage({
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 mb-20 sm:mb-28">
             <div className="lg:col-span-7">
               <Reveal type="up">
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">Overview</p>
-                <p className="text-[16px] sm:text-[17px] leading-relaxed text-ink-soft">{product.heroIntro}</p>
+                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
+                  {product.introEyebrow ?? "Overview"}
+                </p>
+                {product.introHeading && (
+                  <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-4">
+                    {product.introHeading}
+                  </h2>
+                )}
+                <div className="flex flex-col gap-4">
+                  {product.heroIntro.split("\n\n").map((p, i) => (
+                    <p key={i} className="text-[16px] sm:text-[17px] leading-relaxed text-ink-soft">
+                      {p}
+                    </p>
+                  ))}
+                </div>
               </Reveal>
             </div>
             <div className="lg:col-span-5">
@@ -101,6 +115,54 @@ export default async function ProductPage({
               </ul>
             </Reveal>
           </div>
+
+          {product.collections && (
+            <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)]">
+              <Reveal type="up">
+                <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-6">
+                  {product.collections.heading}
+                </h2>
+                <ul className="flex flex-wrap gap-2.5">
+                  {product.collections.items.map((item) => (
+                    <li
+                      key={item}
+                      className="text-[13.5px] font-medium text-ink bg-white border border-[var(--line)] rounded-full px-4 py-2"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            </div>
+          )}
+
+          {product.qualityStandards && (
+            <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)] max-w-3xl">
+              <Reveal type="up">
+                <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-4">
+                  {product.qualityStandards.heading}
+                </h2>
+                <p className="text-[16px] leading-relaxed text-ink-soft">{product.qualityStandards.body}</p>
+              </Reveal>
+            </div>
+          )}
+
+          {product.customDevelopment && (
+            <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)] max-w-3xl">
+              <Reveal type="up">
+                <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-4">
+                  {product.customDevelopment.heading}
+                </h2>
+                <div className="flex flex-col gap-4">
+                  {product.customDevelopment.body.split("\n\n").map((p, i) => (
+                    <p key={i} className="text-[16px] leading-relaxed text-ink-soft">
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </Reveal>
+            </div>
+          )}
         </div>
       </section>
 

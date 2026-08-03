@@ -723,10 +723,14 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Number", name: "num", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tagline", name: "tagline", widget: "string" }
+      - { label: "Tagline / Hero Description", name: "tagline", widget: "text" }
       - { label: "Blurb", name: "blurb", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Hero Intro", name: "heroIntro", widget: "text" }
+      - { label: "Hero Eyebrow (optional)", name: "heroEyebrow", widget: "string", required: false }
+      - { label: "Hero Title Override (optional)", name: "heroTitle", widget: "string", required: false, hint: "If set, shown instead of Title on this product's own page." }
+      - { label: "Overview Eyebrow (optional)", name: "introEyebrow", widget: "string", required: false, hint: "Defaults to \"Overview\" if left blank." }
+      - { label: "Overview Heading (optional)", name: "introHeading", widget: "string", required: false }
+      - { label: "Hero Intro / Overview Body", name: "heroIntro", widget: "text", hint: "Leave a blank line between paragraphs to split into multiple paragraphs." }
       - label: "Characteristics"
         name: "characteristics"
         widget: "list"
@@ -741,6 +745,30 @@ collections:
         fields:
           - { label: "Label", name: "label", widget: "string" }
           - { label: "Value", name: "value", widget: "string" }
+      - label: "Leather Collections (optional)"
+        name: "collections"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+      - label: "Quality Standards (optional)"
+        name: "qualityStandards"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+      - label: "Custom Development (optional)"
+        name: "customDevelopment"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Body", name: "body", widget: "text", hint: "Leave a blank line between paragraphs to split into multiple paragraphs." }
 
   - name: "brands"
     label: "Brands"

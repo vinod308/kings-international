@@ -13,6 +13,13 @@ export type Product = {
   characteristics: string[];
   applications: string[];
   specs: ProductSpec[];
+  heroEyebrow?: string;
+  heroTitle?: string;
+  introEyebrow?: string;
+  introHeading?: string;
+  collections?: { heading: string; items: string[] };
+  qualityStandards?: { heading: string; body: string };
+  customDevelopment?: { heading: string; body: string };
 };
 
 export const PRODUCTS: Product[] = readContentDir<Product>("products").sort((a, b) =>
