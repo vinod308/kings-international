@@ -49,12 +49,12 @@ export default function BrandsPage() {
                       {b.tag}
                     </span>
                   </div>
-                  <div className="p-6">
-                    <div className="flex items-start justify-between gap-3 mb-2">
+                  <div className="p-6 text-center">
+                    <div className="flex items-center justify-center gap-2 mb-2">
                       <h3 className="font-display text-[19px] font-semibold text-ink">{b.name}</h3>
                       <ArrowUpRight
                         size={18}
-                        className="shrink-0 mt-1 text-ink-soft/40 group-hover:text-green group-hover:rotate-45 transition-all duration-300"
+                        className="shrink-0 text-ink-soft/40 group-hover:text-green group-hover:rotate-45 transition-all duration-300"
                       />
                     </div>
                     <p className="text-[13.5px] leading-relaxed text-ink-soft">{b.copy}</p>
