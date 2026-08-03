@@ -38,7 +38,7 @@ export default function Navbar() {
             className="h-11 w-auto object-contain"
           />
           <span className="hidden sm:block font-display leading-tight">
-            <span className="block text-[15px] font-semibold tracking-tight text-ink">Kings International</span>
+            <span className="block text-[15px] font-semibold tracking-tight text-ink">Kings International Ltd</span>
             <span className="block text-[10px] tracking-[0.18em] uppercase text-ink-soft/70">Est. 1977 · Kanpur</span>
           </span>
         </Link>
@@ -121,7 +121,10 @@ export default function Navbar() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between p-5 border-b border-[var(--line)]">
-                <Image src="/images/kings/logo/kings-international-logo.png" alt="Kings International" width={121} height={154} className="h-10 w-auto" />
+                <span className="flex items-center gap-2">
+                  <Image src="/images/kings/logo/kings-international-logo.png" alt="Kings International" width={121} height={154} className="h-10 w-auto" />
+                  <span className="font-display text-[13px] font-semibold tracking-tight text-ink leading-tight">Kings International Ltd</span>
+                </span>
                 <button onClick={() => setMobileOpen(false)} aria-label="Close menu" className="p-2 text-ink">
                   <X size={22} />
                 </button>
