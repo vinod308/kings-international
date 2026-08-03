@@ -61,16 +61,16 @@ export default function QualityPage() {
 
       <section className="bg-cream-deep py-24 sm:py-32">
         <div className="container-site">
-          <div className="relative mb-16 overflow-hidden">
+          <div className="relative mb-16 overflow-hidden max-w-3xl">
             <Image
               src="/images/kings/logo/kings-international-logo-grey.png"
               alt=""
               aria-hidden="true"
               width={1212}
               height={1536}
-              className="pointer-events-none select-none hidden lg:block absolute right-0 top-1/2 w-[160px] xl:w-[200px] h-auto -translate-y-1/2 opacity-15"
+              className="pointer-events-none select-none absolute left-1/2 top-1/2 w-[140px] sm:w-[180px] h-auto -translate-x-1/2 -translate-y-1/2 opacity-15"
             />
-            <Reveal type="up" className="relative z-10 max-w-3xl">
+            <Reveal type="up" className="relative z-10">
               <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{whySection.eyebrow}</p>
               <h2 className="font-display text-[clamp(26px,3.2vw,40px)] leading-[1.1] tracking-tight text-ink mb-6">
                 {whySection.heading}
