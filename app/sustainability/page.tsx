@@ -20,7 +20,7 @@ type SustainabilityContent = {
     heading: string;
     items: { icon: string; title: string; note: string | null; body: string }[];
   };
-  commitmentsSection: { eyebrow: string; heading: string; items: string[] };
+  commitmentsSection: { eyebrow: string; heading: string; body?: string; items: string[] };
   cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
 };
 
@@ -83,6 +83,15 @@ export default function SustainabilityPage() {
               </Reveal>
             </div>
             <div className="relative z-10 lg:col-span-7">
+              {commitmentsSection.body && (
+                <Reveal type="up" className="flex flex-col gap-4 mb-8">
+                  {commitmentsSection.body.split("\n\n").map((p, i) => (
+                    <p key={i} className="text-[16px] leading-relaxed text-ink-soft">
+                      {p}
+                    </p>
+                  ))}
+                </Reveal>
+              )}
               <Reveal type="up" delay={0.1}>
                 <ul className="flex flex-col gap-4">
                   {commitmentsSection.items.map((c) => (

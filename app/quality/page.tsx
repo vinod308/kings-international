@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { readContentFile } from "@/lib/content";
@@ -16,13 +16,15 @@ export const metadata: Metadata = {
 type QualityContent = {
   hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
   stagesSection: { eyebrow: string; heading: string; items: { icon: string; num: string; title: string; body: string }[] };
+  inspectSection: { eyebrow: string; heading: string; items: string[] };
   whySection: { eyebrow: string; heading: string; body: string };
+  benefitsSection: { eyebrow: string; heading: string; items: string[] };
   cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
 };
 
 export default function QualityPage() {
   const content = readContentFile<QualityContent>("settings/quality.json");
-  const { hero, stagesSection, whySection, cta } = content;
+  const { hero, stagesSection, inspectSection, whySection, benefitsSection, cta } = content;
 
   return (
     <>
@@ -56,6 +58,28 @@ export default function QualityPage() {
               );
             })}
           </RevealGroup>
+
+          <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)]">
+            <Reveal type="up" className="mb-14 max-w-2xl">
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{inspectSection.eyebrow}</p>
+              <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
+                {inspectSection.heading}
+              </h2>
+            </Reveal>
+
+            <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {inspectSection.items.map((item) => (
+                <RevealItem key={item} type="up">
+                  <div className="flex items-center gap-3 rounded-xl bg-white border border-[var(--line)] p-4">
+                    <span className="w-7 h-7 rounded-full bg-green-soft flex items-center justify-center text-green shrink-0">
+                      <Check size={14} strokeWidth={3} />
+                    </span>
+                    <span className="text-[14px] font-medium text-ink leading-snug">{item}</span>
+                  </div>
+                </RevealItem>
+              ))}
+            </RevealGroup>
+          </div>
         </div>
       </section>
 
@@ -77,6 +101,28 @@ export default function QualityPage() {
               </h2>
               <p className="text-[16px] leading-relaxed text-ink-soft">{whySection.body}</p>
             </Reveal>
+          </div>
+
+          <div className="mb-16">
+            <Reveal type="up" className="mb-14 max-w-2xl">
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{benefitsSection.eyebrow}</p>
+              <h2 className="font-display text-[clamp(26px,3.2vw,40px)] leading-[1.1] tracking-tight text-ink">
+                {benefitsSection.heading}
+              </h2>
+            </Reveal>
+
+            <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {benefitsSection.items.map((item) => (
+                <RevealItem key={item} type="up">
+                  <div className="flex items-center gap-3 rounded-xl bg-white border border-[var(--line)] p-4">
+                    <span className="w-7 h-7 rounded-full bg-green-soft flex items-center justify-center text-green shrink-0">
+                      <Check size={14} strokeWidth={3} />
+                    </span>
+                    <span className="text-[14px] font-medium text-ink leading-snug">{item}</span>
+                  </div>
+                </RevealItem>
+              ))}
+            </RevealGroup>
           </div>
 
           <Reveal type="up">

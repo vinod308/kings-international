@@ -321,6 +321,16 @@ collections:
                   - { label: "Number", name: "num", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Body", name: "body", widget: "text" }
+          - label: "What We Inspect Section"
+            name: "inspectSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
           - label: "Why It Matters Section"
             name: "whySection"
             widget: "object"
@@ -328,6 +338,16 @@ collections:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Body", name: "body", widget: "text" }
+          - label: "Benefits Section"
+            name: "benefitsSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field: { label: "Item", name: "item", widget: "string" }
           - label: "Call to Action"
             name: "cta"
             widget: "object"
@@ -370,6 +390,7 @@ collections:
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body (optional)", name: "body", widget: "text", required: false }
               - label: "Commitments"
                 name: "items"
                 widget: "list"

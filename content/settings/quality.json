@@ -36,10 +36,36 @@
       }
     ]
   },
+  "inspectSection": {
+    "eyebrow": "What We Inspect",
+    "heading": "Key Quality Parameters",
+    "items": [
+      "Leather Surface Quality",
+      "Colour Consistency",
+      "Stitching Accuracy",
+      "Hardware Finish",
+      "Dimensions & Measurements",
+      "Product Appearance",
+      "Finishing Details",
+      "Packaging Quality"
+    ]
+  },
   "whySection": {
-    "eyebrow": "OUR APPROACH",
-    "heading": "Excellence Begins with Attention to Detail",
-    "body": "At Kings International, quality is not limited to the final inspection - it is integrated into every stage of production. We focus on selecting premium raw materials, maintaining controlled manufacturing processes, and conducting systematic inspections to ensure that every product meets our internal quality standards and customer expectations.\n\nOur goal is to deliver products that are consistent, reliable, and ready for international markets."
+    "eyebrow": "Customer-Focused Quality",
+    "heading": "Manufactured to Meet Your Expectations",
+    "body": "Every customer has unique requirements. We work closely with our clients to understand product specifications, preferred finishes, colours, and functional needs. This collaborative approach helps us deliver products that align with customer expectations and intended applications."
+  },
+  "benefitsSection": {
+    "eyebrow": "Why Our Quality Matters",
+    "heading": "The Benefits for Our Customers",
+    "items": [
+      "Reliable Product Performance",
+      "Consistent Manufacturing",
+      "Better Customer Satisfaction",
+      "Reduced Production Variations",
+      "Export-Ready Packaging",
+      "Long-Term Business Relationships"
+    ]
   },
   "cta": {
     "eyebrow": "Certifications",
