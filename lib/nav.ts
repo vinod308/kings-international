@@ -31,7 +31,7 @@ export const NAV: NavItem[] = [
   },
   {
     label: "Manufacturing Facilities",
-    href: "/manufacturing",
+    href: "/tannery",
     children: [
       { label: "Tannery Division", href: "/tannery" },
       { label: "Smart Factory", href: "/manufacturing" },
