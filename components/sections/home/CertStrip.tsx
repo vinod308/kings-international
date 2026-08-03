@@ -16,14 +16,20 @@ export default function CertStrip({ content }: { content: HomeContent["certStrip
               {heading}
             </h2>
             <ul className="grid grid-cols-2 sm:grid-cols-4 gap-2 list-none p-0 m-0">
-              {CERTIFICATION_BADGES.map((badge) => (
-                <li
-                  key={badge}
-                  className="flex items-center justify-center text-center text-[11px] font-semibold text-ink-soft border border-[var(--line)] rounded-xl px-2.5 py-2.5 bg-white leading-snug"
-                >
-                  {badge}
-                </li>
-              ))}
+              {CERTIFICATION_BADGES.map((badge, i) => {
+                const remainder = CERTIFICATION_BADGES.length % 4;
+                const isInLastPartialRow = remainder !== 0 && i >= CERTIFICATION_BADGES.length - remainder;
+                return (
+                  <li
+                    key={badge}
+                    className={`flex items-center justify-center text-center text-[11px] font-semibold text-ink-soft border border-[var(--line)] rounded-xl px-2.5 py-2.5 bg-white leading-snug ${
+                      isInLastPartialRow ? "sm:col-span-2" : ""
+                    }`}
+                  >
+                    {badge}
+                  </li>
+                );
+              })}
             </ul>
           </Reveal>
         </div>

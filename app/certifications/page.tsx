@@ -56,17 +56,21 @@ export default function CertificationsPage() {
           </Reveal>
 
           <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {CERTIFICATIONS.map((c) => (
-              <RevealItem key={c.num} type="up">
-                <div className="h-full rounded-2xl bg-white border border-[var(--line)] p-6">
-                  <div className="w-11 h-11 rounded-xl bg-green-soft flex items-center justify-center text-green mb-4">
-                    <BadgeCheck size={20} strokeWidth={1.8} />
+            {CERTIFICATIONS.map((c, i) => {
+              const remainder = CERTIFICATIONS.length % 4;
+              const isInLastPartialRow = remainder !== 0 && i >= CERTIFICATIONS.length - remainder;
+              return (
+                <RevealItem key={c.num} type="up" className={isInLastPartialRow ? "lg:col-span-2" : undefined}>
+                  <div className="h-full rounded-2xl bg-white border border-[var(--line)] p-6">
+                    <div className="w-11 h-11 rounded-xl bg-green-soft flex items-center justify-center text-green mb-4">
+                      <BadgeCheck size={20} strokeWidth={1.8} />
+                    </div>
+                    <h3 className="text-[14.5px] font-semibold text-ink mb-1.5 leading-snug">{c.title}</h3>
+                    <p className="text-[12.5px] leading-relaxed text-ink-soft">{c.body}</p>
                   </div>
-                  <h3 className="text-[14.5px] font-semibold text-ink mb-1.5 leading-snug">{c.title}</h3>
-                  <p className="text-[12.5px] leading-relaxed text-ink-soft">{c.body}</p>
-                </div>
-              </RevealItem>
-            ))}
+                </RevealItem>
+              );
+            })}
           </RevealGroup>
         </div>
       </section>

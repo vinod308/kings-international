@@ -8,7 +8,7 @@
     "Leather Working Group - Gold",
     "MSME ZED Gold Certified - Tannery",
     "MSME ZED Gold Certified - Leather Goods",
-    "Government of India Recognised Export House",
+    "A Government of India Recognised Export House",
     "Compliance Partner of SLF"
   ],
   "certificationsSection": {
@@ -30,6 +30,11 @@
       "image": "/images/kings/awards/awards-cabinet.jpg",
       "alt": "Kings International's awards cabinet - Tannery of the Year Asia 2016, Crown Leather Awards, and Asia Leather Awards trophies and certificates",
       "caption": "Tannery of the Year - Asia 2016, and other industry recognitions."
+    },
+    {
+      "image": "/images/kings/certifications/slf-partnership-certificate.jpg",
+      "alt": "Sustainable Leather Foundation Certificate of Partnership - Kings International Ltd",
+      "caption": "Certificate of Partnership - Sustainable Leather Foundation."
     }
   ],
   "certifications": [
@@ -75,7 +80,7 @@
     },
     {
       "num": "09",
-      "title": "Government of India Recognised Export House",
+      "title": "A Government of India Recognised Export House",
       "body": "Officially recognised as an Export House by the Government of India, reflecting our sustained export performance and standing as a trusted international supplier."
     },
     {
@@ -131,6 +136,11 @@
       "src": "/images/kings/certifications/zed-gold-saddlery.png",
       "alt": "MSME Sustainable ZED Gold certificate - Kings International Ltd, Saddlery Division",
       "label": "MSME ZED Gold - Saddlery Division"
+    },
+    {
+      "src": "/images/kings/certifications/slf-partnership-certificate.jpg",
+      "alt": "Sustainable Leather Foundation Certificate of Partnership - Kings International Ltd",
+      "label": "Compliance Partner of SLF"
     }
   ],
   "whyCertified": [
