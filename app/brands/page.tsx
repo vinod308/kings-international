@@ -45,7 +45,7 @@ export default function BrandsPage() {
                     <span className="absolute top-4 left-4 text-[11px] font-semibold tracking-[0.12em] text-cream/90 bg-ink/60 backdrop-blur-sm px-2.5 py-1 rounded-full">
                       {b.num} / 05
                     </span>
-                    <span className="absolute bottom-4 left-4 text-[10px] font-semibold tracking-[0.14em] uppercase text-green">
+                    <span className="absolute bottom-4 inset-x-0 px-4 text-center text-[10px] font-semibold tracking-[0.14em] uppercase text-green">
                       {b.tag}
                     </span>
                   </div>
