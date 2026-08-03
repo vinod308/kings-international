@@ -4,7 +4,6 @@ import AboutStory from "@/components/sections/about/AboutStory";
 import AboutVisionMission from "@/components/sections/about/AboutVisionMission";
 import AboutJourney from "@/components/sections/about/AboutJourney";
 import AboutCraftsmanship from "@/components/sections/about/AboutCraftsmanship";
-import AboutCta from "@/components/sections/about/AboutCta";
 import { readContentFile } from "@/lib/content";
 import type { AboutContent } from "@/lib/about";
 
@@ -31,7 +30,6 @@ export default function AboutPage() {
       <AboutVisionMission content={about.visionMission} />
       <AboutJourney content={about.journey} />
       <AboutCraftsmanship content={about.craftsmanship} />
-      <AboutCta content={about.cta} />
     </>
   );
 }
