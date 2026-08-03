@@ -11,7 +11,7 @@ export default function TheHouse({ content }: { content: HomeContent["theHouse"]
         <div className="lg:col-span-6">
           <Reveal type="up">
             <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{eyebrow}</p>
-            <h2 className="font-display text-[clamp(30px,4.2vw,52px)] leading-[1.08] tracking-tight text-ink mb-6">
+            <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink mb-6">
               {heading.split("\n").map((line, i) => (
                 <span key={i} className="block">
                   {line.trim()}
