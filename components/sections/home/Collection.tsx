@@ -34,7 +34,7 @@ export default function Collection({ content }: { content: HomeContent["collecti
                     sizes="(max-width: 768px) 50vw, 20vw"
                     className="object-contain p-8 group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-4 left-4 text-[10px] font-semibold tracking-[0.14em] uppercase text-green">
+                  <span className="absolute top-4 inset-x-0 px-4 text-center text-[10px] font-semibold tracking-[0.14em] uppercase text-green">
                     {b.tag}
                   </span>
                 </div>
