@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
-import { BRANDS } from "@/lib/brands";
 import { readContentFile } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -16,13 +14,12 @@ export const metadata: Metadata = {
 type ManufacturingContent = {
   hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
   floorSection: { eyebrow: string; heading: string; items: { num: string; title: string; body: string }[] };
-  brandsSection: { eyebrow: string; heading: string };
   cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
 };
 
 export default function ManufacturingPage() {
   const content = readContentFile<ManufacturingContent>("settings/manufacturing.json");
-  const { hero, floorSection, brandsSection, cta } = content;
+  const { hero, floorSection, cta } = content;
 
   return (
     <>
@@ -57,34 +54,6 @@ export default function ManufacturingPage() {
 
       <section className="bg-cream-deep py-24 sm:py-32">
         <div className="container-site">
-          <Reveal type="up" className="mb-14 max-w-2xl">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{brandsSection.eyebrow}</p>
-            <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
-              {brandsSection.heading}
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 mb-16">
-            {BRANDS.map((b) => (
-              <RevealItem key={b.slug} type="up">
-                <Link href={`/brands/${b.slug}`} className="group block">
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-3 bg-white border border-[var(--line)]">
-                    <Image
-                      src={b.image}
-                      alt={b.name}
-                      fill
-                      sizes="(max-width: 768px) 45vw, 18vw"
-                      className="object-contain p-6 group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <span className="block text-center text-[15px] font-display font-semibold tracking-tight text-ink">
-                    {b.name}
-                  </span>
-                </Link>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">

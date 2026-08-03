@@ -34,7 +34,7 @@ export const NAV: NavItem[] = [
     href: "/tannery",
     children: [
       { label: "Tannery Division", href: "/tannery" },
-      { label: "Smart Factory", href: "/manufacturing" },
+      { label: "Smart Factory", href: "/smart-factory" },
       { label: "Green Factory", href: "/green-factory" },
     ],
   },
@@ -57,7 +57,7 @@ export const FOOTER_LEATHERS = [
 
 export const FOOTER_COMPANY = [
   { label: "Our Legacy", href: "/about" },
-  { label: "Smart Factory", href: "/manufacturing" },
+  { label: "Smart Factory", href: "/smart-factory" },
   { label: "Sustainability", href: "/sustainability" },
   { label: "Quality Assurance", href: "/quality" },
   { label: "Certifications & Awards", href: "/certifications" },
