@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
-import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
+import Reveal from "@/components/motion/Reveal";
 import { PRODUCTS, getProductBySlug } from "@/lib/products";
 
 export function generateStaticParams() {
@@ -34,8 +33,6 @@ export default async function ProductPage({
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) notFound();
-
-  const related = PRODUCTS.filter((p) => p.slug !== product.slug).slice(0, 3);
 
   return (
     <>
@@ -109,43 +106,6 @@ export default async function ProductPage({
 
       <section className="bg-cream-deep py-24 sm:py-32">
         <div className="container-site">
-          <Reveal type="up" className="mb-14 max-w-2xl">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">Explore More</p>
-            <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.08] tracking-tight text-ink">
-              Other leather categories.
-            </h2>
-          </Reveal>
-
-          <RevealGroup className="grid sm:grid-cols-3 gap-6 mb-16">
-            {related.map((p) => (
-              <RevealItem key={p.slug} type="up">
-                <Link
-                  href={`/products/${p.slug}`}
-                  className="group block rounded-2xl bg-white border border-[var(--line)] overflow-hidden hover:shadow-xl hover:shadow-black/[0.06] hover:-translate-y-1 transition-all duration-400"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={p.image}
-                      alt={p.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-start justify-between gap-3">
-                      <h3 className="font-display text-[17px] font-semibold text-ink">{p.title}</h3>
-                      <ArrowUpRight
-                        size={16}
-                        className="shrink-0 mt-1 text-ink-soft/40 group-hover:text-green group-hover:rotate-45 transition-all duration-300"
-                      />
-                    </div>
-                  </div>
-                </Link>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-
           <Reveal type="up">
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">

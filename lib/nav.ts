@@ -50,12 +50,9 @@ export const NAV: NavItem[] = [
 ];
 
 export const FOOTER_LEATHERS = [
-  { label: "By Leather Type", href: "/products" },
   { label: "Finished Leather", href: "/products/finished-leather" },
   { label: "Leather Goods", href: "/products/leather-goods" },
   { label: "Our Brands", href: "/brands" },
-  { label: "By Industry", href: "/markets" },
-  { label: "Leather Knowledge", href: "/blog" },
 ];
 
 export const FOOTER_COMPANY = [
