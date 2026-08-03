@@ -3,16 +3,17 @@ import Reveal from "@/components/motion/Reveal";
 import type { HomeContent } from "@/lib/home";
 
 export default function WhatWeMake({ content }: { content: HomeContent["whatWeMake"] }) {
-  const { eyebrow, heading } = content;
+  const { eyebrow, heading, intro } = content;
 
   return (
     <section className="bg-cream-deep py-24 sm:py-32">
       <div className="container-site">
         <Reveal type="up" className="mb-14 max-w-2xl">
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">{eyebrow}</p>
-          <h2 className="font-display text-[clamp(30px,4.2vw,52px)] leading-[1.08] tracking-tight text-ink">
+          <h2 className="font-display text-[clamp(30px,4.2vw,52px)] leading-[1.08] tracking-tight text-ink mb-6">
             {heading}
           </h2>
+          <p className="text-[16px] leading-relaxed text-ink-soft">{intro}</p>
         </Reveal>
 
         <Reveal type="up" delay={0.1}>

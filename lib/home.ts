@@ -16,6 +16,7 @@ export type HomeContent = {
   whatWeMake: {
     eyebrow: string;
     heading: string;
+    intro: string;
   };
   stats: {
     eyebrow: string;
