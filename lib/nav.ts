@@ -13,7 +13,7 @@ export const NAV: NavItem[] = [
   },
   {
     label: "Leather & Leather Goods",
-    href: "/products",
+    href: "/products/finished-leather",
     children: [
       { label: "Finished Leather", href: "/products/finished-leather" },
       { label: "Leather Goods", href: "/products/leather-goods" },
