@@ -3,7 +3,12 @@
     "Saddlery & Harness ",
     "Hunting Accessories",
     "Pet Accessories ",
-    "Bags & Belts"
+    "Bags & Belts",
+    "Equestrian Goods",
+    "Hand Bags",
+    "Wallets",
+    "Leather Goods",
+    "Gym Accessories"
   ],
   "num": " ",
   "slug": "finished-leather",
@@ -39,7 +44,13 @@
   ],
   "collections": {
     "heading": "Explore Our Leather Collections",
-    "items": ["Equestrian Leather", "Softy Leather", "Nappa Leather", "Suede Leather", "Nubuck Leather"]
+    "items": [
+      { "name": "Equestrian Leather", "image": "" },
+      { "name": "Softy Leather", "image": "" },
+      { "name": "Nappa Leather", "image": "" },
+      { "name": "Suede Leather", "image": "" },
+      { "name": "Nubuck Leather", "image": "" }
+    ]
   },
   "qualityStandards": {
     "heading": "Quality Without Compromise",

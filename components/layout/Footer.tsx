@@ -81,8 +81,8 @@ function FooterColumn({ title, links }: { title: string; links: { label: string;
 export default function Footer() {
   return (
     <footer className="bg-[var(--green-deep)] text-cream">
-      <div className="container-site py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
-        <div className="lg:col-span-2">
+      <div className="container-site py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+        <div className="lg:col-span-3">
           <Image
             src="/images/kings/logo/kings-international-logo.png"
             alt="Kings International"
@@ -107,10 +107,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <FooterColumn title="Our Leathers" links={FOOTER_LEATHERS} />
-        <FooterColumn title="Company" links={FOOTER_COMPANY} />
-        <FooterColumn title="B2B Hub" links={FOOTER_B2B} />
-        <OfficeBlock office={CONTACT.india} />
+        <div className="lg:col-span-2">
+          <FooterColumn title="Our Leathers" links={FOOTER_LEATHERS} />
+        </div>
+        <div className="lg:col-span-2">
+          <FooterColumn title="Company" links={FOOTER_COMPANY} />
+        </div>
+        <div className="lg:col-span-2">
+          <FooterColumn title="B2B Hub" links={FOOTER_B2B} />
+        </div>
+        <div className="lg:col-span-3">
+          <OfficeBlock office={CONTACT.india} />
+        </div>
       </div>
 
       <div className="border-t border-cream/10">

@@ -17,7 +17,7 @@ export type Product = {
   heroTitle?: string;
   introEyebrow?: string;
   introHeading?: string;
-  collections?: { heading: string; items: string[] };
+  collections?: { heading: string; items: { name: string; image?: string }[] };
   qualityStandards?: { heading: string; body: string };
   customDevelopment?: { heading: string; body: string };
 };

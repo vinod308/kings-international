@@ -7,7 +7,9 @@
     "SA 8000:2014 - Social Accountability",
     "Leather Working Group - Gold",
     "MSME ZED Gold Certified - Tannery",
-    "MSME ZED Gold Certified - Leather Goods"
+    "MSME ZED Gold Certified - Leather Goods",
+    "Government of India Recognised Export House",
+    "Compliance Partner of SLF"
   ],
   "certificationsSection": {
     "eyebrow": "GLOBAL CERTIFICATIONS",
@@ -23,7 +25,13 @@
     "buttonText": "Request Documentation",
     "buttonHref": "/contact"
   },
-  "awards": [],
+  "awards": [
+    {
+      "image": "/images/kings/awards/awards-cabinet.jpg",
+      "alt": "Kings International's awards cabinet - Tannery of the Year Asia 2016, Crown Leather Awards, and Asia Leather Awards trophies and certificates",
+      "caption": "Tannery of the Year - Asia 2016, and other industry recognitions."
+    }
+  ],
   "certifications": [
     {
       "num": "01",
@@ -64,6 +72,16 @@
       "num": "08",
       "title": "REACH & ZDHC Compliance",
       "body": "Our leather is manufactured using REACH-compliant materials and ZDHC-aligned chemical management practices to meet stringent international environmental and product safety expectations."
+    },
+    {
+      "num": "09",
+      "title": "Government of India Recognised Export House",
+      "body": "Officially recognised as an Export House by the Government of India, reflecting our sustained export performance and standing as a trusted international supplier."
+    },
+    {
+      "num": "10",
+      "title": "Compliance Partner of SLF",
+      "body": "Recognised as a Compliance Partner of SLF, reinforcing our commitment to responsible, audited manufacturing practices across our operations."
     }
   ],
   "hero": {

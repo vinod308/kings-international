@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
-import Reveal from "@/components/motion/Reveal";
+import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { PRODUCTS, getProductBySlug } from "@/lib/products";
 
 export function generateStaticParams() {
@@ -118,21 +119,32 @@ export default async function ProductPage({
 
           {product.collections && (
             <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)]">
-              <Reveal type="up">
-                <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-6">
+              <Reveal type="up" className="mb-10">
+                <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink">
                   {product.collections.heading}
                 </h2>
-                <ul className="flex flex-wrap gap-2.5">
-                  {product.collections.items.map((item) => (
-                    <li
-                      key={item}
-                      className="text-[13.5px] font-medium text-ink bg-white border border-[var(--line)] rounded-full px-4 py-2"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </Reveal>
+
+              <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+                {product.collections.items.map((item) => (
+                  <RevealItem key={item.name} type="up">
+                    <div className="rounded-2xl overflow-hidden bg-white border border-[var(--line)]">
+                      <div className="relative aspect-[4/3] bg-cream-deep">
+                        {item.image && (
+                          <Image
+                            src={item.image}
+                            alt={item.name}
+                            fill
+                            sizes="(max-width: 768px) 50vw, 20vw"
+                            className="object-cover"
+                          />
+                        )}
+                      </div>
+                      <p className="text-center text-[13.5px] font-medium text-ink py-3">{item.name}</p>
+                    </div>
+                  </RevealItem>
+                ))}
+              </RevealGroup>
             </div>
           )}
 
