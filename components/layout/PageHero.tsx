@@ -8,7 +8,7 @@ export default function PageHero({
   imageAlt,
   imagePosition = "center",
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   intro: string;
   image: string;
@@ -31,9 +31,11 @@ export default function PageHero({
       </div>
 
       <div className="container-site relative z-10 pb-16 pt-40">
-        <p className="text-[12px] sm:text-[13px] tracking-[0.24em] uppercase text-gold font-semibold mb-6">
-          {eyebrow}
-        </p>
+        {eyebrow && (
+          <p className="text-[12px] sm:text-[13px] tracking-[0.24em] uppercase text-gold font-semibold mb-6">
+            {eyebrow}
+          </p>
+        )}
         <h1 className="font-display text-[clamp(34px,5.4vw,64px)] leading-[1.05] tracking-tight text-cream max-w-3xl">
           {title}
         </h1>

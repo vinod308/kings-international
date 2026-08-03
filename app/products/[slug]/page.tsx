@@ -40,7 +40,6 @@ export default async function ProductPage({
   return (
     <>
       <PageHero
-        eyebrow={`Our Leathers · ${product.num} / 09`}
         title={product.title}
         intro={product.tagline}
         image={product.image}
