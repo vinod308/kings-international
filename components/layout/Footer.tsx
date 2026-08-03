@@ -40,7 +40,13 @@ function OfficeBlock({ office }: { office: (typeof CONTACT)["india"] }) {
       </div>
       <div className="flex gap-2.5 text-[13px] text-cream/70">
         <Mail size={15} className="mt-0.5 shrink-0" />
-        <span className="break-all">{office.emails.join(" · ")}</span>
+        <span className="flex flex-col">
+          {office.emails.map((email) => (
+            <span key={email} className="break-all">
+              {email}
+            </span>
+          ))}
+        </span>
       </div>
       <p className="text-[12px] text-cream/45 mt-3">{office.hours}</p>
     </div>
