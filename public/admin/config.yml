@@ -102,7 +102,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Title", name: "title", widget: "text", hint: "Each new line becomes its own line on the page." }
               - { label: "Intro", name: "intro", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt Text", name: "imageAlt", widget: "string" }

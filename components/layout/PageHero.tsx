@@ -36,8 +36,12 @@ export default function PageHero({
             {eyebrow}
           </p>
         )}
-        <h1 className="font-display text-[clamp(34px,5.4vw,64px)] leading-[1.05] tracking-tight text-cream max-w-3xl">
-          {title}
+        <h1 className="font-display text-[clamp(34px,5.4vw,64px)] leading-[1.05] tracking-tight text-cream max-w-5xl">
+          {title.split("\n").map((line, i) => (
+            <span key={i} className="block">
+              {line.trim()}
+            </span>
+          ))}
         </h1>
         <p className="mt-6 text-[16px] sm:text-[17px] leading-relaxed text-cream/75 max-w-2xl">{intro}</p>
       </div>
