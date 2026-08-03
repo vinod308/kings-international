@@ -50,8 +50,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Heading", name: "heading", widget: "text" }
           - label: "The Process / Stats Section"
             name: "stats"
             widget: "object"
