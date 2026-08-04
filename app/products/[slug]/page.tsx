@@ -130,39 +130,45 @@ export default async function ProductPage({
             </div>
           )}
 
-          <div className="grid sm:grid-cols-2 gap-12 lg:gap-16">
-            <Reveal type="up">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
-                Key Characteristics
-              </p>
-              <ul className="flex flex-col gap-4">
-                {product.characteristics.map((c) => (
-                  <li key={c} className="flex items-start gap-3">
-                    <span className="mt-0.5 w-5 h-5 rounded-full bg-green-soft flex items-center justify-center text-green shrink-0">
-                      <Check size={12} strokeWidth={3} />
-                    </span>
-                    <span className="text-[15px] leading-relaxed text-ink-soft">{c}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
+          {(product.characteristics.length > 0 || product.applications.length > 0) && (
+            <div className="grid sm:grid-cols-2 gap-12 lg:gap-16">
+              {product.characteristics.length > 0 && (
+                <Reveal type="up">
+                  <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
+                    Key Characteristics
+                  </p>
+                  <ul className="flex flex-col gap-4">
+                    {product.characteristics.map((c) => (
+                      <li key={c} className="flex items-start gap-3">
+                        <span className="mt-0.5 w-5 h-5 rounded-full bg-green-soft flex items-center justify-center text-green shrink-0">
+                          <Check size={12} strokeWidth={3} />
+                        </span>
+                        <span className="text-[15px] leading-relaxed text-ink-soft">{c}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+              )}
 
-            <Reveal type="up" delay={0.1}>
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
-                Typical Applications
-              </p>
-              <ul className="flex flex-wrap gap-2.5">
-                {product.applications.map((a) => (
-                  <li
-                    key={a}
-                    className="text-[13.5px] font-medium text-ink bg-white border border-[var(--line)] rounded-full px-4 py-2"
-                  >
-                    {a}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
+              {product.applications.length > 0 && (
+                <Reveal type="up" delay={0.1}>
+                  <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-green mb-4">
+                    Typical Applications
+                  </p>
+                  <ul className="flex flex-wrap gap-2.5">
+                    {product.applications.map((a) => (
+                      <li
+                        key={a}
+                        className="text-[13.5px] font-medium text-ink bg-white border border-[var(--line)] rounded-full px-4 py-2"
+                      >
+                        {a}
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+              )}
+            </div>
+          )}
 
           {product.collections && (
             <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)]">

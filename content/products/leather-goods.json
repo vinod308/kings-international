@@ -1,10 +1,5 @@
 {
-  "applications": [
-    "Bags & totes",
-    "Wallets & small leather goods",
-    "Belts",
-    "Gym & fitness accessories"
-  ],
+  "applications": [],
   "num": " ",
   "slug": "leather-goods",
   "tagline": "Kings International manufactures premium leather goods that combine timeless craftsmanship, superior materials, and modern production techniques. From fashion accessories to equestrian equipment and pet products, every product is designed to deliver quality, durability, and long-lasting performance.",
@@ -35,12 +30,7 @@
       "value": "To brand specification"
     }
   ],
-  "characteristics": [
-    "Full in-house cutting, dyeing and stitching",
-    "Private label and OEM development",
-    "Hardware and component sourcing to your spec",
-    "Quality inspection at every production stage"
-  ],
+  "characteristics": [],
   "title": "Leather Goods",
   "blurb": "Bags, wallets, belts, gym accessories and small leather goods, cut, dyed and stitched under one roof.",
   "image": "/images/kings/products/leather-goods.jpg"
