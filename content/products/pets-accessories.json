@@ -1,22 +1,39 @@
 {
-  "slug": "pets-accessories",
+  "applications": [
+    "Collars",
+    "Leads & leashes",
+    "Harnesses",
+    "Pet accessories"
+  ],
   "num": "07",
-  "title": "Pets' Accessories",
+  "slug": "pets-accessories",
   "tagline": "Collars, leads and accessories, built to last.",
-  "blurb": "Collars, leads and pet accessories under our Pets' Pal brand, made from imported and indigenous leathers.",
-  "image": "/images/kings/products/pet-accessories.jpg",
   "heroIntro": "Our Pets' Pal line applies the same tannery-to-finished-product control we use across the rest of the factory to pet accessories. Collars, leads and related goods are cut and stitched from imported and indigenous leathers, with hardware selected for daily, repeated use.",
+  "specs": [
+    {
+      "label": "Leather",
+      "value": "Imported & indigenous leather"
+    },
+    {
+      "label": "Hardware",
+      "value": "Rust-resistant fittings"
+    },
+    {
+      "label": "Stitching",
+      "value": "Reinforced double stitching"
+    },
+    {
+      "label": "Customization",
+      "value": "Private label & OEM"
+    }
+  ],
   "characteristics": [
     "Imported and indigenous leather options",
     "Reinforced stitching for daily use",
     "Rust-resistant hardware",
     "Sized and styled for retail ranges"
   ],
-  "applications": ["Collars", "Leads & leashes", "Harnesses", "Pet accessories"],
-  "specs": [
-    { "label": "Leather", "value": "Imported & indigenous leather" },
-    { "label": "Hardware", "value": "Rust-resistant fittings" },
-    { "label": "Stitching", "value": "Reinforced double stitching" },
-    { "label": "Customization", "value": "Private label & OEM" }
-  ]
+  "title": "Pets' Accessories",
+  "blurb": "Collars, leads and pet accessories under our Pets' Pal brand, made from imported and indigenous leathers.",
+  "image": "/images/kings/uploads/pets.png"
 }
