@@ -748,7 +748,7 @@ collections:
       - { label: "Blurb", name: "blurb", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Hero Eyebrow (optional)", name: "heroEyebrow", widget: "string", required: false }
-      - { label: "Hero Title Override (optional)", name: "heroTitle", widget: "string", required: false, hint: "If set, shown instead of Title on this product's own page." }
+      - { label: "Hero Title Override (optional)", name: "heroTitle", widget: "text", required: false, hint: "If set, shown instead of Title on this product's own page. Each new line becomes its own line on the page." }
       - { label: "Overview Eyebrow (optional)", name: "introEyebrow", widget: "string", required: false, hint: "Defaults to \"Overview\" if left blank." }
       - { label: "Overview Heading (optional)", name: "introHeading", widget: "string", required: false }
       - { label: "Hero Intro / Overview Body", name: "heroIntro", widget: "text", hint: "Leave a blank line between paragraphs to split into multiple paragraphs." }
