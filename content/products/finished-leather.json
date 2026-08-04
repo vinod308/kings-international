@@ -11,13 +11,48 @@
     "Gym Accessories"
   ],
   "num": " ",
+  "categoriesSection": {
+    "eyebrow": " ",
+    "heading": " "
+  },
+  "customDevelopment": {
+    "heading": "Tailored to Your Brand Requirements",
+    "body": "We understand that every brand has unique requirements. Our development team works closely with customers to create leather solutions based on preferred colours, textures, finishes, thicknesses, softness, and end-use applications.\n\nWhether you're launching a new collection or scaling production, we offer flexible OEM and private label support."
+  },
   "slug": "finished-leather",
   "tagline": "Kings International manufactures premium finished leather that combines exceptional aesthetics, durability, and performance. Designed to meet the diverse requirements of global brands and manufacturers, our leather is processed using advanced technologies, skilled craftsmanship, and stringent quality control to ensure consistency in every batch.",
   "heroEyebrow": "PREMIUM FINISHED LEATHER",
-  "heroTitle": "Crafted for Performance. Finished for Excellence.",
-  "introEyebrow": "ABOUT FINISHED LEATHER",
-  "introHeading": "Premium Leather Engineered for Global Applications",
   "heroIntro": "Our finished leather is developed to satisfy the quality expectations of international manufacturers across fashion, equestrian, pet accessories, industrial leather goods, and lifestyle products.\n\nEvery hide undergoes a carefully controlled tanning, dyeing, finishing, and inspection process to ensure outstanding appearance, durability, flexibility, and long-term performance.\n\nWhether you require classic leather finishes or customized specifications, our manufacturing capabilities allow us to deliver solutions tailored to your business.",
+  "collections": {
+    "heading": "Explore Our Leather Collections",
+    "items": [
+      {
+        "name": "Equestrian Leather",
+        "image": "/images/kings/uploads/equestrian-leather..png"
+      },
+      {
+        "name": "Softy Leather",
+        "image": "/images/kings/uploads/softy-leather.png"
+      },
+      {
+        "name": "Nappa Leather",
+        "image": "/images/kings/uploads/nappa-leather.png"
+      },
+      {
+        "name": "Suede Leather",
+        "image": "/images/kings/uploads/suede-leather.png"
+      },
+      {
+        "name": "Nubuck Leather",
+        "image": "/images/kings/uploads/nubuck-leather.png"
+      }
+    ]
+  },
+  "introHeading": "Premium Leather Engineered for Global Applications",
+  "qualityStandards": {
+    "heading": "Quality Without Compromise",
+    "body": "Every batch of leather undergoes rigorous quality inspections to verify thickness, colour consistency, finish quality, softness, flexibility, and overall performance. Our quality assurance process is designed to ensure that every shipment meets customer expectations and international manufacturing standards."
+  },
   "specs": [
     {
       "label": "Tanning",
@@ -42,25 +77,9 @@
     "Batch-to-batch consistency in colour and temper",
     "Full grading and selection before it reaches finishing"
   ],
-  "collections": {
-    "heading": "Explore Our Leather Collections",
-    "items": [
-      { "name": "Equestrian Leather", "image": "/images/kings/products/equestrian.jpg" },
-      { "name": "Softy Leather", "image": "/images/kings/manufacturing/handcraft-stitching.jpg" },
-      { "name": "Nappa Leather", "image": "/images/kings/products/bags.jpg" },
-      { "name": "Suede Leather", "image": "/images/kings/products/wallets.jpg" },
-      { "name": "Nubuck Leather", "image": "/images/kings/manufacturing/tannery-hides.jpg" }
-    ]
-  },
-  "qualityStandards": {
-    "heading": "Quality Without Compromise",
-    "body": "Every batch of leather undergoes rigorous quality inspections to verify thickness, colour consistency, finish quality, softness, flexibility, and overall performance. Our quality assurance process is designed to ensure that every shipment meets customer expectations and international manufacturing standards."
-  },
-  "customDevelopment": {
-    "heading": "Tailored to Your Brand Requirements",
-    "body": "We understand that every brand has unique requirements. Our development team works closely with customers to create leather solutions based on preferred colours, textures, finishes, thicknesses, softness, and end-use applications.\n\nWhether you're launching a new collection or scaling production, we offer flexible OEM and private label support."
-  },
   "title": "Finished Leather",
   "blurb": "Wet-blue and wet-white leather, tanned and finished in-house for Saddlery & Harness, Hunting, Pet Accessories, and Bags & Belts.",
-  "image": "/images/kings/manufacturing/tannery-hides.jpg"
+  "image": "/images/kings/manufacturing/tannery-hides.jpg",
+  "introEyebrow": "ABOUT FINISHED LEATHER",
+  "heroTitle": "Crafted for Performance. Finished for Excellence."
 }
