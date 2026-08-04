@@ -1,22 +1,39 @@
 {
-  "slug": "hand-bags",
+  "applications": [
+    "Duffel bags",
+    "Totes",
+    "Travel bags",
+    "Backpacks"
+  ],
   "num": "03",
-  "title": "Hand Bags",
+  "slug": "hand-bags",
   "tagline": "Bags and totes, cut and stitched in-house.",
-  "blurb": "Duffels, totes and travel bags, cut, dyed and stitched from our own finished leather.",
-  "image": "/images/kings/products/bags.jpg",
   "heroIntro": "From weekend duffels to structured totes, our bag lines run on the same in-house leather we tan ourselves. Pattern cutting, dyeing and stitching all happen under one roof, giving us tight control over fit, hardware and finish across a full production run.",
+  "specs": [
+    {
+      "label": "Leather",
+      "value": "Full-grain buffalo & cow"
+    },
+    {
+      "label": "Construction",
+      "value": "Cut, dyed & stitched in-house"
+    },
+    {
+      "label": "Hardware",
+      "value": "Brass / nickel-plated, custom options"
+    },
+    {
+      "label": "Customization",
+      "value": "Private label & OEM"
+    }
+  ],
   "characteristics": [
     "Cut and stitched from in-house finished leather",
     "Reinforced handles and load-bearing seams",
     "Custom hardware and lining options",
     "Consistent finish across full production runs"
   ],
-  "applications": ["Duffel bags", "Totes", "Travel bags", "Backpacks"],
-  "specs": [
-    { "label": "Leather", "value": "Full-grain buffalo & cow" },
-    { "label": "Construction", "value": "Cut, dyed & stitched in-house" },
-    { "label": "Hardware", "value": "Brass / nickel-plated, custom options" },
-    { "label": "Customization", "value": "Private label & OEM" }
-  ]
+  "title": "Hand Bags",
+  "blurb": "Duffels, totes and travel bags, cut, dyed and stitched from our own finished leather.",
+  "image": "/images/kings/uploads/chatgpt-image-aug-2-2026-08_41_15-pm-2-.png"
 }
