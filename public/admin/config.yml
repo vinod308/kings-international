@@ -771,12 +771,13 @@ collections:
         widget: "object"
         required: false
         fields:
-          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string", required: false }
           - label: "Items"
             name: "items"
             widget: "list"
+            required: false
             fields:
-              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Name", name: "name", widget: "string", required: false }
               - { label: "Image (optional)", name: "image", widget: "image", required: false }
       - label: "Nine Categories Showcase (optional)"
         name: "categoriesSection"
@@ -784,22 +785,22 @@ collections:
         required: false
         hint: "Shows a grid of all 9 product categories on this page."
         fields:
-          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Heading", name: "heading", widget: "string", required: false }
       - label: "Quality Standards (optional)"
         name: "qualityStandards"
         widget: "object"
         required: false
         fields:
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "text", required: false }
       - label: "Custom Development (optional)"
         name: "customDevelopment"
         widget: "object"
         required: false
         fields:
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Body", name: "body", widget: "text", hint: "Leave a blank line between paragraphs to split into multiple paragraphs." }
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "text", required: false, hint: "Leave a blank line between paragraphs to split into multiple paragraphs." }
 
   - name: "brands"
     label: "Brands"
