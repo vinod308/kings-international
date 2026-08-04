@@ -25,18 +25,7 @@
     "buttonText": "Request Documentation",
     "buttonHref": "/contact"
   },
-  "awards": [
-    {
-      "image": "/images/kings/awards/awards-cabinet.jpg",
-      "alt": "Kings International's awards cabinet - Tannery of the Year Asia 2016, Crown Leather Awards, and Asia Leather Awards trophies and certificates",
-      "caption": "Tannery of the Year - Asia 2016, and other industry recognitions."
-    },
-    {
-      "image": "/images/kings/certifications/slf-partnership-certificate.jpg",
-      "alt": "Sustainable Leather Foundation Certificate of Partnership - Kings International Ltd",
-      "caption": "Certificate of Partnership - Sustainable Leather Foundation."
-    }
-  ],
+  "awards": [],
   "certifications": [
     {
       "num": "01",
