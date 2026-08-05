@@ -47,7 +47,8 @@
   "introHeading": "Premium Leather Engineered for Global Applications",
   "qualityStandards": {
     "heading": "Quality Without Compromise",
-    "body": "Every batch of leather undergoes rigorous quality inspections to verify thickness, colour consistency, finish quality, softness, flexibility, and overall performance. Our quality assurance process is designed to ensure that every shipment meets customer expectations and international manufacturing standards."
+    "body": "Every batch of leather undergoes rigorous quality inspections to verify thickness, colour consistency, finish quality, softness, flexibility, and overall performance. Our quality assurance process is designed to ensure that every shipment meets customer expectations and international manufacturing standards.",
+    "image": "/images/kings/certifications/unido-innovation-award.jpg"
   },
   "specs": [
     {
@@ -77,5 +78,7 @@
   "blurb": "Wet-blue and wet-white leather, tanned and finished in-house for Saddlery & Harness, Hunting, Pet Accessories, and Bags & Belts.",
   "image": "/images/kings/uploads/chatgpt-image-aug-4-2026-12_25_38-pm.png",
   "introEyebrow": "ABOUT FINISHED LEATHER",
-  "heroTitle": "Crafted for Performance.\nFinished for Excellence."
+  "heroTitle": "Crafted for Performance.\nFinished for Excellence.",
+  "heroBadgeImage": "/images/kings/awards/leather-awards-plaques.jpg",
+  "heroBadgeImageAlt": "Kings International's World's Leather Awards plaques - Tannery Innovation Award 2016 and Tannery of the Year Asia 2016"
 }

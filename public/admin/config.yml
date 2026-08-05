@@ -749,6 +749,8 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Hero Eyebrow (optional)", name: "heroEyebrow", widget: "string", required: false }
       - { label: "Hero Title Override (optional)", name: "heroTitle", widget: "text", required: false, hint: "If set, shown instead of Title on this product's own page. Each new line becomes its own line on the page." }
+      - { label: "Hero Award/Badge Image (optional)", name: "heroBadgeImage", widget: "image", required: false, hint: "Shows as a small floating card over the hero banner, e.g. an award photo." }
+      - { label: "Hero Award/Badge Image Alt Text (optional)", name: "heroBadgeImageAlt", widget: "string", required: false }
       - { label: "Overview Eyebrow (optional)", name: "introEyebrow", widget: "string", required: false, hint: "Defaults to \"Overview\" if left blank." }
       - { label: "Overview Heading (optional)", name: "introHeading", widget: "string", required: false }
       - { label: "Hero Intro / Overview Body", name: "heroIntro", widget: "text", hint: "Leave a blank line between paragraphs to split into multiple paragraphs." }
@@ -794,6 +796,7 @@ collections:
         fields:
           - { label: "Heading", name: "heading", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "text", required: false }
+          - { label: "Certification/Award Image (optional)", name: "image", widget: "image", required: false, hint: "Shown alongside the text, e.g. a certification or award logo." }
       - label: "Custom Development (optional)"
         name: "customDevelopment"
         widget: "object"

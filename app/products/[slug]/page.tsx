@@ -43,6 +43,8 @@ export default async function ProductPage({
         intro={product.tagline}
         image={product.image}
         imageAlt={product.title}
+        badgeImage={product.heroBadgeImage}
+        badgeImageAlt={product.heroBadgeImageAlt}
       />
 
       <section className="bg-cream py-24 sm:py-32">
@@ -202,13 +204,30 @@ export default async function ProductPage({
           )}
 
           {product.qualityStandards && (
-            <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)] max-w-3xl">
-              <Reveal type="up">
-                <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-4">
-                  {product.qualityStandards.heading}
-                </h2>
-                <p className="text-[16px] leading-relaxed text-ink-soft">{product.qualityStandards.body}</p>
-              </Reveal>
+            <div className="mt-20 sm:mt-28 pt-16 sm:pt-20 border-t border-[var(--line)]">
+              <div className={product.qualityStandards.image ? "grid lg:grid-cols-12 gap-12 lg:gap-16 items-center" : "max-w-3xl"}>
+                <Reveal type="up" className={product.qualityStandards.image ? "lg:col-span-7" : undefined}>
+                  <h2 className="font-display text-[clamp(24px,3vw,36px)] leading-[1.15] tracking-tight text-ink mb-4">
+                    {product.qualityStandards.heading}
+                  </h2>
+                  <p className="text-[16px] leading-relaxed text-ink-soft">{product.qualityStandards.body}</p>
+                </Reveal>
+                {product.qualityStandards.image && (
+                  <Reveal type="up" delay={0.1} className="lg:col-span-5">
+                    <div className="rounded-2xl bg-white border border-[var(--line)] p-8 flex items-center justify-center">
+                      <div className="relative w-full aspect-square max-w-[220px]">
+                        <Image
+                          src={product.qualityStandards.image}
+                          alt={`${product.qualityStandards.heading} certification`}
+                          fill
+                          sizes="220px"
+                          className="object-contain"
+                        />
+                      </div>
+                    </div>
+                  </Reveal>
+                )}
+              </div>
             </div>
           )}
 

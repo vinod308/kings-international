@@ -19,8 +19,10 @@ export type Product = {
   introHeading?: string;
   collections?: { heading: string; items: { name: string; image?: string }[] };
   categoriesSection?: { eyebrow: string; heading: string };
-  qualityStandards?: { heading: string; body: string };
+  qualityStandards?: { heading: string; body: string; image?: string };
   customDevelopment?: { heading: string; body: string };
+  heroBadgeImage?: string;
+  heroBadgeImageAlt?: string;
 };
 
 export const PRODUCTS: Product[] = readContentDir<Product>("products").sort((a, b) =>
