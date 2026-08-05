@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ChatBubble from "@/components/layout/ChatBubble";
+import { CONTACT, CONTACT_CONTENT } from "@/lib/contact";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -29,13 +30,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const whatsappHref =
+    CONTACT_CONTENT.quickLinks.find((l) => l.label === "WhatsApp")?.href ??
+    `https://wa.me/${CONTACT.india.phones[0].replace(/\D/g, "")}`;
+
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <ChatBubble />
+        <ChatBubble whatsappHref={whatsappHref} email={CONTACT_CONTENT.recipientEmail} phone={CONTACT.india.phones[0]} />
       </body>
     </html>
   );
