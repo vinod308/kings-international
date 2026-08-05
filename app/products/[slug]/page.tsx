@@ -214,13 +214,14 @@ export default async function ProductPage({
                 </Reveal>
                 {product.qualityStandards.image && (
                   <Reveal type="up" delay={0.1} className="lg:col-span-5">
-                    <div className="rounded-2xl bg-white border border-[var(--line)] p-8 flex items-center justify-center">
-                      <div className="relative w-full aspect-square max-w-[220px]">
+                    <div className="flex items-center justify-center">
+                      <div className="relative w-[300px] h-[250px]">
                         <Image
                           src={product.qualityStandards.image}
                           alt={`${product.qualityStandards.heading} certification`}
                           fill
-                          sizes="220px"
+                          sizes="300px"
+                          quality={95}
                           className="object-contain"
                         />
                       </div>
