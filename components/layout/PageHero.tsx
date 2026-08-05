@@ -34,7 +34,7 @@ export default function PageHero({
 
         {badgeImage && (
           <div className="hidden lg:block absolute right-[350px] top-1/2 -translate-y-1/2 w-[400px]">
-            <div className="relative aspect-[1410/972] rounded-2xl overflow-hidden">
+            <div className="relative aspect-[1567/900] rounded-2xl overflow-hidden">
               <Image src={badgeImage} alt={badgeImageAlt ?? ""} fill sizes="400px" className="object-cover" />
             </div>
           </div>
