@@ -19,6 +19,7 @@
   "tagline": "Kings International manufactures premium finished leather that combines exceptional aesthetics, durability, and performance. Designed to meet the diverse requirements of global brands and manufacturers, our leather is processed using advanced technologies, skilled craftsmanship, and stringent quality control to ensure consistency in every batch.",
   "heroEyebrow": "PREMIUM FINISHED LEATHER",
   "heroIntro": "Our finished leather is developed to satisfy the quality expectations of international manufacturers across fashion, equestrian, pet accessories, industrial leather goods, and lifestyle products.\n\nEvery hide undergoes a carefully controlled tanning, dyeing, finishing, and inspection process to ensure outstanding appearance, durability, flexibility, and long-term performance.\n\nWhether you require classic leather finishes or customized specifications, our manufacturing capabilities allow us to deliver solutions tailored to your business.",
+  "heroBadgeImage": "/images/kings/awards/leather-awards-plaques.png",
   "collections": {
     "heading": "Our Leather Collection",
     "items": [
@@ -45,6 +46,7 @@
     ]
   },
   "introHeading": "Premium Leather Engineered for Global Applications",
+  "heroBadgeImageAlt": "Kings International's Tannery of the Year 2016 crystal awards - Asia Winner and Innovation of the Year, presented in Hong Kong by World Leather magazine",
   "qualityStandards": {
     "heading": "Quality Without Compromise",
     "body": "Every batch of leather undergoes rigorous quality inspections to verify thickness, colour consistency, finish quality, softness, flexibility, and overall performance. Our quality assurance process is designed to ensure that every shipment meets customer expectations and international manufacturing standards.",
@@ -76,9 +78,7 @@
   ],
   "title": "Finished Leather",
   "blurb": "Wet-blue and wet-white leather, tanned and finished in-house for Saddlery & Harness, Hunting, Pet Accessories, and Bags & Belts.",
-  "image": "/images/kings/uploads/chatgpt-image-aug-4-2026-12_25_38-pm.png",
+  "image": "/images/kings/uploads/chatgpt-image-aug-5-2026-07_36_15-pm.png",
   "introEyebrow": "ABOUT FINISHED LEATHER",
-  "heroTitle": "Crafted for Performance.\nFinished for Excellence.",
-  "heroBadgeImage": "/images/kings/awards/leather-awards-plaques.png",
-  "heroBadgeImageAlt": "Kings International's Tannery of the Year 2016 crystal awards - Asia Winner and Innovation of the Year, presented in Hong Kong by World Leather magazine"
+  "heroTitle": "Crafted for Performance.\nFinished for Excellence."
 }
