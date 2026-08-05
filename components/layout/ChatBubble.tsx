@@ -13,12 +13,12 @@ function getGreeting() {
 
 export default function ChatBubble({
   whatsappHref,
-  email,
-  phone,
+  emails,
+  phones,
 }: {
   whatsappHref: string;
-  email: string;
-  phone: string;
+  emails: string[];
+  phones: string[];
 }) {
   const [open, setOpen] = useState(false);
 
@@ -31,22 +31,22 @@ export default function ChatBubble({
       external: true,
       iconClass: "bg-[#25D366] text-white",
     },
-    {
+    ...emails.map((email) => ({
       label: "Email",
       sub: email,
       href: `mailto:${email}`,
       icon: Mail,
       external: false,
       iconClass: "bg-gold text-white",
-    },
-    {
+    })),
+    ...phones.map((phone) => ({
       label: "Call",
       sub: phone,
       href: `tel:${phone.replace(/\s+/g, "")}`,
       icon: Phone,
       external: false,
       iconClass: "bg-cream text-green-deep",
-    },
+    })),
   ];
 
   return (
@@ -77,7 +77,7 @@ export default function ChatBubble({
             <div className="flex flex-col">
               {OPTIONS.map(({ label, sub, href, icon: Icon, external, iconClass }, i) => (
                 <motion.a
-                  key={label}
+                  key={`${label}-${sub}`}
                   href={href}
                   target={external ? "_blank" : undefined}
                   rel={external ? "noopener noreferrer" : undefined}

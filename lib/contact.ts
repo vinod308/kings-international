@@ -11,6 +11,7 @@ export type Office = {
 export type ContactContent = {
   hero: { eyebrow: string; title: string; intro: string; image: string; imageAlt: string };
   recipientEmail: string;
+  chatWidget: { emails: string[]; phones: string[] };
   offices: { india: Office; uk: Office };
   quickLinks: { label: string; href: string; icon: string }[];
   steps: { num: string; title: string; body: string }[];

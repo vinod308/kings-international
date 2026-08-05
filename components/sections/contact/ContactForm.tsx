@@ -18,7 +18,7 @@ export default function ContactForm({
   quickLinks,
   steps,
   interests,
-}: Omit<ContactContent, "hero">) {
+}: Pick<ContactContent, "recipientEmail" | "offices" | "quickLinks" | "steps" | "interests">) {
   const [fullName, setFullName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");

@@ -7,6 +7,16 @@
     "imageAlt": "Hides in production at the Kings International tannery"
   },
   "recipientEmail": "works@kings-international.net",
+  "chatWidget": {
+    "emails": [
+      "taj@kings-international.net",
+      "shahid@kings-international.net"
+    ],
+    "phones": [
+      "+91 94151 28471",
+      "+44 7802 238131"
+    ]
+  },
   "offices": {
     "india": {
       "label": "Corporate Office - India",

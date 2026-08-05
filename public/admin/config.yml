@@ -584,6 +584,18 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
           - { label: "Recipient Email", name: "recipientEmail", widget: "string" }
+          - label: "Chat Widget (\"Let's talk\" bubble)"
+            name: "chatWidget"
+            widget: "object"
+            fields:
+              - label: "Emails"
+                name: "emails"
+                widget: "list"
+                field: { label: "Email", name: "email", widget: "string" }
+              - label: "Phone Numbers"
+                name: "phones"
+                widget: "list"
+                field: { label: "Phone Number", name: "phone", widget: "string" }
           - label: "Offices"
             name: "offices"
             widget: "object"

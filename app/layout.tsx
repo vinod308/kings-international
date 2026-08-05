@@ -40,7 +40,11 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <ChatBubble whatsappHref={whatsappHref} email={CONTACT_CONTENT.recipientEmail} phone={CONTACT.india.phones[0]} />
+        <ChatBubble
+          whatsappHref={whatsappHref}
+          emails={CONTACT_CONTENT.chatWidget.emails}
+          phones={CONTACT_CONTENT.chatWidget.phones}
+        />
       </body>
     </html>
   );
