@@ -34,6 +34,13 @@
         "note": null,
         "body": "Compliant PEPT, The adequacy and performance has been successfully assessed by CSIR- CLRI with mechanical dewatering system."
       }
+    ],
+    "pillars": [
+      { "image": "/images/kings/sustainability/water-saving.png", "label": "Water Saving" },
+      { "image": "/images/kings/sustainability/energy-saving.png", "label": "Energy Saving" },
+      { "image": "/images/kings/sustainability/renewable-energy.png", "label": "Renewable Energy" },
+      { "image": "/images/kings/sustainability/chemical-control.png", "label": "Chemical Control" },
+      { "image": "/images/kings/sustainability/biodegradable-leather.png", "label": "Biodegradable, Breathable\nand Responsible Leather" }
     ]
   },
   "commitmentsSection": {
