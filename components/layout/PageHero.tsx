@@ -31,16 +31,17 @@ export default function PageHero({
           className="object-cover"
           style={{ objectPosition: imagePosition }}
         />
+
+        {badgeImage && (
+          <div className="hidden lg:block absolute right-[350px] top-1/2 -translate-y-1/2 w-[400px]">
+            <div className="relative aspect-[1410/972] rounded-2xl overflow-hidden">
+              <Image src={badgeImage} alt={badgeImageAlt ?? ""} fill sizes="400px" className="object-cover" />
+            </div>
+          </div>
+        )}
+
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
       </div>
-
-      {badgeImage && (
-        <div className="hidden lg:block absolute right-[150px] top-1/2 -translate-y-1/2 z-10 w-[333px] rounded-2xl bg-white p-3 shadow-2xl shadow-black/30">
-          <div className="relative aspect-[7/6] rounded-lg overflow-hidden">
-            <Image src={badgeImage} alt={badgeImageAlt ?? ""} fill sizes="333px" className="object-cover" />
-          </div>
-        </div>
-      )}
 
       <div className="container-site relative z-10 pb-16 pt-40">
         {eyebrow && (
