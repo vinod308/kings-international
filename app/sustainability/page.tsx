@@ -19,7 +19,8 @@ type SustainabilityContent = {
     eyebrow: string;
     heading: string;
     items: { icon: string; title: string; note: string | null; body: string }[];
-    pillars?: { image: string; label: string }[];
+    pillarsImage?: string;
+    pillarsImageAlt?: string;
   };
   commitmentsSection: { eyebrow: string; heading: string; body?: string; items: string[] };
   cta: { eyebrow: string; heading: string; buttonText: string; buttonHref: string };
@@ -62,23 +63,17 @@ export default function SustainabilityPage() {
             })}
           </RevealGroup>
 
-          {initiativesSection.pillars && initiativesSection.pillars.length > 0 && (
-            <RevealGroup className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10 mt-14">
-              {initiativesSection.pillars.map((p) => (
-                <RevealItem key={p.label} type="up" className="flex flex-col items-center text-center">
-                  <div className="relative w-[134px] h-[134px] rounded-full overflow-hidden border-2 border-green/40 mb-4">
-                    <Image src={p.image} alt={p.label.replace("\n", " ")} fill sizes="134px" className="object-cover" />
-                  </div>
-                  <p className="text-[12px] font-bold tracking-[0.04em] uppercase text-green max-w-[220px]">
-                    {p.label.split("\n").map((line, i) => (
-                      <span key={i} className="block">
-                        {line.trim()}
-                      </span>
-                    ))}
-                  </p>
-                </RevealItem>
-              ))}
-            </RevealGroup>
+          {initiativesSection.pillarsImage && (
+            <Reveal type="up" className="mt-14">
+              <Image
+                src={initiativesSection.pillarsImage}
+                alt={initiativesSection.pillarsImageAlt ?? ""}
+                width={1600}
+                height={853}
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="w-full h-auto rounded-2xl"
+              />
+            </Reveal>
           )}
         </div>
       </section>

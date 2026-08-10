@@ -384,13 +384,8 @@ collections:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Note (optional)", name: "note", widget: "string", required: false }
                   - { label: "Body", name: "body", widget: "text" }
-              - label: "Sustainability Pillars (optional photo row below the initiative cards)"
-                name: "pillars"
-                widget: "list"
-                required: false
-                fields:
-                  - { label: "Photo", name: "image", widget: "image" }
-                  - { label: "Label", name: "label", widget: "text", hint: "Each new line becomes its own line under the photo." }
+              - { label: "Sustainability Pillars Image (optional banner below the initiative cards)", name: "pillarsImage", widget: "image", required: false }
+              - { label: "Sustainability Pillars Image Alt Text", name: "pillarsImageAlt", widget: "string", required: false }
           - label: "Commitments Section"
             name: "commitmentsSection"
             widget: "object"

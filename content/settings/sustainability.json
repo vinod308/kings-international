@@ -35,28 +35,8 @@
         "body": "Compliant PEPT, The adequacy and performance has been successfully assessed by CSIR- CLRI with mechanical dewatering system."
       }
     ],
-    "pillars": [
-      {
-        "image": "/images/kings/sustainability/water-saving.png",
-        "label": "Water Saving"
-      },
-      {
-        "image": "/images/kings/sustainability/energy-saving.png",
-        "label": "Energy Saving"
-      },
-      {
-        "image": "/images/kings/sustainability/renewable-energy.png",
-        "label": "Renewable Energy"
-      },
-      {
-        "image": "/images/kings/sustainability/chemical-control.png",
-        "label": "Chemical Control"
-      },
-      {
-        "image": "/images/kings/sustainability/biodegradable-leather.png",
-        "label": "Biodegradable, Breathable\nand Responsible Leather"
-      }
-    ]
+    "pillarsImage": "/images/kings/sustainability/sustainability-pillars-banner.jpg",
+    "pillarsImageAlt": "Kings International's five sustainability pillars: Water Saving, Energy Saving, Renewable Energy, Chemical Control, and Biodegradable, Breathable and Responsible Leather"
   },
   "commitmentsSection": {
     "eyebrow": "OUR COMMITMENT",
