@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ChatBubble from "@/components/layout/ChatBubble";
@@ -42,6 +43,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-S0FLRVXJ5Q"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-S0FLRVXJ5Q');
+          `}
+        </Script>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
