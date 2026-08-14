@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Sustainability",
   description:
     "Zero-liquid-discharge tannery, lime water recycling, hair-saving recovery, and REACH-compliant chemicals - measured sustainability at Kings International's Kanpur facility.",
+  alternates: { canonical: "/sustainability" },
 };
 
 type SustainabilityContent = {

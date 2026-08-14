@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Not just a tannery. Nor just a factory. Both. A vertically integrated leather goods manufacturer building hand-crafted products since 1977.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

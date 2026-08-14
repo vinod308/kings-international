@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "By Industry",
   description:
     "Kings International supplies leather across fashion, equestrian, automotive, industrial footwear, pet, and outdoor markets - vertically integrated from hide to finished product.",
+  alternates: { canonical: "/markets" },
 };
 
 type MarketsContent = {

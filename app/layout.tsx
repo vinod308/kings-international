@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ChatBubble from "@/components/layout/ChatBubble";
 import { CONTACT, CONTACT_CONTENT } from "@/lib/contact";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -20,9 +21,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Kings International Ltd. - Premium Hand-Crafted Leather Goods, Kanpur",
   description:
     "Kings International Ltd. - vertically integrated manufacturer and exporter of hand-crafted leather goods since 1977. Belts, bags, saddlery, pet accessories, and OEM/private-label manufacturing from Kanpur, India.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Media & Gallery",
   description:
     "Photos from Kings International's Kanpur facility - the tannery floor, hand-stitching, the ZLD water treatment plant, and the product range across belts, bags, saddlery and accessories.",
+  alternates: { canonical: "/media" },
 };
 
 type MediaContent = {

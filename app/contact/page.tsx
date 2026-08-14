@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Kings International's Kanpur export desk or UK subsidiary - product enquiries, OEM briefs, and press requests answered personally.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

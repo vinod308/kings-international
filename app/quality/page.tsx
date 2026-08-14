@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Quality Assurance",
   description:
     "Quality checkpoints at every stage of production, not just before dispatch - hide grading, in-process inspection, and pre-shipment sign-off at Kings International, Kanpur.",
+  alternates: { canonical: "/quality" },
 };
 
 type QualityContent = {

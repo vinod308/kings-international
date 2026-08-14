@@ -6,6 +6,7 @@ import Reveal from "@/components/motion/Reveal";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How Kings International collects, uses, and protects your data.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

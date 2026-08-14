@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Certifications & Awards",
   description:
     "Quality, environmental, health & safety, energy and social accountability standards audited across Kings International's Kanpur factory and tannery. Certificate documents available on request.",
+  alternates: { canonical: "/certifications" },
 };
 
 export default function CertificationsPage() {

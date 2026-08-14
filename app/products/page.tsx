@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Our Leathers",
   description:
     "Nine product categories, one tannery - from finished leather and leather goods to equestrian, bags, wallets, belts, pet, hunting and gym accessories, made in-house in Kanpur.",
+  alternates: { canonical: "/products" },
 };
 
 type ProductsPageContent = {

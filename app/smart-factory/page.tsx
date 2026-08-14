@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Smart Factory",
   description:
     "A section-by-section manufacturing process for saddlery, harness, belts and pet accessories - traditional hand craftsmanship where it matters, modern machinery where it counts. Kanpur, India.",
+  alternates: { canonical: "/smart-factory" },
 };
 
 type ManufacturingContent = {

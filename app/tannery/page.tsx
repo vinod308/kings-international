@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Tannery Division",
   description:
     "Kings International's in-house tannery processes up to 200 hides a day through wet-blue and wet-white tanning - full control from raw hide to finished leather, Kanpur, India.",
+  alternates: { canonical: "/tannery" },
 };
 
 type TanneryContent = {

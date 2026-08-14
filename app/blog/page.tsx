@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Leather Knowledge",
   description:
     "Sourcing guides and explainers on leather grades, manufacturing models, and compliance - written for brands, wholesalers, and buyers sourcing leather goods.",
+  alternates: { canonical: "/blog" },
 };
 
 type BlogPageContent = {
