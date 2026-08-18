@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
         destination: "/admin/index.html",
         permanent: false,
       },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.kings-international.net" }],
+        destination: "https://kings-international.net/:path*",
+        permanent: true,
+      },
     ];
   },
 };
