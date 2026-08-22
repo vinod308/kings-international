@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
         destination: "https://kings-international.net/:path*",
         permanent: true,
       },
+      { source: "/about-us", destination: "/about", permanent: true },
+      { source: "/contact-us", destination: "/contact", permanent: true },
+      { source: "/our-brands", destination: "/brands", permanent: true },
+      { source: "/our-products", destination: "/products", permanent: true },
+      { source: "/:path+/", destination: "/:path+", permanent: true },
     ];
   },
 };
