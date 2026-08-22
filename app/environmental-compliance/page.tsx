@@ -9,7 +9,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "Environmental Compliance",
   description:
-    "ISO 14001 environmental management, REACH-compliant chemicals and ZDHC-aligned wastewater standards, independently audited across Kings International's Kanpur factory and tannery.",
+    "ISO 14001 environmental management, REACH-compliant chemicals and ZDHC-aligned wastewater standards, independently audited at our Kanpur factory and tannery.",
   alternates: { canonical: "/environmental-compliance" },
 };
 

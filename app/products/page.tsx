@@ -10,7 +10,7 @@ import { readContentFile } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our Leathers",
   description:
-    "Nine product categories, one tannery - from finished leather and leather goods to equestrian, bags, wallets, belts, pet, hunting and gym accessories, made in-house in Kanpur.",
+    "Nine product categories, one tannery - finished leather and leather goods to equestrian, bags, wallets, belts, pet, hunting and gym accessories, made in Kanpur.",
   alternates: { canonical: "/products" },
 };
 

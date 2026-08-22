@@ -6,7 +6,7 @@ import { readContentFile } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Request a Quote",
   description:
-    "Tell Kings International what you need to source - product category, quantities, and destination market - and get a reply from the Kanpur export desk within one business day.",
+    "Tell us what you need to source - product category, quantities, and destination market - and get a reply from the Kanpur export desk within one business day.",
   alternates: { canonical: "/quote" },
 };
 

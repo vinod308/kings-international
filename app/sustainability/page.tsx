@@ -10,7 +10,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "Sustainability",
   description:
-    "Zero-liquid-discharge tannery, lime water recycling, hair-saving recovery, and REACH-compliant chemicals - measured sustainability at Kings International's Kanpur facility.",
+    "Zero-liquid-discharge tannery, lime water recycling, hair-saving recovery, and REACH-compliant chemicals - measured sustainability at our Kanpur facility.",
   alternates: { canonical: "/sustainability" },
 };
 

@@ -9,7 +9,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "By Industry",
   description:
-    "Kings International supplies leather across fashion, equestrian, automotive, industrial footwear, pet, and outdoor markets - vertically integrated from hide to finished product.",
+    "Kings International supplies leather across fashion, equestrian, automotive, footwear, pet, and outdoor markets - vertically integrated from hide to product.",
   alternates: { canonical: "/markets" },
 };
 

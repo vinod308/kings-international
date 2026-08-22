@@ -10,7 +10,7 @@ import { readContentFile } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our Brands",
   description:
-    "Kingston, Equitel, Ryder Belts, Target and Pets' Pal - five house brands, each built for its own category, all cut, stitched and finished on the same Kanpur floor.",
+    "Kingston, Equitel, Ryder Belts, Target and Pets' Pal - five house brands, each built for its own category, all made on the same Kanpur floor.",
   alternates: { canonical: "/brands" },
 };
 

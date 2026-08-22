@@ -23,9 +23,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Kings International Ltd. - Premium Hand-Crafted Leather Goods, Kanpur",
+  title: "Kings International - Hand-Crafted Leather Goods, Kanpur",
   description:
-    "Kings International Ltd. - vertically integrated manufacturer and exporter of hand-crafted leather goods since 1977. Belts, bags, saddlery, pet accessories, and OEM/private-label manufacturing from Kanpur, India.",
+    "Vertically integrated manufacturer and exporter of hand-crafted leather goods since 1977 - belts, bags, saddlery, pet accessories, OEM from Kanpur, India.",
   alternates: {
     canonical: "/",
   },

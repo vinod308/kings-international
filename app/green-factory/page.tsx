@@ -9,7 +9,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "Green Factory",
   description:
-    "Solar power, a zero-liquid-discharge tannery, and measured water and salt recovery - the Green Factory initiatives behind Kings International's manufacturing footprint, Kanpur, India.",
+    "Solar power, a zero-liquid-discharge tannery, and measured water and salt recovery - the Green Factory initiatives behind our manufacturing, Kanpur, India.",
   alternates: { canonical: "/green-factory" },
 };
 

@@ -9,7 +9,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "OEM Services",
   description:
-    "Full-service OEM and private-label leather manufacturing across every category we produce - from private labelling an existing design to fully custom product development, Kanpur, India.",
+    "Full-service OEM and private-label leather manufacturing across every category we produce - from private labelling to fully custom development, Kanpur, India.",
   alternates: { canonical: "/oem" },
 };
 

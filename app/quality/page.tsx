@@ -10,7 +10,7 @@ import { getIcon } from "@/lib/icons";
 export const metadata: Metadata = {
   title: "Quality Assurance",
   description:
-    "Quality checkpoints at every stage of production, not just before dispatch - hide grading, in-process inspection, and pre-shipment sign-off at Kings International, Kanpur.",
+    "Quality checkpoints at every stage of production, not just before dispatch - hide grading, in-process inspection, and pre-shipment sign-off, Kanpur.",
   alternates: { canonical: "/quality" },
 };
 
