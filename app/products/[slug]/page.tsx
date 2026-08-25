@@ -37,6 +37,8 @@ export default async function ProductPage({
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
+  const isLeatherGoodsIndex = product.slug === "leather-goods";
+
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -280,17 +282,19 @@ export default async function ProductPage({
             <div className="rounded-3xl bg-ink px-8 py-12 sm:px-14 sm:py-16 flex flex-wrap items-center justify-between gap-8">
               <div className="max-w-xl">
                 <p className="text-[10px] font-semibold tracking-[0.22em] uppercase text-gold mb-4">
-                  Private label or fully custom
+                  {isLeatherGoodsIndex ? "Nine categories, one tannery" : "Private label or fully custom"}
                 </p>
                 <h3 className="font-display text-[clamp(24px,2.8vw,34px)] leading-tight tracking-tight text-cream">
-                  Ready to spec a {product.title.toLowerCase()} order?
+                  {isLeatherGoodsIndex
+                    ? "Looking for a specific category?"
+                    : `Ready to spec a ${product.title.toLowerCase()} order?`}
                 </h3>
               </div>
               <Link
-                href="/quote"
+                href={isLeatherGoodsIndex ? "/products" : "/quote"}
                 className="group inline-flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-[13px] font-semibold tracking-[0.06em] uppercase text-ink hover:bg-cream transition-colors shrink-0"
               >
-                Request a Quote
+                {isLeatherGoodsIndex ? "View All Categories" : "Request a Quote"}
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </div>
