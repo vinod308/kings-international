@@ -6,6 +6,7 @@ import { ArrowUpRight, Check } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Reveal, { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { PRODUCTS, getProductBySlug } from "@/lib/products";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -36,8 +37,29 @@ export default async function ProductPage({
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    description: product.blurb,
+    image: `${SITE_URL}${product.image}`,
+    url: `${SITE_URL}/products/${product.slug}`,
+    category: product.introEyebrow,
+    brand: { "@type": "Brand", name: "Kings International" },
+    manufacturer: { "@type": "Organization", name: "Kings International Ltd.", url: SITE_URL },
+    additionalProperty: product.specs.map((s) => ({
+      "@type": "PropertyValue",
+      name: s.label,
+      value: s.value,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <PageHero
         eyebrow={product.heroEyebrow}
         title={product.heroTitle ?? product.title}
