@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         destination: "https://kings-international.net/:path*",
         permanent: true,
       },
+      {
+        source: "/:path((?!api|admin).*)",
+        has: [{ type: "host", value: "app.kings-international.net" }],
+        destination: "https://kings-international.net/:path",
+        permanent: true,
+      },
       { source: "/about-us", destination: "/about", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/our-brands", destination: "/brands", permanent: true },
