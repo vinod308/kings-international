@@ -11,20 +11,24 @@ function FacebookIcon() {
     </svg>
   );
 }
-function XIcon() {
+function InstagramIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M18.9 2.5h3.3l-7.2 8.2 8.5 10.8h-6.6l-5.2-6.6-5.9 6.6H2.5l7.7-8.7L2 2.5h6.8l4.7 6.1 5.4-6.1Zm-1.15 17h1.8L7.3 4.4H5.4l12.35 15.1Z" />
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none" />
     </svg>
   );
 }
-function YoutubeIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M21.6 7.2s-.2-1.5-.85-2.15c-.8-.85-1.7-.85-2.1-.9C15.8 4 12 4 12 4h0s-3.8 0-6.65.15c-.4.05-1.3.05-2.1.9C2.6 5.7 2.4 7.2 2.4 7.2S2.2 8.95 2.2 10.7v1.6c0 1.75.2 3.5.2 3.5s.2 1.5.85 2.15c.8.85 1.85.82 2.3.91C7.2 19 12 19 12 19s3.8 0 6.65-.15c.4-.05 1.3-.05 2.1-.9.65-.65.85-2.15.85-2.15s.2-1.75.2-3.5v-1.6c0-1.75-.2-3.5-.2-3.5ZM9.95 14.1V8.9l5 2.6-5 2.6Z" />
-    </svg>
-  );
-}
+
+const SOCIAL_LINKS = [
+  { Icon: FacebookIcon, href: "https://www.facebook.com/profile.php?id=61594086324427", label: "Facebook" },
+  {
+    Icon: InstagramIcon,
+    href: "https://www.instagram.com/kings_international_ltd?utm_source=qr&igsi=MTU1cnAwaXIzaWR4bw==",
+    label: "Instagram",
+  },
+];
 
 function OfficeBlock({ office }: { office: (typeof CONTACT)["india"] }) {
   return (
@@ -94,11 +98,13 @@ export default function Footer() {
             Excellence in hand-crafted leather goods, manufactured and exported worldwide since 1977.
           </p>
           <div className="flex gap-3 mt-6">
-            {[FacebookIcon, XIcon, YoutubeIcon].map((Icon, i) => (
+            {SOCIAL_LINKS.map(({ Icon, href, label }) => (
               <a
-                key={i}
-                href="#"
-                aria-label="Social link"
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
                 className="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center text-cream/70 hover:bg-cream/10 hover:text-cream transition-colors"
               >
                 <Icon />
