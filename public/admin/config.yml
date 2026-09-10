@@ -217,41 +217,6 @@ collections:
               - { label: "Button Text", name: "buttonText", widget: "string" }
               - { label: "Button Link", name: "buttonHref", widget: "string" }
 
-      - file: "content/settings/markets.json"
-        label: "By Industry Page"
-        name: "markets"
-        fields:
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-          - label: "Markets"
-            name: "markets"
-            widget: "list"
-            fields:
-              - { label: "Icon", name: "icon", widget: "string", hint: "Lucide icon name, e.g. Shirt, Medal, Car, HardHat, Dog, Crosshair" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Body", name: "body", widget: "text" }
-              - label: "Links"
-                name: "links"
-                widget: "list"
-                fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Link", name: "href", widget: "string" }
-          - label: "Call to Action"
-            name: "cta"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Heading", name: "heading", widget: "string" }
-              - { label: "Button Text", name: "buttonText", widget: "string" }
-              - { label: "Button Link", name: "buttonHref", widget: "string" }
-
       - file: "content/settings/oem.json"
         label: "OEM Services Page"
         name: "oem"
@@ -651,20 +616,6 @@ collections:
             widget: "list"
             field: { label: "Option", name: "option", widget: "string" }
 
-      - file: "content/settings/blog.json"
-        label: "Blog Listing Page"
-        name: "blog"
-        fields:
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
-
       - file: "content/settings/brands.json"
         label: "Brands Listing Page"
         name: "brandsPage"
@@ -842,25 +793,6 @@ collections:
         widget: "list"
         field: { label: "Material", name: "material", widget: "string" }
       - { label: "Quote", name: "quote", widget: "text" }
-
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "content/blog"
-    create: true
-    extension: "json"
-    format: "json"
-    slug: "{{slug}}"
-    fields:
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
-      - label: "Content"
-        name: "content"
-        widget: "text"
-        hint: "Use ## for headings, **text** for bold, - for bullet lists, 1. for numbered lists. Separate paragraphs with a blank line."
 
   - name: "certifications_page"
     label: "Certifications Page"

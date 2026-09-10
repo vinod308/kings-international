@@ -1,7 +1,6 @@
 import { SITE_URL } from "@/lib/site";
 import { PRODUCTS } from "@/lib/products";
 import { BRANDS } from "@/lib/brands";
-import { POSTS } from "@/lib/blog";
 
 export async function GET() {
   const lines: string[] = [];
@@ -23,7 +22,6 @@ export async function GET() {
   lines.push(`- [Green Factory](${SITE_URL}/green-factory): Renewable-energy and eco-manufacturing facility.`);
   lines.push(`- [Environmental Compliance](${SITE_URL}/environmental-compliance): Regulatory and compliance standards.`);
   lines.push(`- [OEM Services](${SITE_URL}/oem): Private-label and custom development services.`);
-  lines.push(`- [Markets](${SITE_URL}/markets): Industries and markets served.`);
   lines.push("");
 
   lines.push("## Products");
@@ -36,12 +34,6 @@ export async function GET() {
   lines.push(`- [Brands overview](${SITE_URL}/brands)`);
   for (const b of BRANDS) {
     lines.push(`- [${b.name}](${SITE_URL}/brands/${b.slug}): ${b.tag}`);
-  }
-  lines.push("");
-
-  lines.push("## Leather Knowledge (Blog)");
-  for (const post of POSTS) {
-    lines.push(`- [${post.title}](${SITE_URL}/blog/${post.slug}): ${post.excerpt}`);
   }
   lines.push("");
 
