@@ -76,6 +76,11 @@
       "num": "10",
       "title": "Compliance Partner of SLF",
       "body": "Recognised as a Compliance Partner of SLF, reinforcing our commitment to responsible, audited manufacturing practices across our operations."
+    },
+    {
+      "num": "11",
+      "title": "Sedex Certified Supplier Plus",
+      "body": "For labor standards, health & safety, environment and business ethics"
     }
   ],
   "hero": {
@@ -140,6 +145,11 @@
       "src": "/images/kings/uploads/awards..png",
       "alt": "All Awards",
       "label": "Awards"
+    },
+    {
+      "src": "/images/kings/uploads/certificate_en-1.png",
+      "alt": "Sedex",
+      "label": "Supplier Plus"
     }
   ],
   "whyCertified": [
