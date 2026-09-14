@@ -61,7 +61,7 @@ export default function CertificationsPage() {
               const remainder = CERTIFICATIONS.length % 4;
               const isInLastPartialRow = remainder !== 0 && i >= CERTIFICATIONS.length - remainder;
               return (
-                <RevealItem key={c.num} type="up" className={isInLastPartialRow ? "lg:col-span-2" : undefined}>
+                <RevealItem key={c.num} type="up" className={isInLastPartialRow && remainder === 2 ? "lg:col-span-2" : undefined}>
                   <div className="h-full rounded-2xl bg-white border border-[var(--line)] p-6">
                     <div className="w-11 h-11 rounded-xl bg-green-soft flex items-center justify-center text-green mb-4">
                       <BadgeCheck size={20} strokeWidth={1.8} />

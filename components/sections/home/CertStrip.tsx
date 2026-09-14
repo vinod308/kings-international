@@ -23,7 +23,7 @@ export default function CertStrip({ content }: { content: HomeContent["certStrip
                   <li
                     key={badge}
                     className={`flex items-center justify-center text-center text-[11px] font-semibold text-ink-soft border border-[var(--line)] rounded-xl px-2.5 py-2.5 bg-white leading-snug ${
-                      isInLastPartialRow ? "sm:col-span-2" : ""
+                      isInLastPartialRow && remainder === 2 ? "sm:col-span-2" : ""
                     }`}
                   >
                     {badge}
