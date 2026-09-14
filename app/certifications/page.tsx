@@ -21,7 +21,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/certifications" },
 };
 
+const PARTIAL_ROW_LG_COLS: Record<number, string> = {
+  1: "lg:grid-cols-1",
+  2: "lg:grid-cols-2",
+  3: "lg:grid-cols-3",
+};
+
 export default function CertificationsPage() {
+  const fullRowCount = CERTIFICATIONS.length - (CERTIFICATIONS.length % 4);
+  const fullRowCerts = CERTIFICATIONS.slice(0, fullRowCount);
+  const partialRowCerts = CERTIFICATIONS.slice(fullRowCount);
+
   return (
     <>
       <PageHero
@@ -57,11 +67,27 @@ export default function CertificationsPage() {
           </Reveal>
 
           <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {CERTIFICATIONS.map((c, i) => {
-              const remainder = CERTIFICATIONS.length % 4;
-              const isInLastPartialRow = remainder !== 0 && i >= CERTIFICATIONS.length - remainder;
-              return (
-                <RevealItem key={c.num} type="up" className={isInLastPartialRow && remainder === 2 ? "lg:col-span-2" : undefined}>
+            {fullRowCerts.map((c) => (
+              <RevealItem key={c.num} type="up">
+                <div className="h-full rounded-2xl bg-white border border-[var(--line)] p-6">
+                  <div className="w-11 h-11 rounded-xl bg-green-soft flex items-center justify-center text-green mb-4">
+                    <BadgeCheck size={20} strokeWidth={1.8} />
+                  </div>
+                  <h3 className="text-[14.5px] font-semibold text-ink mb-1.5 leading-snug">{c.title}</h3>
+                  <p className="text-[12.5px] leading-relaxed text-ink-soft">{c.body}</p>
+                </div>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+
+          {partialRowCerts.length > 0 && (
+            <RevealGroup
+              className={`grid sm:grid-cols-2 ${
+                PARTIAL_ROW_LG_COLS[partialRowCerts.length] ?? "lg:grid-cols-4"
+              } gap-5 mt-5`}
+            >
+              {partialRowCerts.map((c) => (
+                <RevealItem key={c.num} type="up">
                   <div className="h-full rounded-2xl bg-white border border-[var(--line)] p-6">
                     <div className="w-11 h-11 rounded-xl bg-green-soft flex items-center justify-center text-green mb-4">
                       <BadgeCheck size={20} strokeWidth={1.8} />
@@ -70,9 +96,9 @@ export default function CertificationsPage() {
                     <p className="text-[12.5px] leading-relaxed text-ink-soft">{c.body}</p>
                   </div>
                 </RevealItem>
-              );
-            })}
-          </RevealGroup>
+              ))}
+            </RevealGroup>
+          )}
         </div>
       </section>
 
